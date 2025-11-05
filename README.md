@@ -33,5 +33,4 @@ Serhii Karpus
 Liashenko Sofiia
 Halaichuk Vladyslav
 Gerlib Andriy
-Yurii Bazhan
 
