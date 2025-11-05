@@ -29,4 +29,8 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 ```
 Team
 Maksym Poliakov
+Serhii Karpus
+Liashenko Sofiia
+Halaichuk Vladyslav
+Gerlib Andriy
 Serhii Popovniak
