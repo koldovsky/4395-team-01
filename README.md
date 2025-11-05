@@ -95,4 +95,10 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
     <td><a href="https://github.com">GitHub</a></td>
     <td>Frontend Developer</td>
   </tr>
+  <tr>
+    <td>11</td>
+    <td>Semen Hoinets</td>
+    <td><a href="https://github.com/goosepinggg201">GitHub</a></td>
+    <td>FullStack Python/React Developer</td>
+  </tr>
 </table>
