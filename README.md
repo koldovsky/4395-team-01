@@ -34,3 +34,4 @@ Liashenko Sofiia<br>
 Halaichuk Vladyslav<br>
 Gerlib Andriy<br>
 Levenets Yuriy<br>
+Kuzhil Vitaliy<br>
