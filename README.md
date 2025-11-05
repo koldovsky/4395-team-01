@@ -28,9 +28,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
 ## Team
-Maksym Poliakov
-Serhii Karpus
-Liashenko Sofiia
-Halaichuk Vladyslav
-Gerlib Andriy
-Levenets Yuriy
+Maksym Poliakov<br>
+Serhii Karpus<br>
+Liashenko Sofiia<br>
+Halaichuk Vladyslav<br>
+Gerlib Andriy<br>
+Levenets Yuriy<br>
