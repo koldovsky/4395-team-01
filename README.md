@@ -80,7 +80,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
   <tr>
     <td>8</td>
     <td>Nychkalo Vira</td>
-    <td><a href="https://github.com">GitHub</a></td>
+    <td><a href="https://github.com/vironchiks">GitHub</a></td>
     <td>Frontend Developer</td>
   </tr>
   <tr>
