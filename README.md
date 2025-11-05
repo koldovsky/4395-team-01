@@ -31,4 +31,5 @@ Team
 Maksym Poliakov
 Serhii Karpus
 Liashenko Sofiia
+Yurii Bazhan
 
