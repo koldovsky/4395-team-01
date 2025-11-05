@@ -28,10 +28,10 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
 ## Team
-Maksym Poliakov
-Serhii Karpus
-Liashenko Sofiia
-Halaichuk Vladyslav
-Semen Hoinets
-Gerlib Andriy
-Serhii Popovniak
+Maksym Poliakov<br>
+Serhii Karpus<br>
+Liashenko Sofiia<br>
+Halaichuk Vladyslav<br>
+Semen Hoinets<br>
+Gerlib Andriy<br>
+Serhii Popovniak<br>
