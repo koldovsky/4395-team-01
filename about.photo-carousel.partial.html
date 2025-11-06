@@ -1,10 +1,143 @@
-<section aria-roledescription="carousel" id="photo-carousel">
-  <div>
-    <h2>An Art Gallery You'll Visit More Than Once</h2>
-    <p>
+<!-- partial: about.photo-carousel.partial.html -->
+<section class="photo-carousel" id="photo-carousel">
+  <div class="photo-carousel__intro">
+    <h2 class="photo-carousel__title">
+      An Art Gallery You'll Visit More Than Once
+    </h2>
+    <p class="photo-carousel__description">
       Each photo is meticulously selected to highlight the artistic details,
       rich colours, and exquisite craftsmanship that define Renaissance art.
     </p>
   </div>
 
+  <!-- Велике зображення / сцена -->
+  <div class="photo-carousel__stage">
+    <button
+      class="photo-carousel__control photo-carousel__control--prev"
+      type="button"
+    >
+      ‹
+    </button>
+
+    <div class="photo-carousel__slides">
+      <!-- Slide 1 -->
+      <figure class="photo-carousel__slide photo-carousel__slide--active">
+        <img
+          class="photo-carousel__image"
+          src="img/aboutpage/gallery-picture1.png"
+          alt="Галерея — фото 1"
+          width="1600"
+          height="900"
+        />
+      </figure>
+
+      <!-- Slide 2 -->
+      <figure class="photo-carousel__slide">
+        <img
+          class="photo-carousel__image"
+          src="img/aboutpage/gallery-picture2.webp"
+          alt="Галерея — фото 2"
+          width="1600"
+          height="900"
+        />
+      </figure>
+
+      <!-- Slide 3 -->
+      <figure class="photo-carousel__slide">
+        <img
+          class="photo-carousel__image"
+          src="img/aboutpage/gallery-picture3.png"
+          alt="Галерея — фото 3"
+          width="1600"
+          height="900"
+        />
+      </figure>
+
+      <!-- Slide 4 -->
+      <figure class="photo-carousel__slide">
+        <img
+          class="photo-carousel__image"
+          src="img/aboutpage/gallery-picture4.webp"
+          alt="Галерея — фото 4"
+          width="1600"
+          height="900"
+        />
+      </figure>
+
+      <!-- Slide 5 -->
+      <figure class="photo-carousel__slide">
+        <img
+          class="photo-carousel__image"
+          src="img/aboutpage/gallery-picture5.webp"
+          alt="Галерея — фото 5"
+          width="1600"
+          height="900"
+        />
+      </figure>
+    </div>
+
+    <button
+      class="photo-carousel__control photo-carousel__control--next"
+      type="button"
+    >
+      ›
+    </button>
+  </div>
+
+  <!-- Превʼю / Thumbnails -->
+  <div class="photo-carousel__thumbs">
+    <button
+      class="photo-carousel__thumb photo-carousel__thumb--active"
+      type="button"
+    >
+      <img
+        class="photo-carousel__thumb-image"
+        src="img/aboutpage/gallery-picture1.png"
+        alt="Мініатюра фото 1"
+        width="160"
+        height="90"
+      />
+    </button>
+
+    <button class="photo-carousel__thumb" type="button">
+      <img
+        class="photo-carousel__thumb-image"
+        src="img/aboutpage/gallery-picture2.webp"
+        alt="Мініатюра фото 2"
+        width="160"
+        height="90"
+      />
+    </button>
+
+    <button class="photo-carousel__thumb" type="button">
+      <img
+        class="photo-carousel__thumb-image"
+        src="img/aboutpage/gallery-picture3.png"
+        alt="Мініатюра фото 3"
+        width="160"
+        height="90"
+      />
+    </button>
+
+    <button class="photo-carousel__thumb" type="button">
+      <img
+        class="photo-carousel__thumb-image"
+        src="img/aboutpage/gallery-picture4.webp"
+        alt="Мініатюра фото 4"
+        width="160"
+        height="90"
+      />
+    </button>
+
+    <button class="photo-carousel__thumb" type="button">
+      <img
+        class="photo-carousel__thumb-image"
+        src="img/aboutpage/gallery-picture5.webp"
+        alt="Мініатюра фото 5"
+        width="160"
+        height="90"
+      />
+    </button>
+  </div>
 </section>
+<!-- end partial -->
