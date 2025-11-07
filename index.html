@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Galerry</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
+<<<<<<< HEAD
         <nav 
             data-hx-trigger="load" 
             data-hx-swap="outerHTML" 
@@ -20,71 +25,71 @@
             data-hx-get="index.hero.partial.html"
             >
         </section>
+=======
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+>>>>>>> 8828309 (change article partial)
     </header>
     <main class="main">
+      <!--Gerlib Andriy-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.project-video.partial.html"
+      ></section>
+      <!--Gerlib Andriy End -->
 
-    <!--Gerlib Andriy-->
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.project-video.partial.html"
-            >
-        </section>
-    <!--Gerlib Andriy End -->
+      <!-- Halaichuk Vladyslav -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.rahael.partial.html"
+      ></section>
+      <!-- Halaichuk Vladyslav End -->
 
-    <!-- Halaichuk Vladyslav -->
-        <section
-           data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="index.rahael.partial.html"
-            >
-        </section>
-    <!-- Halaichuk Vladyslav End -->    
+      <!-- Serhii Popovniak -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.artworks.partial.html"
+      ></section>
+      <!-- Serhii Popovniak -->
 
-    <!-- Serhii Popovniak -->
-        <section 
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="index.artworks.partial.html"
-            >
-         </section>
-    <!-- Serhii Popovniak -->
+      <!--Sofiia Liashenko -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="renaissance-reverie.html"
+      ></section>
+      <!-- Sofiia Liashenko -->
 
-    <!--Sofiia Liashenko -->
-        <section 
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="renaissance-reverie.html"
-            >
-         </section>
-    <!-- Sofiia Liashenko -->
+      <!--Mykola Heiko-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.news.partial.html"
+      ></section>
+      <!--Mykola Heiko Finish-->
 
-    <!--Mykola Heiko-->
-        <section
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="index.news.partial.html"
-        ></section>
-    <!--Mykola Heiko Finish-->    
-
-    <!--Pasychnyk Anna-->
-    <section
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="index.articles.partial.html"
-        ></section>
-        <!--Pasychnyk Anna Finish-->
-        
+      <!--Pasychnyk Anna-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.articles.partial.html"
+      ></section>
+      <!--Pasychnyk Anna Finish-->
     </main>
     <!--Nychkalo Vira-->
     <footer class="footer">
-        <nav 
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="global.footer-nav.partial.html"
-        ></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer-nav.partial.html"
+      ></nav>
     </footer>
     <!--Nychkalo Vira Finish-->
-
-</body>
+  </body>
 </html>
