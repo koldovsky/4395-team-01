@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permanent Exhibition Page</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="permanent-exhibition.on-display.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="permanent-exibition.genius-and-inspiration.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="<div class="exhibition__artwork-text">
+            <h2 class="exhibition__artwork-title">
+                Rediscover the <span class="exhibition__accent">Renaissance's Enduring Genius</span> and 
+                <span class="exhibition__accent">Inspiration</span>
+            </h2>
+
+            <p class="exhibition__paragraph">
+                From bold reinterpretations of iconic paintings to innovative mixed-media installations, 
+                "Art Beyond Time" showcases the diverse ways in which artists pay homage to the rich cultural 
+                heritage of the Renaissance while pushing the boundaries of creativity.
+            </p>
+
+            <p class="exhibition__paragraph">
+                Join us on this enlightening journey as we explore the intersections of tradition and innovation, 
+                past and present, and witness the vibrant evolution of Renaissance art.
+            </p>
+        </div>"
+        ></section>
+    </main>  
+    <footer>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer-nav.partial.html"
+      ></nav>
+    </footer>
+  </body>
+</html>
