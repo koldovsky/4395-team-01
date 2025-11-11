@@ -1,4 +1,7 @@
-
-.footer__nav{
-   background-color: rgb(30, 20, 10);
+footer{
+   text-align: center;
+   background-color: var(--bg-secondary);
+   text-align: center;
+   margin: auto;
 }
+

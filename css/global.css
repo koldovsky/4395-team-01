@@ -1,3 +1,4 @@
+@import "global.css";
 @import "index.news.partial.css";
 @import "global.header-nav.partial.css";
 @import "global.footer.partial.css";
@@ -14,8 +15,8 @@
 }
 
 :root{
+  --bg-color: #251a0d;
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
   background-color: var(--bg-color);
-  --bg-color: #251a0d;
 }

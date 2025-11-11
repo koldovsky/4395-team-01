@@ -1,5 +1,6 @@
 :root {
   --bg-header: #251a0d;
+  --bg-secondary: #1e140a;
   --gold: #cda15f;
   --muted: rgba(255, 255, 255, 0.78);
   --muted-strong: rgba(255, 255, 255, 0.95);
