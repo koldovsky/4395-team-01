@@ -1,9 +1,13 @@
 .news__container{
-
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
     .news__title{
         color:rgb(234,177,86);
-        font-family: "Bacasime Antique", serif;
-        font-size: 40px;
+        font-family: 'Bacasime Antique', serif;
+        font-size: 35px;
+        
     }
 }
 
