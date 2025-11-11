@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-*,
+/*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -23,4 +23,4 @@
 body{
   max-width: 1200px;
   margin: auto;
-}
+}/ */ 
