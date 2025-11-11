@@ -12,9 +12,14 @@
   padding: 0;
 }
 
-:root{
+:root {
+  --bg-color: #251a0d;
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
   background-color: var(--bg-color);
-  --bg-color: #251a0d;
+}
+
+body{
+  max-width: 1200px;
+  margin: auto;
 }
