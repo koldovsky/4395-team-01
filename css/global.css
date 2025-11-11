@@ -82,7 +82,7 @@
   .header__logo-image{ width: 160px; }
   .header__nav-list{ gap: 12px; font-size: .82rem; }
 }
-```/* filepath: /workspaces/4395-team-01/styles/header.css */
+/* filepath: /workspaces/4395-team-01/styles/header.css */
 :root{
   --bg-header: #251a0d;
   --gold: #cda15f;
