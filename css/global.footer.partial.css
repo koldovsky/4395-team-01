@@ -5,8 +5,7 @@ footer{
    margin: auto;
 }
 
-svg.footer__logo-image{
-      display: block;
-      width: 56px;  
+.footer__link{
+      color: var(red);
+      text-decoration: none;
 }
-
