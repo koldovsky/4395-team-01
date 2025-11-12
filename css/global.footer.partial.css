@@ -12,12 +12,11 @@ footer{
 
 .footer__logo{
   display: block;
-  width: 300px;
+  width: 160px;
   height: auto;
   object-fit: contain;
 }
 
-.footer__list--left{
-      text-align: left;
-      color: yellow;
+.footer__list{
+      text-align: center;  
 }
