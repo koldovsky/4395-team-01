@@ -108,6 +108,8 @@
   }
 }
 /* filepath: /workspaces/4395-team-01/styles/header.css */
+
+/* цей рут слід прибрати, оскільки він дублює змінні з global.css
 :root {
   --bg-header: #251a0d;
   --gold: #cda15f;
@@ -118,6 +120,7 @@
   --title-font: "Playfair Display", serif;
   --ui-font: "Source Sans Pro", Arial, sans-serif;
 }
+*/
 
 .header__content {
   background: var(--bg-header);
