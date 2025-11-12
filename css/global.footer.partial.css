@@ -21,15 +21,17 @@ footer{
       text-align: center;  
 }
 
-.footer__social-list{
-      list-style: none;
+.footer__social-item{
       display: flex;
-      justify-content: center;
-      gap: 1rem;
+      flex-direction: column;
+}
+
+.footer__social-icon{
+      color: #9f7647;
 }
 
 @media (min-width: 770px) {
-    .footer__list-left{
+    .footer__list--left{
       text-align: left;  
 }
 }
