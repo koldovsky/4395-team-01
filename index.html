@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Gallery</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    
+
   </head>
   <body>
     <header class="header">
-        <nav 
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="global.header-nav.partial.html"
-        ></nav>
-        <section 
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="index.raphael.partial.html"
-            >
-        </section>
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
       ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.hero.partial.html"
+      ></div>
     </header>
     <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.raphael.partial.html"
+      ></section>
       <!--Oksana Kovalenko-->
       <!-- Section 4. Gateway to the Renaissance -->
       <section
@@ -40,7 +42,13 @@
       ></section>
       <!--Oksana Kovalenko End -->
       <!-- Section 4. Gateway to the Renaissance End-->
-
+      <!--Section 5. Serhii Karpus Start-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.unlock-renaissance.partial.html"
+      ></section>
+      <!--Section 5. Serhii Karpus End-->
       <!--Section 8. YuriySuharskiy-->
       <section
         data-hx-trigger="load"
@@ -65,45 +73,41 @@
       ></section>
       <!--Mykola Heiko Finish-->
 
-    <!-- Vitaliy Kuzhil -->
-        <!-- Section 10.Renaissance Miracle -->
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.renaissance-miracle.partial.html"
-            >
-        </section>
-        <!-- Section 10.Renaissance Miracle End -->
-        
-        <!-- Section 11.Eternal Beauty -->
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.eternal-beauty.partial.html"
-            >
-        </section>
-        <!-- Section 11.Eternal Beauty End -->
+      <!-- Vitaliy Kuzhil -->
+      <!-- Section 10.Renaissance Miracle -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.renaissance-miracle.partial.html"
+      ></section>
+      <!-- Section 10.Renaissance Miracle End -->
 
-        <!-- Section 12.Religious Motifs -->
-        <!-- Halaychuck Vlad -->
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.religious-motifs.partial.html"
-            >
-        </section>
-        <!-- Halaychuck Vlad End -->
-        <!-- Section 12.Religious Motifs End -->
-    <!-- Vitaliy Kuzhil End -->
+      <!-- Section 11.Eternal Beauty -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.eternal-beauty.partial.html"
+      ></section>
+      <!-- Section 11.Eternal Beauty End -->
 
-    <!--Sofiia Liashenko -->
-        <section 
-            data-hx-trigger="load" 
-            data-hx-swap="outerHTML" 
-            data-hx-get="index.renaissance-reverie.html"
-            >
-         </section>
-    <!-- Sofiia Liashenko -->
+      <!-- Section 12.Religious Motifs -->
+      <!-- Halaychuck Vlad -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.religious-motifs.partial.html"
+      ></section>
+      <!-- Halaychuck Vlad End -->
+      <!-- Section 12.Religious Motifs End -->
+      <!-- Vitaliy Kuzhil End -->
+
+      <!--Sofiia Liashenko -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.renaissance-reverie.html"
+      ></section>
+      <!-- Sofiia Liashenko -->
       <!-- Serhii Popovniak -->
       <section
         data-hx-trigger="load"

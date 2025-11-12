@@ -1,0 +1,36 @@
+footer{
+   text-align: center;
+   background-color: var(--bg-secondary);
+   margin: auto;
+   align-items: center;
+   padding: 20px 0;
+}
+
+.footer__logo{
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.footer__item{
+      display: flex;
+      flex-direction: row;
+      color: #9f7647;
+      align-items: center;
+}
+
+.footer__copyright{
+      color: rgba(255,255,255,0.32);
+}
+
+.footer__item--bottom a{
+      color: rgba(255,255,255,0.32);
+      text-decoration-line: underline;
+}
+
+.footer__item--top a{
+      color: #ea8f22;
+      text-decoration: none;
+}

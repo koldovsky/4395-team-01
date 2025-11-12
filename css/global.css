@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --bg-color: #251a0d;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
