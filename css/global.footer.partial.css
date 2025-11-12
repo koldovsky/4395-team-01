@@ -9,3 +9,15 @@ footer{
       color: var(red);
       text-decoration: none;
 }
+
+.footer__logo{
+  display: block;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer__list--left{
+      text-align: left;
+      color: yellow;
+}
