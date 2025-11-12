@@ -1,9 +1,10 @@
-footer{
+.footer{
    text-align: center;
    background-color: var(--bg-secondary);
    margin: auto;
    align-items: center;
    padding: 20px 0;
+   max-width: 1200px;
 }
 
 .footer__logo{
@@ -17,20 +18,21 @@ footer{
 .footer__item{
       display: flex;
       flex-direction: row;
-      color: #9f7647;
       align-items: center;
 }
 
 .footer__copyright{
-      color: rgba(255,255,255,0.32);
+      color: var(--text-color2);
 }
 
 .footer__item--bottom a{
-      color: rgba(255,255,255,0.32);
+      color: var(--text-color2);
       text-decoration-line: underline;
+      font-family: var(--title-font);
 }
 
 .footer__item--top a{
-      color: #ea8f22;
+      color: var(--title-color2);
       text-decoration: none;
+      font-family: var(--text-font);
 }

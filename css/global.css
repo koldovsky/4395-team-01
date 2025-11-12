@@ -24,6 +24,8 @@
 
   scroll-behavior: smooth;
 
+  background-color: var(--bg-primary);
+  font-family: var(--text-font);
 }
 
 img {
