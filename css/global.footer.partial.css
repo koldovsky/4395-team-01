@@ -14,13 +14,22 @@ footer{
   align-items: center;
 }
 
-.footer__social-icon{
+.footer__list{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       color: #9f7647;
       align-items: center;
 }
 
 .footer__copyright{
       color: rgba(255,255,255,0.32);
+}
+
+.footer__item--bottom{
+      color: rgba(255,255,255,0.32);
+      text-decoration-line: underline;
+}
+
+.footer__item--top{
+      color: #ea8f22;
 }
