@@ -1,7 +1,7 @@
 @import "global.css";
 @import "global.header-nav.partial.css";
 @import "index.hero.partial.css";
-@import "global.footer.partial.css";
 @import "index.news.partial.css";
 @import "index.art-works.partial.css";
-@import "project-video.partial.css"
+@import "project-video.partial.css";
+@import "global.footer.partial.css";
