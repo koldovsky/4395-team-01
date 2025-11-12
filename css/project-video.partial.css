@@ -1,0 +1,139 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.project-video {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-video__background {
+  position: absolute;
+  inset: 0;
+  background-color: #251a0d;
+  z-index: 0;
+}
+
+.project-video__content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 56rem;
+  padding: 1rem;
+}
+
+.project-video__frame {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.project-video__preview {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
+}
+
+.project-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Styling */
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 9999px;
+  background-color: rgba(236, 172, 83, 0.8);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-video__play:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgba(236, 172, 83, 1);
+}
+
+.project-video__play-icon {
+  font-size: 2rem;
+  color: white;
+  line-height: 1;
+  transform: translateX(2px);
+}
+
+.project-video__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.project-video__subtitle {
+  font-size: 14px;
+  color: #545454;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+  align-items: baseline;
+}
+
+.project-video__title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #eab156;
+  margin-top: 25px;
+  margin-bottom: 9px;
+}
+
+.project-video__author {
+  font-size: 1rem;
+  color: #fdfddf;
+  margin-top: 12px;
+}
+
+@media (min-width: 640px) {
+  .project-video__content {
+    padding: 2rem;
+  }
+
+  .project-video__info {
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .project-video__subtitle {
+    margin-bottom: 0;
+  }
+
+  .project-video__title {
+    text-align: right;
+    margin: 0;
+  }
+  .project-video__author {
+    text-align: right;
+    margin-top: 9px;
+  }
+  @media (min-width: 640px) {
+    .project-video__details {
+      text-align: right;
+    }
+  }
+}
