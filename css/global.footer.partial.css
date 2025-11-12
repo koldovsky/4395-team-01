@@ -18,3 +18,7 @@ footer{
       flex-direction: row;
       color: #9f7647;
 }
+
+.footer__copyright{
+      color: white
+}
