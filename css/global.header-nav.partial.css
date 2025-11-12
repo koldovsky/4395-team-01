@@ -1,15 +1,3 @@
-:root {
-  --bg-header: #251a0d;
-  --bg-secondary: #1e140a;
-  --gold: #cda15f;
-  --muted: rgba(255, 255, 255, 0.78);
-  --muted-strong: rgba(255, 255, 255, 0.95);
-  --gap: 48px;
-  --max-width: 1400px;
-  --title-font: "Playfair Display", serif;
-  --ui-font: "Source Sans Pro", Arial, sans-serif;
-}
-
 .header__content {
   background: var(--bg-header);
   color: white;

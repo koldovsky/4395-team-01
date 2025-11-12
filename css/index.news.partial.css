@@ -1,12 +1,3 @@
-:root {
-  --news-bg-color: rgb(37, 26, 13);
-  --title-color1: rgb(234, 177, 86);
-  --title-color2: rgb(159, 118, 71);
-  --text-color1: rgba(255, 255, 255, 0.51);
-  --text-color2: rgba(255, 255, 255, 0.31);
-  --title-font: "Bacasime Antique", serif;
-  --text-font: "Work Sans", sans-serif;
-}
 .news__container {
   max-width: 320px;
   display: block;
