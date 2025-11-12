@@ -1,1 +1,4 @@
-@import "global.css";
+.hero {
+    max-width: 1200px;
+    margin: auto;
+}
