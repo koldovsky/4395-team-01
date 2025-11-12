@@ -15,20 +15,24 @@ footer{
   width: 160px;
   height: auto;
   object-fit: contain;
+
 }
 
 .footer__list{
       text-align: center;  
 }
 
-.footer__social-item{
+.footer__social-icon{
       display: flex;
       flex-direction: column;
-}
-
-.footer__social-icon{
       color: #9f7647;
 }
+
+.footer__nav { 
+      display:flex;
+      justify-content:center;
+      align-items:center; 
+      flex-wrap:wrap; }
 
 @media (min-width: 770px) {
     .footer__list--left{
