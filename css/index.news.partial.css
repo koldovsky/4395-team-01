@@ -1,5 +1,4 @@
 .news__container {
-  max-width: 320px;
   display: block;
   padding-left: 25px;
   padding-right: 25px;
@@ -7,7 +6,10 @@
   .news__title {
     font-family: var(--title-font);
     color: var(--title-color1);
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 260px;
+    line-height: 30px;
 
     .news__word {
       color: var(--title-color2);

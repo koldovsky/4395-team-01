@@ -8,47 +8,22 @@
 }
 
 :root {
-  /* --- Основні Змінні (Редагуйте тут) --- */
-  
-  /* Кольори */
   --bg-primary: #251a0d;
-  --bg-secondary: #1e140a;
-  --color-bg: #2b1c0e;
-  
-  --accent-primary: rgb(234, 177, 86);
-  --gold: #cda15f;
-  --title-color2: rgb(159, 118, 71);
+  --bg-secondary: rgb(30, 20, 10);
 
-  --color-text: #ffffff;
-  --muted: rgba(255, 255, 255, 0.78);
-  --muted-strong: rgba(255, 255, 255, 0.95);
-  --color-text-muted: #ffffff52;
-  --text-color1: rgba(255, 255, 255, 0.51);
+  --title-color1:rgb(234,177,86);
+  --title-color2: rgb(159,118,71);
+  --title-color3: #FFFFFF;
+
+  --text-color1: rgba(255, 255, 255, 0.59);
   --text-color2: rgba(255, 255, 255, 0.31);
 
-  /* Шрифти */
-  --font-text-base: "Work Sans", sans-serif;
+  --text-font: "Work Sans", sans-serif;
   --title-font: "Bacasime Antique", serif;
-  
 
-  /* --- Похідні Змінні (Аліаси) --- */
-  
-  --bg-color: var(--bg-primary);
-  --bg-header: var(--bg-primary);
-  --news-bg-color: var(--bg-primary);
-
-  --color-accent: var(--accent-primary);
-  --title-color1: var(--accent-primary);
-  
-  --text-font: var(--font-text-base);
-
-
-  /* --- Прямі властивості для <html> --- */
-  font-family: var(--font-text-base);
   scroll-behavior: smooth;
-  background-color: var(--bg-primary);
-}
 
+}
 img{
   display: block;
   max-width: 100%;
