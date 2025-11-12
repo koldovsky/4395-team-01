@@ -20,3 +20,16 @@ footer{
 .footer__list{
       text-align: center;  
 }
+
+.footer__social-list{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+}
+
+@media (min-width: 770px) {
+    .footer__list-left{
+      text-align: left;  
+}
+}
