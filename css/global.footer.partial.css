@@ -11,7 +11,7 @@
   display: block;
   width: 160px;
   height: auto;
-  margin: 0 24px;
+  margin: 0 auto;
   object-fit: contain;
 }
 
@@ -27,7 +27,6 @@
       color: var(--text-color2);
       text-decoration-line: underline;
       font-family: var(--text-font);
-      margin-top: 20px;
       width: 15px
 }
 
@@ -48,6 +47,7 @@
   align-items: center;    
   gap: 12px;
   flex-wrap: nowrap;
+  fill: var(--title-color2)
 }
 
 .footer__social-icon{
