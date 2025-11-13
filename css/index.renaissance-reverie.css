@@ -24,9 +24,12 @@
   color: #FFFFFF;
   text-align: right;
   line-height: 60px;
-  position: static;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
 }
 .art__figure {
+  position: relative;
   width: 311px;
   height: auto;
   display: block;
