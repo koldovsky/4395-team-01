@@ -28,6 +28,8 @@
   height: auto;
   display: block;
   margin: 0 auto;
+}
+.art__figure__date{
   position: relative;
   bottom: 60px;
 }
