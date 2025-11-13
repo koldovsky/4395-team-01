@@ -11,7 +11,7 @@
   display: block;
   width: 160px;
   height: auto;
-  margin: 0 auto;
+  margin: 0 24px;
   object-fit: contain;
 }
 
@@ -27,12 +27,15 @@
       color: var(--text-color2);
       text-decoration-line: underline;
       font-family: var(--text-font);
+      margin-top: 20px;
+      width: 15px
 }
 
 .footer__item--top {
       color: var(--title-color1);
       text-decoration: none;
       font-family: var(--text-font);
+      width: 17px
 }
 
 .footer__social-list {
@@ -47,10 +50,16 @@
   flex-wrap: nowrap;
 }
 
+.footer__social-icon{
+  width: 30px;
+  height: 30px;
+}
+
 .footer__link{
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin: 0; 
-  color: var(--text-color1) 
+  color: var(--text-color1); 
+  text-decoration: none;
 }
