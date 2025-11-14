@@ -2,6 +2,7 @@
    text-align: center;
    background-color: var(--bg-secondary);
    margin: auto;
+   margin-bottom: 24px;
    align-items: center;
    padding: 20px 0;
    max-width: 1200px;
@@ -11,12 +12,13 @@
   display: block;
   width: 160px;
   height: auto;
-  margin: 0 auto;
+  margin: 40px 0;
   object-fit: contain;
 }
 
 .footer__copyright{
       color: var(--text-color2);
+      margin-top: 60px;
 }
 
 .footer__copyright-right{
