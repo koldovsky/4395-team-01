@@ -69,3 +69,22 @@
 .footer__item{
   margin-bottom: 16px;
 }
+
+/* Стандартне розміщення (на великих екранах) */
+.footer__list--left {
+    display: flex;
+    flex-direction: column; /* або row, залежно від твого макету */
+    gap: 12px;
+}
+
+
+@media (max-width: 785px) {
+
+    .footer__list--left {
+        flex-direction: column; 
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
+    }
+
+}
