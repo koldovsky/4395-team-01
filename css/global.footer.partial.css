@@ -81,7 +81,7 @@
 @media (min-width: 785px) {
 
     .footer__list--left {
-        flex-direction: column; 
+        flex-direction: row; 
 
     }
 
