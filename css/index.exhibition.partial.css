@@ -1,0 +1,6 @@
+.exhibitions__list {
+  display: flex;
+  gap: 40px;         
+  justify-content: space-between; 
+  align-items: flex-start;
+}
