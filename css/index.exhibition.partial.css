@@ -1,4 +1,3 @@
-/* базово: центрований контейнер без горизонтального скролу */
 body {
   margin: 0;
 }
@@ -16,10 +15,9 @@ body {
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.05); /* як легкий водяний знак */
+  color: rgba(255, 255, 255, 0.05); 
 }
 
-/* ГОЛОВНЕ: grid з auto-fit → сам підбирає кількість колонок */
 .exhibitions__list {
   max-width: 1200px;
   margin: 0 auto;
@@ -28,14 +26,12 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/* Одна картка виставки */
 .exhibition {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* Номер — 01 / — 02 / — 03 */
 .exhibition__number {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.3);
@@ -45,7 +41,7 @@ body {
 .exhibition__title {
   font-size: 20px;
   margin: 0;
-  color: #eab156; /* як на демо Weblium */
+  color: #eab156;
 }
 
 .exhibition__work {
@@ -54,7 +50,6 @@ body {
   color: #9f7647;
 }
 
-/* Статус + дати */
 .exhibition__status {
   margin: 0;
   font-weight: 700;
@@ -66,7 +61,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Зображення */
+
 .exhibition__link {
   margin-top: 12px;
   display: block;
@@ -80,7 +75,6 @@ body {
   border-radius: 8px;
 }
 
-/* Трохи анімації при наведенні (як сучасні лендінги) */
 .exhibition__image:hover {
   transform: scale(1.02);
   transition: transform 0.2s ease-out;
