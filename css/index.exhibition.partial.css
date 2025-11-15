@@ -1,7 +1,9 @@
 .exhibitions__list {
   display: flex;
-  gap: 40px;         
-  justify-content: space-between; 
-  align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.exhibition {
+  flex: 0 0 300px;  
 }
