@@ -35,14 +35,12 @@
 }
 .art__artist-name {
   font-family: Bacasime Antique, serif;
-  width: 188px;
   font-size: 24px;
   color: #EAB156;
   line-height: 26px;
 }
 .art__name {
   font-family: Bacasime Antique, serif;
-  width: 177px;
   font-size: 24px;
   color: #9F7647;
   line-height: 26px;
@@ -59,7 +57,7 @@
   width: 339px;
   font-size: 17px;
   color: #FFFFFF96; 
-  text-align: justify;
+  text-align: center;
   line-height: 23px;
 }
 .art_name {
