@@ -1,28 +1,87 @@
-.exhibitions__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+/* базово: центрований контейнер без горизонтального скролу */
+body {
+  margin: 0;
 }
 
+.exhibitions {
+  background-color: #251a0d;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.exhibitions__label {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  font-size: 48px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.05); /* як легкий водяний знак */
+}
+
+/* ГОЛОВНЕ: grid з auto-fit → сам підбирає кількість колонок */
+.exhibitions__list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Одна картка виставки */
 .exhibition {
-  flex: 1 1 calc(33.333% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Номер — 01 / — 02 / — 03 */
+.exhibition__number {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Заголовок */
+.exhibition__title {
+  font-size: 20px;
+  margin: 0;
+  color: #eab156; /* як на демо Weblium */
+}
+
+.exhibition__work {
+  display: block;
+  font-style: italic;
+  color: #9f7647;
+}
+
+/* Статус + дати */
+.exhibition__status {
+  margin: 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.exhibition__dates {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Зображення */
+.exhibition__link {
+  margin-top: 12px;
+  display: block;
 }
 
 .exhibition__image {
   width: 100%;
-  height: auto;
   display: block;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-@media (max-width: 900px) {
-  .exhibition {
-    flex: 1 1 calc(50% - 24px);
-  }
-}
-
-
-@media (max-width: 600px) {
-  .exhibition {
-    flex: 1 1 100%;
-  }
+/* Трохи анімації при наведенні (як сучасні лендінги) */
+.exhibition__image:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-out;
 }
