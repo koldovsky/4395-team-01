@@ -1,9 +1,28 @@
 .exhibitions__list {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .exhibition {
-  flex: 0 0 300px;  
+  flex: 1 1 calc(33.333% - 24px);
+}
+
+.exhibition__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .exhibition {
+    flex: 1 1 calc(50% - 24px);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .exhibition {
+    flex: 1 1 100%;
+  }
 }
