@@ -1,7 +1,7 @@
 .unlock-renaissance {
     margin: auto;
     max-width: 1200px;
-    border-top: 1px seashell;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5);пше
     .unlock-renaissance__title{
       text-align: center;
       font-size: 3.75rem; 
@@ -29,6 +29,7 @@
     .unlock-renaissance__content{
       margin: 0 auto;
       .unlock-renaissance__subtitle{
+        width: 83%;
         text-align: center;
         font: var(--title-font);
         font-size: 17px;
@@ -39,6 +40,7 @@
         color: var(--text-color1);
       }
       .unlock-renaissance__text{
+        width: 83%;
         text-align: center;
         font: var(--title-font);
         font-size: 14px;
