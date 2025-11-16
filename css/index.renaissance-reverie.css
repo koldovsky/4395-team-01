@@ -4,6 +4,8 @@
 }
 .content__title {
   font-family: Bacasime Antique, serif;
+  width: 160px;
+  height: 71px;
   font-size: 34px;
   color: #EAB156;
   line-height: 37px;
@@ -14,6 +16,9 @@
   font-size: 34px;
   color: #FFFFFF;
   line-height: 37px;
+  text-align: center;
+}
+.content__separator {
   text-align: center;
 }
 .art__segment {
@@ -33,10 +38,12 @@
 .art__figure__date{
   position: relative;
   bottom: 60px;
+  width: 82px;
 }
 .art__artist-name {
   font-family: Bacasime Antique, serif;
-  width: 102px;
+  width: 117px;
+  height: 28px;
   font-size: 24px;
   color: #EAB156;
   line-height: 26px;
@@ -51,6 +58,7 @@
 .art__comment {
   font-family: Antic Didon, serif;
   width: 155px;
+  height: 20px;
   font-size: 12px;
   color: #FFFFFF96;
   line-height: 20px;
@@ -58,6 +66,7 @@
 .description__text {
   font-family: Work Sans, serif;
   width: 185px;
+  height: 85px;
   font-size: 17px;
   color: #FFFFFF96; 
   text-align: center;
