@@ -21,6 +21,7 @@
   width: 64px;
   height: 5px;
   text-align: center;
+}
 .art__segment {
   font-family: Bacasime Antique, serif;
   height: 180px;
@@ -35,7 +36,7 @@
   display: block;
   margin: 0 auto;
 }
-.art__figure__date{
+.art__figure__date {
   position: relative;
   bottom: 60px;
   width: 81;
