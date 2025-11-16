@@ -1,11 +1,7 @@
 .title__content {
-   text-align: center;
+  text-align: center;
   width: 160px;
   height: 71px;
-  padding: 0;
-  margin: 0;
-  line-height: normal;
-  box-sizing: border-box;
 }
 .content__title {
   font-family: Bacasime Antique, serif;
