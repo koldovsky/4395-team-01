@@ -1,18 +1,12 @@
-.art__container {
+.art__segment {
   display: flex;
-  flex-direction: column;
-  gap: 20px; 
+  justify-content: center; 
 }
-.center-blocks {
+
+.art__description-segment {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.left-blocks {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; 
   gap: 10px;
 }
 title__content {
