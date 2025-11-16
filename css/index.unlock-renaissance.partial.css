@@ -1,36 +1,55 @@
 .unlock-renaissance {
-    text-align: center;
     margin: auto;
-    align-items: center;
     max-width: 1200px;
-
+    border-top: 1px seashell;
     .unlock-renaissance__title{
-        font-size: 3.75rem; 
-        font-family: var(--title-font);
-        color: var(--title-color1); 
-        font-weight: lighter;
-        overflow-wrap: break-word;
+      text-align: center;
+      font-size: 3.75rem; 
+      font-family: var(--title-font);
+      color: var(--title-color1); 
+      font-weight: lighter;
+      overflow-wrap: break-word;
+      margin-bottom: 2rem;  /* нормальний відступ */
+      position: relative;
+      z-index: 2;
     }
     .unlock-renaissance__image-wrapper{
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      max-width: 380px;
-      border-radius: 15rem 15rem 0 0;
-
-      .unlock-renaissance__divider{
-      width: 1.4rem;      /* товщина */
-      min-height: 15rem;      /* висота  */
-      align-self: center;
-      border-radius: 0.125rem;
-      background-color: var(--title-color1);
-      gap: 1rem;
-
+      position: relative;
+      margin: 0 auto;
+      margin-top: -6rem;
+      z-index: 1;
+      .unlock-renaissance__image{
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+        border-radius: 85% 85% 0 0;
+        display: block; /* щоб margin auto працював завжди */
+      }
+    }
+    .unlock-renaissance__content{
+      margin: 0 auto;
+      .unlock-renaissance__subtitle{
+        text-align: center;
+        font: var(--title-font);
+        font-size: 17px;
+        font-weight: bold;
+        word-spacing: 0.1rem;
+        line-height: 1.6;
+        margin: 50px auto;     
+        color: var(--text-color1);
+      }
+      .unlock-renaissance__text{
+        text-align: center;
+        font: var(--title-font);
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.6;
+        font-weight: bold;
+        margin: 25px auto;
+        color: var(--text-color2);
     }
   }
-
 }
-
 /*
 :root {
   --color-bg: #2b1807;
