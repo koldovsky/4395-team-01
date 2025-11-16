@@ -1,6 +1,7 @@
 .title__content {
   text-align: center;
   width: 160px;
+  height: 71px;
 }
 .content__title {
   font-family: Bacasime Antique, serif;
@@ -16,6 +17,10 @@
   line-height: 37px;
   text-align: center;
 }
+.content__separator {
+  width: 64px;
+  height: 5px;
+  text-align: center;
 .art__segment {
   font-family: Bacasime Antique, serif;
   height: 180px;
