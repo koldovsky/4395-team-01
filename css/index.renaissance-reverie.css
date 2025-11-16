@@ -11,8 +11,6 @@
 }
 .title__content {
   text-align: center;
-  width: 160px;
-  height: 71px;
 }
 .content__title {
   font-family: Bacasime Antique, serif;
@@ -22,11 +20,8 @@
   text-align: center;
 }
 .title__highlighted-text {
-  font-family: Bacasime Antique, serif;
-  font-size: 34px;
+  font-style: italic;
   color: #FFFFFF;
-  line-height: 37px;
-  text-align: center;
 }
 .art__segment {
   font-family: Bacasime Antique, serif;
@@ -49,14 +44,12 @@
 }
 .art__artist-name {
   font-family: Bacasime Antique, serif;
-  width: 117px;
   font-size: 24px;
   color: #EAB156;
   line-height: 26px;
 }
 .art__name {
   font-family: Bacasime Antique, serif;
-  width: 100px;
   font-size: 24px;
   color: #9F7647;
   line-height: 26px;
