@@ -28,7 +28,6 @@
   .news__divider {
     position: absolute;
     left: 5px;
-    border: 1px solid red;
   }
 
   .news__category {
