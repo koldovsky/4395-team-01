@@ -18,7 +18,7 @@
 }
 .art__segment {
   font-family: Bacasime Antique, serif;
-  height: 280px;
+  height: 180px;
   font-size: 60px;
   color: #FFFFFF;
   text-align: right;
@@ -33,10 +33,11 @@
 .art__figure__date{
   position: relative;
   bottom: 60px;
+  width: 81;
 }
 .art__artist-name {
   font-family: Bacasime Antique, serif;
-  width: 102px;
+  width: 117px;
   font-size: 24px;
   color: #EAB156;
   line-height: 26px;
