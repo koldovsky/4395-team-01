@@ -1,0 +1,29 @@
+/* Carousel image sizing: make all slides the same height while keeping images centered */
+.photo-carousel {
+	--carousel-height: 280px; /* mobile default */
+}
+
+.photo-carousel .carousel-inner {
+	width: 100%;
+}
+
+.photo-carousel .carousel-item img {
+	width: 100%;
+	height: var(--carousel-height);
+	object-fit: cover;
+	object-position: center center;
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.photo-carousel {
+		--carousel-height: 420px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.photo-carousel {
+		--carousel-height: 520px;
+	}
+}
+
