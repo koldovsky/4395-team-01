@@ -1,19 +1,20 @@
 .title__content {
   text-align: center;
+  width: 160px;
 }
 .content__title {
   font-family: Bacasime Antique, serif;
-  width: 272px;
   font-size: 34px;
   color: #EAB156;
   line-height: 37px;
+  text-align: center;
 }
 .title__highlighted-text {
   font-family: Bacasime Antique, serif;
-  width: 135px;
   font-size: 34px;
   color: #FFFFFF;
   line-height: 37px;
+  text-align: center;
 }
 .art__segment {
   font-family: Bacasime Antique, serif;
@@ -24,7 +25,7 @@
   line-height: 60px;
 }
 .art__figure {
-  width: 311px;
+  width: 169px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -35,26 +36,28 @@
 }
 .art__artist-name {
   font-family: Bacasime Antique, serif;
+  width: 102px;
   font-size: 24px;
   color: #EAB156;
   line-height: 26px;
 }
 .art__name {
   font-family: Bacasime Antique, serif;
+  width: 100px;
   font-size: 24px;
   color: #9F7647;
   line-height: 26px;
 }
 .art__comment {
   font-family: Antic Didon, serif;
-  width: 287px;
+  width: 155px;
   font-size: 12px;
   color: #FFFFFF96;
   line-height: 20px;
 }
 .description__text {
   font-family: Work Sans, serif;
-  width: 339px;
+  width: 185px;
   font-size: 17px;
   color: #FFFFFF96; 
   text-align: center;
@@ -62,14 +65,14 @@
 }
 .art_name {
   font-family: Work Sans, sans-serif;
-  width: 129px;
+  width: 70px;
   font-size: 15px;
   color: #FFFFFF52; 
   line-height: 20px;
 }
 .artist_name {
   font-family: Work Sans, sans-serif;
-  width: 152px;
+  width: 82px;
   font-size: 14px;
   color: #FFFFFF52; 
   line-height: 20px;
