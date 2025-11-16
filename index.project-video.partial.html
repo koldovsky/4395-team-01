@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Video Section</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/project-video.partial.css" />
-  </head>
-  <body class="bg-black">
-    <section class="project-video">
-      <div class="project-video__background"></div>
+<!--Коли працюємо з partial структуру Doctype не використовуємо - виникає конфлікт-->
+<section class="project-video">
+  <div class="project-video__background"></div>
 
-      <div class="project-video__content">
-        <div class="project-video__frame">
-          <img
-          class="project-video__preview"
-          src="img/project-video/painting-preview.webp"
-          alt="Video preview image"
-          />
-          <button class="project-video__play" aria-label="Play video">
-            <span class="project-video__play-icon">▶</span>
-          </button>
-        </div>
+  <div class="project-video__content">
+    <div class="project-video__frame">
+      <img
+        class="project-video__preview"
+        src="img/project-video/painting-preview.webp"
+        alt="Video preview image"
+      />
+      <button class="project-video__play" aria-label="Play video">
+        <span class="project-video__play-icon">▶</span>
+      </button>
+    </div>
 
-        <div class="project-video__info">
-          <p class="project-video__subtitle">Watch the clip</p>
+    <div class="project-video__info">
+      <p class="project-video__subtitle">Watch the clip</p>
 
-          <div class="project-video__details">
-            <h3 class="project-video__title">Maria Mathilda Bingham (1810)</h3>
-            <p class="project-video__author">by Thomas Lawrence</p>
-          </div>
-        </div>
+      <div class="project-video__details">
+        <h3 class="project-video__title">Maria Mathilda Bingham (1810)</h3>
+        <p class="project-video__author">by Thomas Lawrence</p>
       </div>
-    </section>
-  </body>
-</html>
+    </div>
+  </div>
+</section>
