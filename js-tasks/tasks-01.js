@@ -1,17 +1,26 @@
-// https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript
 
-function plural(n) {
-  return n !== 1;
+//Grasshopper - Messi goals function
+//https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 
-// https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript
-
-function plural(n) {
-  return n !== 1;
+//Return Negative
+//https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
+function makeNegative(num) {
+  return num <= 0 ? num : -num
 }
 
-// https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript
-
-function plural(n) {
-  return n !== 1;
+// Grasshopper - Terminal game move function
+//https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
+function move (position, roll) {
+  return position + (roll * 2)
 }
+
+//Grasshopper - Personalized Message
+//https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+function greet (name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest"
+}
+//Keep Hydrated 
+// https://www.codewars.com/kata/keep-hydrated-1/train/javascript
