@@ -48,7 +48,7 @@
   color: var(--title-color3);
   display: block;
   z-index: 1005;
-  width: 246px;;
+  width: 150px; /* вилазить за межі */
   min-width: 20px;
   letter-spacing: 0.05em;
   font-weight: 400;
