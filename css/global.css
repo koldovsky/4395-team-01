@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red; /* for development purposes only */
+  /* outline: 1px solid red;  for development purposes only */
 }
 
 :root {
@@ -23,6 +23,9 @@
 
   --text-font: "Work Sans", sans-serif;
   --title-font: "Bacasime Antique", serif;
+  --title-font2: "Antic Didone", serif;
+
+  --scale: 1;
 
   scroll-behavior: smooth;
 

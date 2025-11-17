@@ -1,0 +1,77 @@
+.exhibitions {
+  background-color: #251a0d;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.exhibitions__label {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  font-size: 35px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.05); 
+}
+
+.exhibitions__list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.exhibition {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exhibition__number {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Заголовок */
+.exhibition__title {
+  font-size: 20px;
+  margin: 0;
+  color: #eab156;
+}
+
+.exhibition__work {
+  display: block;
+  font-style: italic;
+  color: #9f7647;
+}
+
+.exhibition__status {
+  margin: 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.exhibition__dates {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.exhibition__link {
+  margin-top: 12px;
+  display: block;
+}
+
+.exhibition__image {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.exhibition__image:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-out;
+}

@@ -1,91 +1,144 @@
 .artworks {
-    margin-top: 250px;
-    margin-bottom: 100px;
-    padding: 40px 20px 100px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.75rem 1.25rem;
     position: relative;
-    padding: 28px 20px;
-    
-
 
     .artworks__title {
         color: var(--title-color1);
         text-align: center;
         font-family: "Bacasime Antique", serif;
         font-weight: 400;
-        font-size: 56px;
         font-style: italic;
-        width: 209px;
-        height: 65px;
-        margin: 6px 0 20px;
+        font-size: clamp(56px, 10vw, 75px);
+        margin: 6px auto 20px;
+        width: fit-content;
+        height: auto;
+        /* display: inline-block; */
     }
 
     .artworks__list {
-        display: flex;
-        flex-direction: column;
-        min-height: 500px;
+        position: relative;
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
+        min-height: 40vh;
+
+        .artworks__item {
+            margin: 0;
+            padding: 0;
+
+            .artworks__image {
+                display: block;
+                height: auto;
+                width: 100%;
+            }
+
+            .artworks__caption {
+                margin-top: 1.25rem;
+                color: var(--text-color2);
+                text-align: left;
+                font-size: clamp(0.75rem, 4vw, 1rem);
+                font-style: italic;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.25;
+            }
+        }
     }
 
-    .artworks__item {
-        margin: 0;
-        padding: 0;
 
-
-    }
-
-    .artworks__caption {
-        margin-top: 20px;
-        color: var(--text-color2);
-        text-align: left;
-        max-width: 240px;
-        font-size: 13px;
-        font-style: italic;
-        display: flex;
-        white-space: wrap;
-        flex-direction: column;
-    }
-
-
-    .artworks__image {
-        display: block;
-        height: auto;
-    }
-
-    .artworks__image--large {
-        justify-content: center;
-        width: 170px;
-    }
-
-    .artworks__image--medium {
-        width: 163px;
-    }
-
-    .artworks__image--small {
-        width: 127px;
-    }
 
     .artworks__item:nth-child(1) {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 3rem;
+        width: 60%;
+        margin-left: 8%;
+
     }
+
+    .artworks__item--second {
+        width: 58%;
+        margin-left: 10%;
+    }
+
 
     .artworks__item--third {
         position: absolute;
-        align-self: flex-end;
-        margin-top: 270px;
-        margin-right: 10px;
+        top: 50%;
+        right: 0%;
+        width: 42%;
         z-index: 2;
-        align-items: center;
 
-
+        .artworks__caption--third {
+            text-align: center;
+            margin: 1rem auto 0;
+            max-width: 120px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: manual;
+            padding: 0 20px;
+        }
     }
+}
 
-    .artworks__caption--third {
-        width: 71px;
+
+@media (min-width: 768px) {
+    .artworks {
+        padding: 3rem 2rem;
         text-align: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: left;
-        margin-left: 30px;
+
+        .artworks__title {
+            font-size: clamp(103px, 10vw, 183px);
+            margin-bottom: 0;
+            justify-content: center;
+            z-index: 1;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .artworks__list {
+            display: flex;
+            align-items: flex-start;
+            gap: 3rem;
+            min-height: auto;
+            position: relative;
+
+            .artworks__item {
+                position: static;
+                width: 28%;
+                margin: 0;
+
+                .artworks__image {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .artworks__caption {
+                    justify-content: flex-start;
+                    margin-top: 0.75rem;
+                    font-size: clamp(14px, 1.5vw, 18px);
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .artworks__item:nth-child(1) {
+            position: static;
+            margin-top: -2rem;
+        }
+
+
+        .artworks__item--second {
+            margin-top: 0;
+        }
+
+
+        .artworks__item--third {
+            position: static !important;
+            margin-top: -2rem !important;
+
+        }
+
     }
-    
 }
