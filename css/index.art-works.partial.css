@@ -5,7 +5,7 @@
     position: relative;
 
     .artworks__title {
-        color: var(--title-color1);
+        color: var(--color-gold);
         text-align: center;
         font-family: "Bacasime Antique", serif;
         font-weight: 400;
@@ -14,7 +14,6 @@
         margin: 6px auto 20px;
         width: fit-content;
         height: auto;
-        /* display: inline-block; */
     }
 
     .artworks__list {
@@ -36,7 +35,7 @@
 
             .artworks__caption {
                 margin-top: 1.25rem;
-                color: var(--text-color2);
+                color: var(--text-color-secondary);
                 text-align: left;
                 font-size: clamp(0.75rem, 4vw, 1rem);
                 font-style: italic;
@@ -46,8 +45,6 @@
             }
         }
     }
-
-
 
     .artworks__item:nth-child(1) {
         text-align: center;
@@ -61,7 +58,6 @@
         width: 58%;
         margin-left: 10%;
     }
-
 
     .artworks__item--third {
         position: absolute;
@@ -81,7 +77,6 @@
         }
     }
 }
-
 
 @media (min-width: 768px) {
     .artworks {
@@ -128,11 +123,9 @@
             margin-top: -2rem;
         }
 
-
         .artworks__item--second {
             margin-top: 0;
         }
-
 
         .artworks__item--third {
             position: static !important;

@@ -1,6 +1,6 @@
 .exhibitions {
-  background-color: #251a0d;
-  color: #ffffff;
+  background-color: var(--bg-primary);
+  color: var(--color-white);
   padding: 60px 20px;
 }
 
@@ -11,7 +11,7 @@
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.05); 
+  color: var(--text-color-dim);
 }
 
 .exhibitions__list {
@@ -30,33 +30,31 @@
 
 .exhibition__number {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-color-muted);
 }
 
-/* Заголовок */
 .exhibition__title {
   font-size: 20px;
   margin: 0;
-  color: #eab156;
+  color: var(--color-gold);
 }
 
 .exhibition__work {
   display: block;
   font-style: italic;
-  color: #9f7647;
+  color: var(--color-bronze);
 }
 
 .exhibition__status {
   margin: 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-color-light);
 }
 
 .exhibition__dates {
   margin: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-color-tertiary);
 }
-
 
 .exhibition__link {
   margin-top: 12px;

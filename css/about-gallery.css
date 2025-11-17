@@ -9,25 +9,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red;  for development purposes only */
 }
 
 :root {
-  --bg-primary: #251a0d;
-  --bg-secondary: rgb(30, 20, 10);
-
-  --title-color1:rgb(234,177,86);
-  --title-color2: rgb(159,118,71);
-  --title-color3: #FFFFFF; 
-
-  --text-color1: rgba(255, 255, 255, 0.59);
-  --text-color2: rgba(255, 255, 255, 0.31);
-  --text-color3: rgba(255, 255, 255, 0.59);
-
-  --text-font: "Work Sans", sans-serif;
-  --title-font: "Bacasime Antique", serif;
-  --title-font2: "Antic Didone", serif;
-
   scroll-behavior: smooth;
 
   background-color: var(--bg-primary);
