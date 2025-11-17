@@ -46,8 +46,6 @@
         }
     }
 
-
-
     .artworks__item:nth-child(1) {
         text-align: center;
         margin-bottom: 3rem;
@@ -60,7 +58,6 @@
         width: 58%;
         margin-left: 10%;
     }
-
 
     .artworks__item--third {
         position: absolute;
@@ -80,7 +77,6 @@
         }
     }
 }
-
 
 @media (min-width: 768px) {
     .artworks {
@@ -127,11 +123,9 @@
             margin-top: -2rem;
         }
 
-
         .artworks__item--second {
             margin-top: 0;
         }
-
 
         .artworks__item--third {
             position: static !important;
