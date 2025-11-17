@@ -111,7 +111,7 @@
     display: flex;
     flex-direction: column;
 
-    .hero_year {
+    .hero__year {
         font-family: var(--title-font);
         font-weight: 100;
         font-size: 5rem;
