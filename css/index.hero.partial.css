@@ -26,7 +26,7 @@
         font-family: var(--text-font);
         font-weight: 500;
         font-size: 0.775rem;
-        color: var(--text-color2);
+        color: var(--text-color-secondary);
         font-style: italic;
     }
 
@@ -34,16 +34,16 @@
         font-family: var(--title-font);
         font-weight: 100;
         font-size: 2.85rem;
-        color: var(--title-color1);    
+        color: var(--color-gold);
 
         .hero__title-em {
             font-style: italic;
-            color: var(--title-color2);
+            color: var(--color-bronze);
         }
 
         .hero__endtitle-em {
             font-style: italic;
-            color: var(--title-color3);
+            color: var(--color-white);
         }
     }
 
@@ -55,7 +55,7 @@
         font-family: var(--text-font);
         font-weight: 300;
         font-size: 0.8rem;
-        color: var(--text-color1);
+        color: var(--text-color-primary);
         text-align: justify;
     }
 
@@ -64,17 +64,17 @@
         font-family: var(--text-font);
         font-weight: 700;
         font-size: 0.6rem;
-        color: var(--title-color1);
+        color: var(--color-gold);
         background-color: transparent;
-        border: 0.9px solid var(--title-color1);
+        border: 0.9px solid var(--color-gold);
         cursor: pointer;
         text-decoration: none;
         display: inline-block;
         transition: background-color 0.3s ease, color 0.3s ease;
 
         &:hover {
-            background-color: var(--title-color1);
-            color: var(--title-color3);
+            background-color: var(--color-gold);
+            color: var(--color-white);
         }
     }
 }
@@ -93,14 +93,14 @@
             font-family: var(--title-font2);
             font-weight: 100;
             font-size: 0.5rem;
-            color: var(--title-color3);
+            color: var(--color-white);
         }
 
         .hero__video-subtitle {
             font-family: var(--text-font);
             font-weight: 500;
             font-size: 0.775rem;
-            color: var(--text-color2);
+            color: var(--text-color-secondary);
             font-style: italic;
         }
     }
@@ -115,7 +115,7 @@
         font-family: var(--title-font);
         font-weight: 100;
         font-size: 2.5rem;
-        color: var(--title-color3);
+        color: var(--color-white);
     }
 }
 

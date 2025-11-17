@@ -24,7 +24,7 @@
 }
 
 .video-tour-explore {
-  color: var(--title-color2);
+  color: var(--color-bronze);
   font-family: var(--title-font);
   font-size: 5.74vw;
   font-weight: thick;
@@ -35,18 +35,18 @@
 .video-tour-text-title {
   font-family: var(--title-font);
   font-size: 9.57vw;
-  color: var(--title-color1);
+  color: var(--color-gold);
   font-weight: 100;
   width: 75vw;
 }
 
 .video-tour-text-title-highlight {
-  color: var(--title-color2);
+  color: var(--color-bronze);
   font-style: italic;
 }
 
 .video-tour-text-content {
-  color: var(--text-color1);
+  color: var(--text-color-primary);
   font-family: var(--text-font);
   font-size: 4.07vw;
   text-align: justify;

@@ -6,25 +6,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red;  for development purposes only */
 }
 
 :root {
+  /* Background colors */
   --bg-primary: #251a0d;
   --bg-secondary: rgb(30, 20, 10);
+  --bg-header: #251a0d;
 
-  --title-color1:rgb(234,177,86);
-  --title-color2: rgb(159,118,71);
-  --title-color3: #FFFFFF; 
+  /* Main colors */
+  --color-gold: rgb(234, 177, 86);
+  --color-bronze: rgb(159, 118, 71);
+  --color-white: #ffffff;
+  --color-gold-alt: #cda15f;
+  --color-gold-light: #d6b47a;
+  --color-gold-muted: #9c7f52;
+  --color-gold-accent: #f7b93e;
+  --color-gold-button: #e6a834;
+  --color-gold-hover: rgba(236, 172, 83, 0.8);
+  --color-gold-hover-full: rgba(236, 172, 83, 1);
+  --color-cream: #fdfddf;
+  --color-gray: #545454;
+  --color-dark-brown: #2b1807;
 
-  --text-color1: rgba(255, 255, 255, 0.59);
-  --text-color2: rgba(255, 255, 255, 0.31);
-  --text-color3: rgba(255, 255, 255, 0.59);
+  /* Text colors with opacity */
+  --text-color-primary: rgba(255, 255, 255, 0.59);
+  --text-color-secondary: rgba(255, 255, 255, 0.31);
+  --text-color-tertiary: rgba(255, 255, 255, 0.5);
+  --text-color-quaternary: rgba(255, 255, 255, 0.51);
+  --text-color-muted: rgba(255, 255, 255, 0.3);
+  --text-color-dim: rgba(255, 255, 255, 0.05);
+  --text-color-light: rgba(255, 255, 255, 0.7);
+  --text-color-bright: rgba(255, 255, 255, 0.78);
+  --text-color-brightest: rgba(255, 255, 255, 0.95);
 
+  /* Shadow colors */
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.1);
+
+  /* Fonts */
   --text-font: "Work Sans", sans-serif;
   --title-font: "Bacasime Antique", serif;
   --title-font2: "Antic Didone", serif;
 
+  /* Layout */
+  --gap: 48px;
+  --max-width: 1400px;
   --scale: 1;
 
   scroll-behavior: smooth;
