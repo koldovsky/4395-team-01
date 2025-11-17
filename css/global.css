@@ -25,6 +25,8 @@
   --title-font: "Bacasime Antique", serif;
   --title-font2: "Antic Didone", serif;
 
+  --scale: 1;
+
   scroll-behavior: smooth;
 
   background-color: var(--bg-primary);
