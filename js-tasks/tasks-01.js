@@ -1,6 +1,6 @@
 //Messi goals function
 //https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 //Return Negative
@@ -11,26 +11,26 @@ function makeNegative(num) {
 
 //Terminal game move function
 //https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
-function move (position, roll) {
+function move(position, roll) {
   return position + roll * 2;
 }
 
 //Personalized Message
 //https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
-function greet (name, owner) {
-  return name === owner ? 'Hello boss' : 'Hello guest';
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
 }
 
-//Keep Hydrated 
+//Keep Hydrated
 //https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 function litres(time) {
   return Math.floor(time * 0.5);
 }
 
-//Opposites Attract 
+//Opposites Attract
 //https:www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
-function lovefunc(flower1, flower2){
+function lovefunc(flower1, flower2) {
   return flower1 % 2 !== flower2 % 2;
 }
 
-export {goals, makeNegative, move, greet, litres, lovefunc};
+export { goals, makeNegative, move, greet, litres, lovefunc };
