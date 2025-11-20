@@ -10,6 +10,9 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
+//Serhii Karpus version
+const stringToArray = str => str.split(/\s+/);
+
 // DNA to RNA Conversion
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 // Liashenko Sofiia Solution
@@ -19,6 +22,14 @@ function DNAtoRNA(dna) {
 //Serhii Popovnaik version
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
+}
+//Serhii Karpus
+function DNAtoRNA(dna) {
+  const result = [];
+  for (let i = 0; i < dna.length; i++) {
+    result.push(dna[i] === "T" ? "U" : dna[i]);
+  }
+  return result.join("");
 }
 
 // Find Maximum and Minimum Values of a List
@@ -51,6 +62,27 @@ var max = function (list) {
   return max;
 };
 
+//Serhii Karpus version
+function min (list){
+  let minNumber = list[0];
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] < minNumber) {
+      minNumber = list[i];
+    }
+  }
+  return minNumber;
+}
+
+function max (list){
+  let maxNumber = list[0];
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] > maxNumber) {
+      maxNumber = list[i];
+    }
+  }
+  return maxNumber;
+}
+
 
 // Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
@@ -82,4 +114,52 @@ function min(arr, toReturn) {
   }
 }
 
+//Serhii Karpus version
+function min(arr, toReturn) {
+  let minValue = arr[0];
+  let minIndex = 0;
 
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < minValue) {
+      minValue = arr[i];
+      minIndex = i;
+    }
+  }
+
+  return {
+    value: minValue,
+    index: minIndex
+  }[toReturn];
+}
+
+//You Can't Code Under Pressure #1
+//https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+//Serhii Karpus version
+const doubleInteger = i => i * 2;
+
+//Twice as old
+//https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+//Serhii Karpus version
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+//Get Nth Even Number
+//https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
+//Serhii Karpus version
+const nthEven = n => (n > 0 ? 2 * (n - 1) : null);
+
+//What's the real floor?
+//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
+//Serhii Karpus version
+const getRealFloor = n => n <= 0 ? n : n <= 13 ? n - 1 : n - 2;
+
+//Beginner Series #2 Clock
+//https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+//Serhii Karpus version
+const past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;
+
+//Is n divisible by x and y?
+//https://www.codewars.com/kata/5545f109004975ea66000086/solutions/javascript
+//Serhii Karpus version
+const isDivisible = (n, x, y) => n % x === 0 && n % y === 0
