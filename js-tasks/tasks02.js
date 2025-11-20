@@ -20,3 +20,14 @@ var min = function(list){
 var max = function(list){
     return Math.max(...list);
 }
+// Smallest value of an array
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+// Liashenko Sofiia Solution
+function min(arr, toReturn) {
+    const minValue = Math.min(...arr);
+    if (toReturn === "value") {
+        return minValue; 
+    } else if (toReturn === "index") {
+        return arr.indexOf(minValue);
+    }
+}
