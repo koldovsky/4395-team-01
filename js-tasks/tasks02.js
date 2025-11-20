@@ -1,7 +1,7 @@
 // Convert a string to an array
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 // Liashenko Sofiia Solution
-function stringToArray(string){
+function stringToArray(string) {
   let words = string.split(" ");
   return words;
 }
@@ -9,9 +9,8 @@ function stringToArray(string){
 function stringToArray(string) {
   return string.split(" ");
 }
-
 //Serhii Karpus version
-const stringToArray = str => str.split(/\s+/);
+const stringToArray = (str) => str.split(/\s+/);
 
 // DNA to RNA Conversion
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
@@ -23,7 +22,7 @@ function DNAtoRNA(dna) {
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
 }
-//Serhii Karpus
+//Serhii Karpus version
 function DNAtoRNA(dna) {
   const result = [];
   for (let i = 0; i < dna.length; i++) {
@@ -35,12 +34,12 @@ function DNAtoRNA(dna) {
 // Find Maximum and Minimum Values of a List
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 // Liashenko Sofiia Solution
-var min = function(list){
-    return Math.min(...list);
-}
-var max = function(list){
-    return Math.max(...list);
-}
+var min = function (list) {
+  return Math.min(...list);
+};
+var max = function (list) {
+  return Math.max(...list);
+};
 //Serhii Popovnaik version
 var min = function (list) {
   let min = list[0];
@@ -63,7 +62,7 @@ var max = function (list) {
 };
 
 //Serhii Karpus version
-function min (list){
+function min(list) {
   let minNumber = list[0];
   for (let i = 1; i < list.length; i++) {
     if (list[i] < minNumber) {
@@ -73,7 +72,7 @@ function min (list){
   return minNumber;
 }
 
-function max (list){
+function max(list) {
   let maxNumber = list[0];
   for (let i = 1; i < list.length; i++) {
     if (list[i] > maxNumber) {
@@ -83,17 +82,16 @@ function max (list){
   return maxNumber;
 }
 
-
 // Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 // Liashenko Sofiia Solution
 function min(arr, toReturn) {
-    const minValue = Math.min(...arr);
-    if (toReturn === "value") {
-        return minValue; 
-    } else if (toReturn === "index") {
-        return arr.indexOf(minValue);
-    }
+  const minValue = Math.min(...arr);
+  if (toReturn === "value") {
+    return minValue;
+  } else if (toReturn === "index") {
+    return arr.indexOf(minValue);
+  }
 }
 //Serhii Popovnaik version
 function min(arr, toReturn) {
@@ -113,7 +111,6 @@ function min(arr, toReturn) {
     return "Error, please enter index or value";
   }
 }
-
 //Serhii Karpus version
 function min(arr, toReturn) {
   let minValue = arr[0];
@@ -128,14 +125,14 @@ function min(arr, toReturn) {
 
   return {
     value: minValue,
-    index: minIndex
+    index: minIndex,
   }[toReturn];
 }
 
 //You Can't Code Under Pressure #1
 //https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
 //Serhii Karpus version
-const doubleInteger = i => i * 2;
+const doubleInteger = (i) => i * 2;
 
 //Twice as old
 //https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
@@ -147,12 +144,12 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 //Get Nth Even Number
 //https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
 //Serhii Karpus version
-const nthEven = n => (n > 0 ? 2 * (n - 1) : null);
+const nthEven = (n) => (n > 0 ? 2 * (n - 1) : null);
 
 //What's the real floor?
 //https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
 //Serhii Karpus version
-const getRealFloor = n => n <= 0 ? n : n <= 13 ? n - 1 : n - 2;
+const getRealFloor = (n) => (n <= 0 ? n : n <= 13 ? n - 1 : n - 2);
 
 //Beginner Series #2 Clock
 //https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
@@ -162,4 +159,4 @@ const past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;
 //Is n divisible by x and y?
 //https://www.codewars.com/kata/5545f109004975ea66000086/solutions/javascript
 //Serhii Karpus version
-const isDivisible = (n, x, y) => n % x === 0 && n % y === 0
+const isDivisible = (n, x, y) => n % x === 0 && n % y === 0;
