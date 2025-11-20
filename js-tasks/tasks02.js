@@ -11,3 +11,12 @@ function stringToArray(string){
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
+// Find Maximum and Minimum Values of a List
+// https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+// Liashenko Sofiia Solution
+var min = function(list){
+    return Math.min(...list);
+}
+var max = function(list){
+    return Math.max(...list);
+}
