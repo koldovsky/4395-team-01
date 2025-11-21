@@ -180,6 +180,46 @@ function min(arr, toReturn) {
     return toReturn === "value" ? minValue : minIndex;
 }
 
+// Convert a string to an array
+// https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+// Gerlib Andriy Solution
+function stringToArray(string){
+  return string.split(" ");
+}
+
+// DNA to RNA Conversion
+// https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+// Gerlib Andriy Solution
+function DNAtoRNA(dna) {
+ return dna.replace(/T/g, 'U')
+}
+
+// Find Maximum and Minimum Values of a List
+// https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+// Gerlib Andriy Solution
+
+var min = function(list){
+  let minimum = list[0]; 
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] < minimum) {
+      minimum = list[i];
+    }
+  }
+  return minimum;
+}
+
+var max = function(list){
+  let maximum = list[0]; 
+  for (let i = 1; i < list.length; i++) {
+    if (list[i] > maximum) {
+      maximum = list[i];
+    }
+  }
+  return maximum;
+}
+
+
+
 //You Can't Code Under Pressure #1
 //https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
 //Serhii Karpus version
