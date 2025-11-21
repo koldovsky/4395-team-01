@@ -12,6 +12,12 @@ function stringToArray(string) {
 //Serhii Karpus version
 const stringToArray = (str) => str.split(/\s+/);
 
+//Yuriy Levenets
+function stringToArray(string){
+    return string.split(" ");
+}
+
+
 // DNA to RNA Conversion
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 // Liashenko Sofiia Solution
@@ -29,6 +35,11 @@ function DNAtoRNA(dna) {
     result.push(dna[i] === "T" ? "U" : dna[i]);
   }
   return result.join("");
+}
+
+//Yuriy Levenets
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, "U");
 }
 
 // Find Maximum and Minimum Values of a List
@@ -82,6 +93,31 @@ function max(list) {
   return maxNumber;
 }
 
+//Yuriy Levenets
+var min = function(list) {
+    let minValue = list[0];
+
+    for (let i = 1; i < list.length; i++) {
+        if (list[i] < minValue) {
+            minValue = list[i];
+        }
+    }
+
+    return minValue;
+}
+
+var max = function(list) {
+    let maxValue = list[0];
+
+    for (let i = 1; i < list.length; i++) {
+        if (list[i] > maxValue) {
+            maxValue = list[i];
+        }
+    }
+
+    return maxValue;
+}
+
 // Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 // Liashenko Sofiia Solution
@@ -127,6 +163,21 @@ function min(arr, toReturn) {
     value: minValue,
     index: minIndex,
   }[toReturn];
+}
+
+//Yuriy Levenets
+function min(arr, toReturn) {
+    let minValue = arr[0];
+    let minIndex = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < minValue) {
+            minValue = arr[i];
+            minIndex = i;
+        }
+    }
+
+    return toReturn === "value" ? minValue : minIndex;
 }
 
 //You Can't Code Under Pressure #1
