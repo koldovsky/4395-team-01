@@ -235,6 +235,10 @@ function min(arr, toReturn) {
 //https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
 //Serhii Karpus version
 const doubleInteger = (i) => i * 2;
+//Semen Hoinets Solution
+function doubleInteger(i) {
+  return i * 2;
+}
 
 //Twice as old
 //https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
