@@ -2,50 +2,64 @@
   background-color: #251a0d;
   color: #ffffff;
   padding: 60px 20px;
-}
+  .events-exhibitions__list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    /* grid-auto-rows: auto; */
+    grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
+    .events-exhibition {
+      position: relative;
+      .events-exhibition__image {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .events-exhibition__status {
+        margin-top: 1rem;
+        opacity: 0.6;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .events-exhibition__dates {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .events-exhibition__title {
+        font-family: var(--title-font);
+        font-size: 2.3rem;
+        font-weight: 400;
+        margin-top: 1rem;
+        /* opacity: 0.6; */
+        color: var(--title-color1);
+      }
+      .events-exhibition__work {
+        display: block;
+        font-style: italic;
+        color: #9f7647;
+        margin-bottom: 5rem;
+      }
+      .read-more {
+        display: inline-block;
+        position: absolute;
+        bottom: 1rem; /* відступ від нижнього краю */
+        padding: 0.7em 1.2em;
+        margin-top: 1rem;
+        border: 1px solid var(--title-color1); /* жовта рамка */
+        color: var(--title-color1); /* жовтий текст */
+        background-color: transparent; /* прозора заливка */
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 1rem;
+        transition: color 0.3s ease, border-color 0.3s ease;
+      }
 
-.events-exhibitions__list {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
-}
-
-.events-exhibition {
-  /* display: flex;
-  flex-direction: column; */
-  /* gap: 10rem; */
-}
-
-/* Заголовок */
-.events-exhibition__title {
-  font-size: 20px;
-  margin: 0;
-  color: #eab156;
-}
-
-.events-exhibition__work {
-  display: block;
-  font-style: italic;
-  color: #9f7647;
-}
-
-.events-exhibition__status {
-  margin: 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.events-exhibition__dates {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.events-exhibition__image {
-  /* width: 100%; */
-  display: block;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 10px;
+      .read-more:hover {
+        color: #ffffff; /* білий текст при наведенні */
+        background-color: var(--title-color1);
+      }
+    }
+  }
 }
