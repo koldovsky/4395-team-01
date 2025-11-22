@@ -1,54 +1,174 @@
 .unlock-renaissance {
-    margin: auto;
-    max-width: 1200px;
-    border-top: 0.5px solid rgba(255, 255, 255, 0.5);п
-    .unlock-renaissance__title{
-      text-align: center;
-      font-size: 3.75rem; 
-      font-family: var(--title-font);
-      color: var(--title-color1); 
-      font-weight: lighter;
-      overflow-wrap: break-word;
-      margin-bottom: 2rem;  /* нормальний відступ */
-      position: relative;
-      z-index: 2;
+  margin: auto;
+  max-width: 1200px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+
+  @media (min-width: 768px) {
+    border-top: none;
+  }
+  .unlock-renaissance__title {
+    margin: 25px 10% auto 10%;
+    text-align: center;
+    font-size: 12vw;
+    font-family: var(--title-font);
+    color: var(--title-color1);
+    font-weight: lighter;
+    overflow-wrap: break-word;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      font-size: 10vw;
+      margin: 5% 0 0 7%;
+      width: 78vw;
     }
-    .unlock-renaissance__image-wrapper{
-      position: relative;
-      margin: 0 auto;
-      margin-top: -6rem;
-      z-index: 1;
-      .unlock-renaissance__image{
-        display: block;
-        width: 30vw;
-        margin: 0 auto;
-        border-radius: 85% 85% 0 0;
-        display: block; /* щоб margin auto працював завжди */
+    @media (min-width: 992px) {
+      font-size: 7vw;
+    }
+  }
+  .unlock-renaissance__title-2 {
+    font-size: 12vw;
+    font-family: var(--title-font);
+    font-style: italic;
+    color: rgb(159, 118, 71, 1);
+    font-weight: lighter;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media (min-width: 768px) {
+      top: 22%;
+      left: 69%;
+      font-size: 10vw;
+      width: 78vw;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 7vw;
+      position: static;
+      transform: none;
+      margin-left: 20%;
+    }
+  }
+  .unlock-renaissance__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .unlock-renaissance__image {
+      width: 80vw;
+      border-radius: 85% 85% 0 0;
+      margin-top: -15%;
+      z-index: -1;
+
+      @media (min-width: 768px) {
+        flex: 1;
+        order: 2;
+        width: 35vw;
+        margin-top: -15%;
       }
     }
-    .unlock-renaissance__content{
-      margin: 0 auto;
-      .unlock-renaissance__subtitle{
+    .unlock-renaissance__content {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      height: 100%;
+      @media (min-width: 768px) {
+        height: 100%;
+        flex: 2;
+        order: 1;
+        justify-content: flex-end;
+      }
+      .unlock-renaissance__subtitle {
         width: 83%;
         text-align: center;
         font: var(--title-font);
-        font-size: 17px;
+        font-size: 4.2vw;
         font-weight: bold;
         word-spacing: 0.1rem;
         line-height: 1.6;
-        margin: 50px auto;     
         color: var(--text-color1);
+
+        @media (min-width: 768px) {
+          font-size: 1.9vw;
+          text-align: left;
+          margin-left: 10%;
+        }
       }
-      .unlock-renaissance__text{
+      .unlock-renaissance__text {
         width: 83%;
         text-align: center;
         font: var(--title-font);
-        font-size: 14px;
+        font-size: 3.6vw;
         font-style: italic;
         line-height: 1.6;
         font-weight: bold;
-        margin: 25px auto;
         color: var(--text-color2);
+
+        @media (min-width: 768px) {
+          font-size: 1.6vw;
+          text-align: left;
+          margin-left: 10%;
+        }
+      }
     }
+    .online-guide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media (min-width: 768px) {
+        top: 50%;
+        left: 63%;
+      }
+
+      .online-guide__circle {
+        background-color: var(--title-color2);
+        opacity: 80%;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        .online-guide__icon {
+          font-size: 1rem;
+          color: var(--text-color1);
+        }
+      }
+
+      .online-guide__text {
+        font-family: var(--title-font);
+        font-size: 1rem;
+        color: var(--text-color1);
+        text-transform: uppercase;
+      }
+    }
+  }
+  .unlock-renaissance__icon-star {
+    margin-top: 3%;
+    text-align: center;
+    color: var(--title-color1);
+    font-size: 3.6vw;
   }
 }
