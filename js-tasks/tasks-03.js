@@ -4,6 +4,10 @@
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
 }
+//Semen Hoinets Solution
+function circleCircumference(circle) {
+  return 2 * Math.PI * circle.radius;
+}
 
 // loop statement --for..in and for..of
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
