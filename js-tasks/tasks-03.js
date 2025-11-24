@@ -4,6 +4,7 @@
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
 }
+
 //Semen Hoinets Solution
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
@@ -41,6 +42,20 @@ function giveMeFive(obj) {
     }
   }
   return result;
+}
+
+//Semen Hoinets Solution
+function giveMeFive(obj) {
+  let words = [];
+  for (let key in obj) {
+    if (key.length === 5) {
+      words.push(key);
+    }
+    if (obj[key].length === 5) {
+      words.push(obj[key]);
+    }
+  }
+  return words;
 }
 
 //Understanding closures - the basics
