@@ -9,6 +9,9 @@ function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
 }
 
+//Serhii Karpus verion
+const circleCircumference = ({ radius }) => 2 * Math.PI * radius;
+
 // loop statement --for..in and for..of
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 //Serhii Popovniak version
@@ -18,13 +21,26 @@ function giveMeFive(obj) {
     if (key.length === 5) {
       arr.push(key);
     }
-
     if (obj[key].length === 5) {
       arr.push(obj[key]);
     }
   }
-
   return arr;
+}
+
+//Serhii Karpus version
+function giveMeFive(obj) {
+  const result = [];
+  for (const key in obj) {
+    //Хотів використати Object.entries() але сама перевірка codewars не дала.
+    if (key.length === 5) {
+      result.push(key);
+    }
+    if (typeof obj[key] === "string" && obj[key].length === 5) {
+      result.push(obj[key]);
+    }
+  }
+  return result;
 }
 
 //Understanding closures - the basics
