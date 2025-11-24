@@ -1,39 +1,12 @@
 //Geometry Basics: Circle Circumference in 2D
 //https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
-//Serhii Popovniak version
-function circleCircumference(circle) {
-  return 2 * Math.PI * circle.radius;
-}
-
-//Semen Hoinets Solution
-function circleCircumference(circle) {
-  return 2 * Math.PI * circle.radius;
-}
-
-//Serhii Karpus verion
 const circleCircumference = ({ radius }) => 2 * Math.PI * radius;
 
 // loop statement --for..in and for..of
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
-//Serhii Popovniak version
-function giveMeFive(obj) {
-  const arr = [];
-  for (var key in obj) {
-    if (key.length === 5) {
-      arr.push(key);
-    }
-    if (obj[key].length === 5) {
-      arr.push(obj[key]);
-    }
-  }
-  return arr;
-}
-
-//Serhii Karpus version
 function giveMeFive(obj) {
   const result = [];
   for (const key in obj) {
-    //Хотів використати Object.entries() але сама перевірка codewars не дала.
     if (key.length === 5) {
       result.push(key);
     }
@@ -44,23 +17,8 @@ function giveMeFive(obj) {
   return result;
 }
 
-//Semen Hoinets Solution
-function giveMeFive(obj) {
-  let words = [];
-  for (let key in obj) {
-    if (key.length === 5) {
-      words.push(key);
-    }
-    if (obj[key].length === 5) {
-      words.push(obj[key]);
-    }
-  }
-  return words;
-}
-
 //Understanding closures - the basics
 //https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
-//Serhii Popovniak version
 function buildFun(n) {
   let res = [];
 
@@ -74,7 +32,6 @@ function buildFun(n) {
 
 //Animals and Inheritance
 //https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
-//Serhii Popovniak version
 class Shark extends Animal {
   constructor(name, age, status) {
     super(name, age, 0, "shark", status);
