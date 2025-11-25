@@ -110,7 +110,7 @@
   line-height: 37px;
   text-align: left;
   font-weight: 400;
-  padding: 10px 700px 10px 30px;
+  padding: 10px 680px 10px 30px;
 }
 .title__highlighted-text {
   font-style: italic;
@@ -122,6 +122,7 @@
   color: #FFFFFF;
   text-align: left;
   line-height: 60px;
+  padding: 0px 500px 0px 0px;
 }
 .art__figure {
   width: 470px;
