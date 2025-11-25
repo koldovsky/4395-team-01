@@ -100,7 +100,9 @@
   padding: 15px;
   gap: 10px;
   font-weight: 400;
-  text-align: right;
+  text-align: left;
+  position: relative;
+        top: -200px;
 }
 .title__content {
   text-align: center;
