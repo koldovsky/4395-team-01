@@ -88,7 +88,7 @@
   color: var(--text-color2); 
   line-height: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px)  {
   .art__segment {
   display: flex;
   justify-content: center; 
