@@ -131,7 +131,7 @@
 
   .articles__image2 {
     margin-top: 30px;
-    width: clamp(150px, 20vw, 180px);
+    width: clamp(150px, 20vw, 18px);
     height: clamp(200px, 30vw, 320px);
     border-radius: 20rem 20rem 0 0;
   }
