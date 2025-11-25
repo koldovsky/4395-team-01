@@ -105,11 +105,12 @@
 }
 .content__title {
   font-family: Bacasime Antique, serif;
-  font-size: 38px;
+  font-size: 42px;
   color: #EAB156;
   line-height: 37px;
   text-align: left;
   font-weight: 400;
+  padding: 10px 700px 10px 30px;
 }
 .title__highlighted-text {
   font-style: italic;
