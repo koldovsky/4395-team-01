@@ -48,6 +48,11 @@
   text-shadow: var(--text-color1); 
 }
 
+.footer__social-icon:hover {
+  color: var(--title-color1);
+  text-shadow: var(--text-color1); 
+}
+
 .footer__list--left,
 .footer__list--right {
   display: flex;
