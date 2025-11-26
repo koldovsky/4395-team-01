@@ -113,6 +113,8 @@
                 width: 100%;
                 height: auto;
 
+                aspect-ratio: 3/4;
+
                 /* щоб верхня частина була також заокруглена */
                 border-top-left-radius: 50% 35%;
                 border-top-right-radius: 50% 35%;
@@ -120,6 +122,7 @@
                 border-bottom-right-radius: 0;
 
                 object-fit: cover;
+                object-position: center top;
             }
         }
     }
