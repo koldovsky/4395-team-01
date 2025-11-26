@@ -6,14 +6,11 @@
     padding: 0 28px;
 
     @media (min-width: 768px) {
-        display: grid;
-        flex-direction: row;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
+       
     }
 
     @media (min-width: 992px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        
     }
 }
 
@@ -84,24 +81,122 @@
     display: flex;
     flex-direction: column;
 
-    .hero__video {
-        display: grid;
-        flex-direction: row;
-        grid-template-columns: 1fr 2fr;
+    .hero__figure--main {
+        width: 100%;
+        max-width: 380px;
+        margin-inline: auto;
 
-        .hero__video-title {
-            font-family: var(--title-font2);
-            font-weight: 100;
-            font-size: 0.5rem;
-            color: var(--title-color3);
+        padding: 3px; /* створює проміжок між рамкою та зовн. контуром */
+        background-color: var(--color-hero-frame-outer);
+
+        border-top-left-radius: 50% 35%;
+        border-top-right-radius: 50% 35%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        overflow: hidden; /* обрізає все під арку */
+
+        .hero__figure-inner {
+            padding: 10px; /* ВАЖЛИВО! Це і є той проміжок! */
+            background-color: var(--bg-primary);
+
+            border-top-left-radius: 50% 35%;
+            border-top-right-radius: 50% 35%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            overflow: hidden;
+
+            /* Внутрішній блок із зображенням */
+            .hero__img {
+                display: block;
+                width: 100%;
+                height: auto;
+
+                aspect-ratio: 3/4;
+
+                /* щоб верхня частина була також заокруглена */
+                border-top-left-radius: 50% 35%;
+                border-top-right-radius: 50% 35%;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
+                object-fit: cover;
+                object-position: center top;
+            }
+        }
+    }
+
+    .hero__video {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+        .hero__video-btn {
+            position: relative;
+
+            width: 89px;
+            height: 89px; /* ВАЖЛИВО: ширина = висоті */
+
+            border-radius: 50%;
+            overflow: hidden;
+
+            border: 4px solid var(--hero-video-border);
+            padding: 0;
+            background: var(--hero-video-bg);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-shrink: 0; /* Щоб кнопка не деформувалась */
+
+            .hero__video-thumb {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .hero__video-play {
+                position: absolute;
+                width: 28px;
+                height: 28px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background: var(--hero-video-play-bg);
+                color: #000;
+                font-size: 16px;
+                line-height: 1;
+                border-radius: 50%;
+
+                pointer-events: none;
+            }
         }
 
-        .hero__video-subtitle {
-            font-family: var(--text-font);
-            font-weight: 500;
-            font-size: 0.775rem;
-            color: var(--text-color2);
-            font-style: italic;
+        .hero__video-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .hero__video-title {
+                font-family: var(--title-font2);
+                font-weight: 100;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                color: var(--title-color3);
+            }
+
+            .hero__video-subtitle {
+                font-family: var(--text-font);
+                font-weight: 500;
+                font-size: 0.775rem;
+                color: var(--text-color2);
+                font-style: italic;
+            }
         }
     }
 }
@@ -139,4 +234,17 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+
+    .hero__nav-link {
+        font-family: var(--title-font);
+        font-weight: 500;
+        font-size: 0.775rem;
+        color: var(--title-color1);
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
