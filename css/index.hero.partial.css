@@ -84,7 +84,6 @@
     .hero__figure--main {
         width: 100%;
         max-width: 380px;
-        max-height: 520px; /* будь-яке значення */
         margin-inline: auto;
 
         padding: 3px; /* створює проміжок між рамкою та зовн. контуром */
@@ -183,7 +182,8 @@
             .hero__video-title {
                 font-family: var(--title-font2);
                 font-weight: 100;
-                font-size: 0.5rem;
+                font-size: 0.75rem;
+                text-transform: uppercase;
                 color: var(--title-color3);
             }
 
