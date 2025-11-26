@@ -126,23 +126,74 @@
     }
 
     .hero__video {
-        display: grid;
-        flex-direction: row;
-        grid-template-columns: 1fr 2fr;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
 
-        .hero__video-title {
-            font-family: var(--title-font2);
-            font-weight: 100;
-            font-size: 0.5rem;
-            color: var(--title-color3);
+        .hero__video-btn {
+            position: relative;
+
+            width: 89px;
+            height: 89px; /* ВАЖЛИВО: ширина = висоті */
+
+            border-radius: 50%;
+            overflow: hidden;
+
+            border: 4px solid #3b3029;
+            padding: 0;
+            background: transparent;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-shrink: 0; /* Щоб кнопка не деформувалась */
+
+            .hero__video-thumb {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .hero__video-play {
+                position: absolute;
+                width: 28px;
+                height: 28px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background: var(--hero-video-play-bg);
+                color: #000;
+                font-size: 16px;
+                line-height: 1;
+                border-radius: 50%;
+
+                pointer-events: none;
+            }
         }
 
-        .hero__video-subtitle {
-            font-family: var(--text-font);
-            font-weight: 500;
-            font-size: 0.775rem;
-            color: var(--text-color2);
-            font-style: italic;
+        .hero__video-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .hero__video-title {
+                font-family: var(--title-font2);
+                font-weight: 100;
+                font-size: 0.5rem;
+                color: var(--title-color3);
+            }
+
+            .hero__video-subtitle {
+                font-family: var(--text-font);
+                font-weight: 500;
+                font-size: 0.775rem;
+                color: var(--text-color2);
+                font-style: italic;
+            }
         }
     }
 }

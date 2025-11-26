@@ -23,6 +23,10 @@
 
   --color-hero-frame-outer: rgb(58, 48, 38); /* фон зовнішнього контуру */
 
+  --hero-video-bg: transparent;
+  --hero-video-border: #3b3029;
+  --hero-video-play-bg: rgba(255, 255, 255, 0.85);
+
   --text-font: "Work Sans", sans-serif;
   --title-font: "Bacasime Antique", serif;
   --title-font2: "Antic Didone", serif;
