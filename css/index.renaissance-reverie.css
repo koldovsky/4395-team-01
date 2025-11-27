@@ -9,7 +9,7 @@
   padding: 15px;
   gap: 5px;
   font-weight: 400;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .title__content {
   text-align: center;
@@ -95,9 +95,6 @@
     align-items: flex-start;
     gap: 40px; 
   }
-  .art__segment {
-    margin: 0;
-  }
 .art__description-segment {
   display: flex;
   flex-direction: column;
@@ -128,7 +125,7 @@
   color: var(--title-color3);
   text-align: left;
   line-height: 60px;
-  padding: 0px 500px 0px 0px;
+  margin: 0;
 }
 .art__figure {
   width: 470px;
