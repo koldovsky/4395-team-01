@@ -94,6 +94,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 40px; 
+    padding: 65px;
   }
 .art__description-segment {
   display: flex;
