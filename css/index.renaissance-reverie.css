@@ -89,10 +89,15 @@
   line-height: 20px;
 }
 @media (min-width: 992px)  {
+   .art__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; 
+  }
   .art__segment {
-  display: flex;
-  justify-content: center; 
-}
+    margin: 0;
+  }
 .art__description-segment {
   display: flex;
   flex-direction: column;
