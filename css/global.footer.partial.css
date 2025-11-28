@@ -18,7 +18,6 @@
 }
 
 .footer__logo {
-  margin: 20px 0;
   display: inline-block;
 }
 
@@ -30,8 +29,6 @@
 .footer__list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 15px;
   padding: 0;
   list-style: none;
 }
@@ -132,24 +129,5 @@
     justify-content: space-between; 
     align-items: flex-end; 
     text-align: right;
-  }
-
-  .footer__list {
-    flex-direction: row;
-    gap: 40px;
-  }
-
-  .footer__logo {
-    margin-bottom: 30px;
-  }
-  
-  .footer__copyright {
-    margin-bottom: 0;
-    margin-top: 30px;
-  }
-  
-  .footer__list--left,
-  .footer__list--right {
-    margin-bottom: 0;
   }
 }
