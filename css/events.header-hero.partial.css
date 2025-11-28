@@ -1,6 +1,7 @@
 .events-header-hero {
     text-align: center;
     padding: 60px 0px 90px;
+    background-color: var(--header-events-bg);
 
 
     .events-header-hero__content {
@@ -54,6 +55,7 @@
                 .events-header-hero__breadcrumbs-link {
                     text-decoration: none;
                     color: var(--text-color1);
+                    font-family: var(--title-font2);
                     font-size: 14px;
                     letter-spacing: 0.5px;
                 }
