@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--bg-secondary);
+  font-family: var(--text-font);
   padding: 40px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -29,7 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
 }
@@ -90,7 +91,7 @@
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 35px;
   padding: 0;
   list-style: none;
 }
