@@ -3,7 +3,7 @@
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    padding: 0 28px;
+    padding: 40px 20px;
 
     @media (min-width: 768px) {
        
@@ -18,6 +18,8 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    text-align: left;
+    max-width: 600px;
 
     .hero__subtitle {
         font-family: var(--text-font);
@@ -108,7 +110,7 @@
             overflow: hidden;
 
             /* Внутрішній блок із зображенням */
-            .hero__img {
+            .hero__img-visual {
                 display: block;
                 width: 100%;
                 height: auto;
@@ -205,12 +207,52 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    /* Фонова зірка */
+    .hero__content-info::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("img/global/global-star.svg") center/60% no-repeat;
+        opacity: 0.05;
+        z-index: 0;
+    }
+
+    .hero__figure {
+        position: relative;
+        border-top-left-radius: 55%;
+        overflow: hidden;
+        z-index: 1;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .hero__figure--side {
+        margin-bottom: 2rem;
+    }
+
+    .hero__img-info {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .hero__info {
+        max-width: 340px;
+        z-index: 1;
+    }
 
     .hero__year {
         font-family: var(--title-font);
         font-weight: 100;
         font-size: 2.5rem;
         color: var(--title-color3);
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 
     .hero__info-title {
