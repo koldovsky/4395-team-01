@@ -1,0 +1,129 @@
+.header-top__date-left-text,
+.header__date-right-text {
+    font-family: "Work Sans", sans-serif;
+    color: rgb(159, 118, 71);
+    font-style: italic;
+    flex: 1;
+}
+
+.header-top__date-left-text {
+    text-align: right;
+}
+
+.header__date-right-text {
+    text-align: left;
+}
+
+.header-top__hero-image {
+    flex-shrink: 0;
+}
+
+.header-top__image {
+    max-width: 120px;
+    height: auto;
+}
+
+
+.header-bottom__link {
+    font-family: "Antic Didone", serif;
+    color: #fbf6e9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-bottom__link:hover {
+    color: rgb(234, 177, 86);
+}
+
+.header-bottom__left-word,
+.header-bottom__right-word {
+    font-family: 'Bacasime Antique', serif;
+    color: rgb(234, 177, 86);
+}
+
+
+.raphael__headliner,
+.murillo__headliner {
+    font-family: 'Bacasime Antique', serif;
+    color: #fbf6e9;
+}
+
+.raphael__title,
+.murillo__title {
+    font-family: 'Bacasime Antique', serif;
+    color: rgb(159, 118, 71);
+}
+
+.raphael__text,
+.murillo__text {
+    font-family: "Work Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.51);
+}
+
+.content__footer-link {
+    font-family: "Work Sans", sans-serif;
+    color: rgb(234, 177, 86);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content__footer-link:hover {
+    color: #fbf6e9;
+}
+
+.content__header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.content__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.raphael__segment,
+.content__image-container,
+.murillo__segment {
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Статичний текст */
+.raphael__headliner,
+.raphael__title,
+.raphael__text,
+.murillo__headliner,
+.murillo__title,
+.murillo__text {
+    font-size: inherit;
+}
+
+@media (min-width: 768px) {
+    .content__body {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .raphael__segment,
+    .content__image-container,
+    .murillo__segment {
+        width: auto;
+        max-width: 300px;
+        text-align: left;
+    }
+
+    .content__image-container {
+        display: flex;
+        justify-content: center;
+    }
+    .content__image {
+        max-width: 200px;
+    }
+
+}
