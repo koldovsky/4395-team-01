@@ -42,6 +42,10 @@
   transition: all 0.3s ease;
 }
 
+.footer__link:hover {
+  color: var(--title-color3);
+}
+
 .footer__list--left,
 .footer__list--right {
   display: flex;
@@ -92,19 +96,14 @@
 }
 
 .footer__social-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   fill: var(--title-color2); 
   transition: all 0.3s ease;
 }
 
 .footer__social-icon:hover {
-  color: var(--title-color1);
-}
-
-.footer__social-list:hover {
-  fill: var(--title-color3); 
-  filter: drop-shadow(var(--text-color1));
+  fill: var(--title-color1);
 }
 
 @media screen and (min-width: 785px) {
