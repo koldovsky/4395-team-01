@@ -103,7 +103,7 @@
 }
 
 .footer__social-icon:hover {
-  fill: var(--title-color1);
+  fill: var(--icon-hover-color);
 }
 
 @media screen and (min-width: 785px) {
