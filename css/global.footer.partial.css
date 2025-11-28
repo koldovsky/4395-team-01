@@ -34,7 +34,7 @@
   list-style: none;
 }
 
-.footer__item {
+.footer__link {
   color: var(--text-color1); 
   font-size: 16px;
   font-weight: 500;
@@ -102,7 +102,7 @@
   color: var(--title-color1);
 }
 
-.footer__social-item:hover {
+.footer__social-list:hover {
   fill: var(--title-color3); 
   filter: drop-shadow(var(--text-color1));
 }
