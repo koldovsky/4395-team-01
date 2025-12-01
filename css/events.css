@@ -1,4 +1,5 @@
 @import "global.css";
 @import "global.header-nav.partial.css";
 @import "events.exhibitions-list.partial.css";
-@import "events.header-hero.partial.css"
+@import "events.header-hero.partial.css";
+@import "events.latest-events.partial.css";
