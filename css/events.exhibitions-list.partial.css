@@ -1,5 +1,5 @@
 .events-exhibitions {
-  background-color: #251a0d;
+  background-color: var(--header-events-bg);
   color: #ffffff;
   padding: 60px 20px;
   .events-exhibitions__list {
