@@ -1,3 +1,148 @@
-h1 {
-    color: blue;
+/* Базові скидання для секції */
+.latest-events {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  /* background: linear-gradient(180deg, var(--le-bg), #0b2f28 80%); */
+
+  /* border-radius: var(--le-radius); */
+  /* font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Header */
+.latest-events__header {
+  padding: 8px 6px 26px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  margin-bottom: 18px;
+
+  .latest-events__title {
+    margin: 0 0 10px 0;
+    font-family: var(--title-font);
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--title-color1);
+    letter-spacing: 0.6px;
+    line-height: 1;
+
+    .latest-events__title-accent {
+      font-style: italic;
+    }
+  }
+}
+
+.latest-events__intro {
+  margin: 0;
+  color: rgba(233, 239, 233, 0.95);
+  font-size: 15px;
+  max-width: 78ch;
+  line-height: 1.6;
+}
+
+/* Card block */
+.latest-events__card {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Card elements */
+.card__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.card__time {
+  text-align: center;
+}
+
+.card__time-value {
+  display: block;
+  font-weight: 600;
+  /* color: var(--le-muted); */
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.card__date {
+  font-size: 12px;
+  /* color: var(--le-accent); */
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+/* Avatar element */
+.card__avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(201, 161, 74, 0.12);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.12)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Body elements */
+.card__body {
+  flex: 1;
+  padding-right: 6px;
+}
+
+.card__title {
+  margin: 0 0 8px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  /* color: var(--le-muted); */
+  font-weight: 700;
+}
+
+.card__desc {
+  margin: 0;
+  color: rgba(233, 239, 233, 0.9);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Модифікатори прикладу */
+/* компактна версія картки */
+.latest-events__card--compact {
+  padding: 12px;
+  gap: 12px;
+}
+
+.latest-events__card--compact .card__media {
+  width: 120px;
+}
+
+.latest-events__card--compact .card__avatar {
+  width: 80px;
+  height: 80px;
 }
