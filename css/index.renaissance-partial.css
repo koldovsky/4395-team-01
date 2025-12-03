@@ -1,222 +1,247 @@
-/* ---------- Main Section ---------- */
+/* ------------------------------------------------- */
+/* GLOBAL */
+/* ------------------------------------------------- */
+
+:root {
+  --serif: "Playfair Display", serif;
+}
+
 .renaissance-section {
   padding: 160px 0 120px;
   background: #251a0d;
-  font-family: "Playfair Display", serif;
+  font-family: var(--serif);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
+  width: 90%;
   margin: 0 auto;
 }
 
-/* ---------- Layout ---------- */
 .renaissance-content {
   display: flex;
   justify-content: space-between;
-  gap: clamp(40px, 6vw, 80px);
+  gap: clamp(40px, 6vw, 90px);
 }
 
-/* ---------- LEFT SIDE ---------- */
+/* ------------------------------------------------- */
+/* LEFT */
+/* ------------------------------------------------- */
+
 .renaissance-left {
   width: 50%;
   position: relative;
 }
 
-/* woman bg */
 .woman-bg-shape {
   position: absolute;
-  width: clamp(140px, 22vw, 200px);
-  height: clamp(140px, 22vw, 200px);
-  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+  width: clamp(160px, 25vw, 260px);
+  height: clamp(160px, 25vw, 260px);
+  background: radial-gradient(circle, rgba(255,255,255,0.07), transparent 70%);
   border-radius: 50%;
-  top: 20%;
+  top: 18%;
   left: -8%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .renaissance-left-text p {
-  color: #f2e4c7;
-  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  font-variation-settings: "wght" 400;
+  font-size: clamp(17px, 1.9vw, 21px);
   line-height: 1.7;
-  margin-bottom: 25px;
-  letter-spacing: 0.3px;
-}
-
-.renaissance-circle-figure {
-  margin-top: 40px;
-  text-align: center;
+  color: #f7e6cd;
+  margin-bottom: 28px;
 }
 
 .circle-img {
-  width: clamp(260px, 32vw, 360px);
-  height: clamp(260px, 32vw, 360px);
+  width: clamp(320px, 36vw, 420px);
+  height: clamp(320px, 36vw, 420px);
   border-radius: 50%;
   object-fit: cover;
-  z-index: 5;
-  position: relative;
 }
 
 .renaissance-caption {
-  margin-top: 14px;
+  margin-top: 12px;
   font-size: 14px;
   font-style: italic;
   color: #b8a88a;
+  font-variation-settings: "wght" 400, "ital" 1;
 }
 
-/* ---------- Decorative Arrow ---------- */
 .decor-arrow {
   width: 40px;
   height: 40px;
-  background-image: url("../img/index/renaissance-partial-section/arrow.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("../img/index/renaissance-partial-section/arrow.png") no-repeat center/contain;
   position: absolute;
-  opacity: 0.9;
-}
-
-.arrow-bottom-left {
   left: -55px;
   bottom: 35px;
   z-index: 10;
 }
 
-/* ---------- RIGHT SIDE ---------- */
+/* ------------------------------------------------- */
+/* RIGHT */
+/* ------------------------------------------------- */
+
 .renaissance-right {
   width: 50%;
   position: relative;
   padding-left: 40px;
 }
 
-.right-ornament {
-  position: absolute;
-  right: -40px;
-  top: 0;
-  height: 100%;
-  width: 1.5px;
-  background: rgba(255,255,255,0.28);
-  opacity: 0.55;
-  z-index: 20;               /* поднял выше, чтобы быть поверх любых SVG, если нужно */
-  pointer-events: none;
-}
-
-/* Light oval */
 .oval-behind {
   position: absolute;
-  width: clamp(360px, 45vw, 520px);
-  height: clamp(240px, 30vw, 360px);
-  background: radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%);
+  width: clamp(420px, 48vw, 620px);
+  height: clamp(260px, 32vw, 420px);
+  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
   border-radius: 50%;
-  top: 10px;
+  top: -15px;
   left: -40px;
   z-index: 0;
 }
 
 .renaissance-right-text p {
-  color: #f2e4c7;
-  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  font-variation-settings: "wght" 400;
+  font-size: clamp(17px, 1.9vw, 21px);
   line-height: 1.7;
+  color: #f7e6cd;
   margin-bottom: 25px;
 }
 
 /* ARC IMAGE */
 .arc-wrap {
   position: relative;
-  width: clamp(280px, 35vw, 420px);
-  height: clamp(280px, 35vw, 420px);
+  width: clamp(360px, 40vw, 520px);
+  height: clamp(360px, 40vw, 520px);
   border-radius: 50% 50% 0 0;
-  overflow: visible;
-  margin-bottom: 20px;
-  z-index: 5;
+  z-index: 6;
+  margin-bottom: 25px;
 }
 
 .arc-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  position: relative;
-  z-index: 6;
-  border-radius: 0;
 }
 
-.circle-text {
+/* ------------------------------------------------- */
+/* TOP CURVED TEXT */
+/* ------------------------------------------------- */
+
+.top-circle {
   position: absolute;
+  width: min(600px, 90%);
+  opacity: 0.32;
+  top: -8%;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
-  user-select: none;
+  z-index: 5;
 }
 
-.top-circle {
-  width: min(520px, 80%);
-  height: auto;
-  top: -6%;
-  z-index: 3;
-  opacity: 0.22;
+.top-circle text {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  fill: rgba(255,255,255,0.16);
 }
+
+/* ------------------------------------------------- */
+/* BOTTOM CURVED TEXT */
+/* ------------------------------------------------- */
 
 .bottom-circle {
+  position: absolute;
   width: 760px;
   height: 760px;
   left: 66%;
-  top: calc(100% + 40px);
+  top: calc(100% + 30px);
   transform: translateX(-50%);
+  pointer-events: none;
   z-index: 0;
-  opacity: 0.08;
+  opacity: 0.12;
 }
 
+.bottom-circle text {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-variation-settings: "wght" 500;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  fill: rgba(255,255,255,0.06);
+}
+
+/* ------------------------------------------------- */
 /* SMALL IMAGE */
+/* ------------------------------------------------- */
+
 .small-scene {
-  width: clamp(200px, 25vw, 280px);
-  height: clamp(130px, 17vw, 180px);
-  border-radius: 25px 25px 0 0;
+  width: clamp(240px, 27vw, 320px);
+  height: clamp(150px, 18vw, 200px);
+  border-radius: 22px 22px 0 0;
   overflow: hidden;
-  margin-left: auto;
-  margin-top: 15px;
+  margin-top: -40px;
+  margin-left: 40px;
+  z-index: 10;
   position: relative;
-  z-index: 7;   
 }
 
 .small-caption {
-  margin-top: 12px;
   font-size: 14px;
-  font-style: italic;
   color: #b8a88a;
   text-align: right;
+  font-style: italic;
+  font-variation-settings: "wght" 400, "ital" 1;
 }
 
-/* STAR */
-.renaissance-star {
-  width: 22px;
-  height: 22px;
-  background-image: url("../img/index/renaissance-partial-section/renaissance-star.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+/* RIGHT VERTICAL ORNAMENT */
+
+.right-ornament {
   position: absolute;
-  right: -35px;
-  top: 160px;
-  opacity: 0.9;
-  z-index: 10;
+  right: -60px;
+  top: -40px;
+  width: 3px;
+  height: 125%;
+  background: rgba(255,255,255,0.35);
+  z-index: 15;
 }
 
-/* ---------- RESPONSIVE ---------- */
+.renaissance-star {
+  width: 24px;
+  height: 24px;
+  background: url("../img/index/renaissance-partial-section/renaissance-star.png") no-repeat center/contain;
+  position: absolute;
+  right: -45px;
+  top: 160px;
+  z-index: 20;
+}
+
+/* ------------------------------------------------- */
+/* RESPONSIVE */
+/* ------------------------------------------------- */
+
 @media (max-width: 992px) {
   .renaissance-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
   }
 
-  .renaissance-left, .renaissance-right {
+  .renaissance-left,
+  .renaissance-right {
     width: 100%;
     padding-left: 0;
   }
 
-  .right-ornament {
+  .right-ornament,
+  .renaissance-star {
     display: none;
   }
 
-  .arc-wrap, .circle-img, .small-scene {
+  .arc-wrap,
+  .small-scene,
+  .circle-img {
     margin-left: auto;
     margin-right: auto;
   }
@@ -225,24 +250,22 @@
     text-align: center;
   }
 
-  .woman-bg-shape {
-    left: 0;
-    top: 10%;
+  .oval-behind {
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(300px, 70vw, 500px);
+    height: clamp(180px, 40vw, 260px);
+    top: 0;
   }
 
   .bottom-circle {
-    top: 90%;
+    top: 95%;
   }
 }
 
 @media (max-width: 600px) {
-
-  .oval-behind {
-    width: 260px;
-    height: 180px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -20px;
+  .renaissance-section {
+    padding: 100px 0 80px;
   }
 
   .arc-wrap {
@@ -256,7 +279,12 @@
   }
 
   .small-scene {
-    width: 200px;
-    height: 140px;
+    width: 220px;
+    height: 150px;
+    margin-left: auto;
+  }
+
+  .top-circle {
+    opacity: 0.25;
   }
 }

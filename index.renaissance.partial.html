@@ -1,108 +1,107 @@
 <!-- Volodymyr Oleshchuk Start -->
-<section id="renaissance" class="renaissance-section">
+<section class="renaissance-section">
   <div class="container">
-
     <div class="renaissance-content">
 
-      <!-- LEFT SIDE -->
+      <!-- LEFT -->
       <div class="renaissance-left">
 
-        <!-- woman bg -->
         <div class="woman-bg-shape"></div>
 
         <div class="renaissance-left-text">
           <p>
-            There are many reasons why the Renaissance is considered such an important cultural era.
-            It was a period of renewed interest in classical learning and culture.
+            The Renaissance marked a moment when art and science intertwined,
+            giving birth to masterpieces that continue to inspire the world today.
           </p>
-
           <p>
-            This led to a flourishing of art, literature, and philosophy that was unprecedented in Western history.
+            Our approach captures this timeless aesthetic through balance,
+            refined composition, and the gentle interplay of form and light.
           </p>
         </div>
 
         <figure class="renaissance-circle-figure">
-          <img src="img/index/renaissance-partial-section/woman-reading.webp" alt="Renaissance Woman Reading" class="circle-img"> 
-          <figcaption class="renaissance-caption">"Gravin de Pagès, née de Cornellan" — by Joseph-Désiré Court</figcaption>
+          <img src="img/woman.jpg" class="circle-img" alt="">
+          <figcaption class="renaissance-caption">
+            Female portrait from the early Renaissance period
+          </figcaption>
         </figure>
 
-        <!-- Decorative arrows -->
         <div class="decor-arrow arrow-bottom-left"></div>
-
       </div>
 
-      <!-- RIGHT SIDE -->
+      <!-- RIGHT -->
       <div class="renaissance-right">
 
         <div class="oval-behind"></div>
+        <div class="right-ornament"></div>
+        <div class="renaissance-star"></div>
 
         <div class="renaissance-right-text">
           <p>
-            The Renaissance marked the rise of humanism — a new way of thinking about the individual
-            and their place in the world. This way of thinking had a profound impact on society and the arts.
+            Our visual language is built upon geometry, soft contours,
+            and delicately placed highlights.
           </p>
-
           <p>
-            Artists began to depict the world more realistically, exploring new themes and techniques.
+            Each element guides the viewer’s eye and shapes an immersive,
+            harmonious experience.
           </p>
         </div>
 
-<!-- Main image with circular text -->
-<div class="arc-wrap">
+        <!-- ARC IMAGE -->
+        <div class="arc-wrap">
+          <img src="img/arc-photo.jpg" class="arc-img" alt="">
 
-  <!-- Верхний круг (ART RENART...) -->
-  <svg class="circle-text top-circle" viewBox="0 0 500 500" aria-hidden="true">
-    <defs>
-      <path id="circlePathTop" d="M250,250 m-210,0 a210,210 0 1,1 420,0 a210,210 0 1,1 -420,0" />
-    </defs>
+          <!-- TOP CURVED TEXT -->
+          <svg class="circle-text top-circle" viewBox="0 0 500 350">
+            <defs>
+              <path id="circlePathTop"
+                d="
+                  M 250,40
+                  C 130,45 60,160 110,250
+                  C 160,335 330,335 380,250
+                  C 430,160 365,45 250,40
+                "
+              />
+            </defs>
 
-    <text fill="rgba(255,255,255,0.16)" font-size="34" letter-spacing="8" font-family="Playfair Display, serif">
-      <!-- startOffset сдвигает начало текста по кругу -->
-      <textPath href="#circlePathTop" startOffset="6%">
-        ART • RENART • RENART • RENART • RENART • RENART • RENART
-      </textPath>
-    </text>
-  </svg>
+            <text fill="rgba(255,255,255,0.16)" font-size="34" letter-spacing="8"
+              font-family="Playfair Display, serif" font-weight="600">
+              <textPath href="#circlePathTop" startOffset="4%">
+                ART • RENAISSANCE • RENAISSANCE • RENAISSANCE • RENAISSANCE
+              </textPath>
+            </text>
+          </svg>
 
-  <img
-    src="img/index/renaissance-partial-section/renaissance-group.webp"
-    alt="Group Renaissance Painting"
-    class="arc-img"
-  >
-</div>
+          <!-- BOTTOM CURVED TEXT -->
+          <svg class="circle-text bottom-circle" viewBox="0 0 700 560">
+            <defs>
+              <path id="circlePathBottom"
+                d="
+                  M 350,20
+                  C 210,20 160,200 210,370
+                  C 260,520 440,520 490,370
+                  C 540,200 490,20 350,20
+                "
+              />
+            </defs>
 
-<!-- SMALL IMAGE -->
-<div class="small-scene">
-  <img
-    src="img/index/renaissance-partial-section/rooster-scene.webp"
-    alt="Nature Scene"
-    class="small-img"
-  >
-</div>
+            <text fill="rgba(255,255,255,0.06)" font-size="36" letter-spacing="10"
+              font-family="Playfair Display, serif" font-weight="500">
+              <textPath href="#circlePathBottom" startOffset="3%">
+                AESTHETIC • BALANCE • GEOMETRY • LIGHT • AESTHETIC • BALANCE
+              </textPath>
+            </text>
+          </svg>
+        </div>
 
-<!-- Круговой текст под картинкой (TRANER) — позиционируется относительно .renaissance-right -->
-<svg class="circle-text bottom-circle" viewBox="0 0 700 700" aria-hidden="true">
-  <defs>
-    <path id="circlePathBottom" d="M350,350 m-300,0 a300,300 0 1,1 600,0 a300,300 0 1,1 -600,0" />
-  </defs>
-
-  <text fill="rgba(255,255,255,0.06)" font-size="36" letter-spacing="10" font-family="Playfair Display, serif">
-    <textPath href="#circlePathBottom" startOffset="8%">
-      TRANER • TRANER • TRANER • TRANER • TRANER • TRANER • TRANER
-    </textPath>
-  </text>
-</svg>
-
-        <div class="image-caption small-caption">"An Eagle, a Cockerell, Hens, a Pigeon in Flight" — by Melchior de Hondecoeter</div>
-
-        <div class="renaissance-star"></div>
-
-        <!-- Right vertical line -->
-        <div class="right-ornament"></div>
+        <!-- SMALL IMAGE -->
+        <figure class="small-scene">
+          <img src="img/small.jpg" alt="">
+        </figure>
+        <figcaption class="small-caption">Architectural detail</figcaption>
 
       </div>
     </div>
-
   </div>
 </section>
 <!-- Volodymyr Oleshchuk End -->
