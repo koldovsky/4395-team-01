@@ -19,14 +19,28 @@
       data-hx-swap="outerHTML"
       data-hx-get="global.header-nav.partial.html"
     ></nav>
+    <!-- Serhii Popovniak -->
+    <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="events.header-hero.partial.html"
+      ></div>
+    <!-- Serhii Popovniak -->
     </header>
     <main>
-      <sectiom
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="events.exhibitions-list.partial.html"
-      ></sectiom>
-    ></nav>
+      <!-- Serhii Karpus START-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="events.exhibitions-list.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="events.latest-events.partial.html"
+      ></section>
     </main>
+      <!-- Serhii Karpus END -->
   </body>
+  <script src="js/events.js"></script>
 </html>

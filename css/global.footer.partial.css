@@ -1,6 +1,6 @@
-
 .footer {
   background-color: var(--bg-secondary);
+  font-family: var(--text-font);
   padding: 40px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -14,10 +14,10 @@
   max-width: 1400px;
   margin: 0 auto;
   position: relative; 
+  gap: 30px;
 }
 
 .footer__logo {
-  margin: 20px 0;
   display: inline-block;
 }
 
@@ -30,7 +30,6 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 30px;
   padding: 0;
   list-style: none;
 }
@@ -43,14 +42,8 @@
   transition: all 0.3s ease;
 }
 
-.footer__list:hover {
+.footer__link:hover {
   color: var(--title-color3);
-  text-shadow: var(--text-color1); 
-}
-
-.footer__social-icon:hover {
-  color: var(--title-color1);
-  text-shadow: var(--text-color1); 
 }
 
 .footer__list--left,
@@ -58,7 +51,6 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 20px;
   padding: 0;
   list-style: none;
 }
@@ -81,16 +73,9 @@
   transition: color 0.3s ease;
 }
 
-.footer__item--top:hover,
-.footer__item--bottom:hover {
-  color: var(--title-color3); 
-}
-
 .footer__copyright {
   font-size: 14px;
   color: var(--text-color1);
-  margin-top: 10px;
-  margin-bottom: 20px;
   cursor: default;
 }
 
@@ -102,21 +87,19 @@
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-top: 10px;
   padding: 0;
   list-style: none;
 }
 
 .footer__social-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   fill: var(--title-color2); 
   transition: all 0.3s ease;
 }
 
-.footer__social-link:hover .footer__social-icon {
-  fill: var(--title-color3); 
-  filter: drop-shadow(var(--text-color1));
+.footer__social-icon:hover {
+  fill: var(--icon-hover-color);
 }
 
 @media screen and (min-width: 785px) {
@@ -134,7 +117,6 @@
     left: 0;
     top: 0;
     bottom: 0;
-    margin: 0;
     justify-content: space-between;
     align-items: flex-start; 
     text-align: left;
@@ -145,29 +127,8 @@
     right: 0;
     top: 0;
     bottom: 0;
-    margin: 0;
     justify-content: space-between; 
     align-items: flex-end; 
     text-align: right;
-  }
-
-  .footer__list {
-    flex-direction: row;
-    gap: 40px;
-    margin-bottom: 40px;
-  }
-
-  .footer__logo {
-    margin-bottom: 30px;
-  }
-  
-  .footer__copyright {
-    margin-bottom: 0;
-    margin-top: 30px;
-  }
-  
-  .footer__list--left,
-  .footer__list--right {
-    margin-bottom: 0;
   }
 }

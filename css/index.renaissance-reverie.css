@@ -9,7 +9,7 @@
   padding: 15px;
   gap: 5px;
   font-weight: 400;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .title__content {
   text-align: center;
@@ -89,10 +89,13 @@
   line-height: 20px;
 }
 @media (min-width: 992px)  {
-  .art__segment {
-  display: flex;
-  justify-content: center; 
-}
+   .art__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; 
+    padding: 65px;
+  }
 .art__description-segment {
   display: flex;
   flex-direction: column;
@@ -111,7 +114,7 @@
   line-height: 37px;
   text-align: left;
   font-weight: 400;
-  padding: 10px 680px 10px 30px;
+  padding: 50px 500px 10px 30px;
 }
 .title__highlighted-text {
   font-style: italic;
@@ -123,7 +126,7 @@
   color: var(--title-color3);
   text-align: left;
   line-height: 60px;
-  padding: 0px 500px 0px 0px;
+  margin: 0;
 }
 .art__figure {
   width: 470px;
