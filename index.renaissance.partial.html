@@ -6,6 +6,9 @@
       <!-- LEFT SIDE -->
       <div class="renaissance-left">
 
+        <!-- woman bg -->
+        <div class="woman-bg-shape"></div>
+
         <div class="renaissance-left-text">
           <p>
             There are many reasons why the Renaissance is considered such an important cultural era.
@@ -18,19 +21,12 @@
         </div>
 
         <figure class="renaissance-circle-figure">
-          <img 
-            src="img/index/renaissance-partial-section/woman-reading.webp"
-            alt="Renaissance Woman Reading" 
-            class="circle-img"
-          >
-          <figcaption class="renaissance-caption">
-            "Gravin de Pagès, née de Cornellan" — by Joseph-Désiré Court
-          </figcaption>
+          <img src="img/index/renaissance-partial-section/woman-reading.webp" alt="Renaissance Woman Reading" class="circle-img"> 
+          <figcaption class="renaissance-caption">"Gravin de Pagès, née de Cornellan" — by Joseph-Désiré Court</figcaption>
         </figure>
 
         <!-- Decorative arrows -->
         <div class="decor-arrow arrow-bottom-left"></div>
-        <div class="decor-arrow arrow-top-left"></div>
 
       </div>
 
@@ -50,40 +46,53 @@
           </p>
         </div>
 
-        <!-- Main image with circular text -->
-        <div class="arc-wrap">
-          <svg class="circle-text" viewBox="0 0 300 300">
-            <defs>
-              <path id="circlePath"
-                d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0" />
-            </defs>
+<!-- Main image with circular text -->
+<div class="arc-wrap">
 
-            <text fill="rgba(255,255,255,0.15)" font-size="22" letter-spacing="4" font-family="Playfair Display, serif">
-              <textPath href="#circlePath">
-                RENART • RENART • RENART • RENART • RENART • RENART • RENART •
-              </textPath>
-            </text>
-          </svg>
+  <!-- Верхний круг (ART RENART...) -->
+  <svg class="circle-text top-circle" viewBox="0 0 500 500" aria-hidden="true">
+    <defs>
+      <path id="circlePathTop" d="M250,250 m-210,0 a210,210 0 1,1 420,0 a210,210 0 1,1 -420,0" />
+    </defs>
 
-          <img 
-            src="img/index/renaissance-partial-section/renaissance-group.webp"
-            alt="Group Renaissance Painting" 
-            class="arc-img"
-          >
-        </div>
+    <text fill="rgba(255,255,255,0.16)" font-size="34" letter-spacing="8" font-family="Playfair Display, serif">
+      <!-- startOffset сдвигает начало текста по кругу -->
+      <textPath href="#circlePathTop" startOffset="6%">
+        ART • RENART • RENART • RENART • RENART • RENART • RENART
+      </textPath>
+    </text>
+  </svg>
 
-        <!-- SMALL IMAGE -->
-        <div class="small-scene">
-          <img 
-            src="img/index/renaissance-partial-section/rooster-scene.webp"
-            alt="Nature Scene"
-            class="small-img"
-          >
-        </div>
+  <img
+    src="img/index/renaissance-partial-section/renaissance-group.webp"
+    alt="Group Renaissance Painting"
+    class="arc-img"
+  >
+</div>
 
-        <div class="image-caption small-caption">
-          "An Eagle, a Cockerell, Hens, a Pigeon in Flight" — by Melchior de Hondecoeter
-        </div>
+<!-- SMALL IMAGE -->
+<div class="small-scene">
+  <img
+    src="img/index/renaissance-partial-section/rooster-scene.webp"
+    alt="Nature Scene"
+    class="small-img"
+  >
+</div>
+
+<!-- Круговой текст под картинкой (TRANER) — позиционируется относительно .renaissance-right -->
+<svg class="circle-text bottom-circle" viewBox="0 0 700 700" aria-hidden="true">
+  <defs>
+    <path id="circlePathBottom" d="M350,350 m-300,0 a300,300 0 1,1 600,0 a300,300 0 1,1 -600,0" />
+  </defs>
+
+  <text fill="rgba(255,255,255,0.06)" font-size="36" letter-spacing="10" font-family="Playfair Display, serif">
+    <textPath href="#circlePathBottom" startOffset="8%">
+      TRANER • TRANER • TRANER • TRANER • TRANER • TRANER • TRANER
+    </textPath>
+  </text>
+</svg>
+
+        <div class="image-caption small-caption">"An Eagle, a Cockerell, Hens, a Pigeon in Flight" — by Melchior de Hondecoeter</div>
 
         <div class="renaissance-star"></div>
 
