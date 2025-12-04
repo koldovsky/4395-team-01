@@ -1,0 +1,79 @@
+.about-gallery-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 90px;
+    background-color: #1f0f06;
+}
+
+.about-gallery-hero-title {
+    font-family: var(--title-font);
+    font-size: 40px;
+    color: var(--title-color1);
+    text-align: center;
+    font-weight: 400;
+}
+
+.about-gallery-hero-title-highlight {
+    color: var(--title-color2);
+    font-style: italic;
+}
+
+.about-gallery-hero-image {
+    margin-top: 25px;
+    width: 352px;
+}
+
+.about-gallery-hero-direction {
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: var(--title-font2);
+    color: #FBF6E9;
+    text-align: center;
+    max-width: 100%;
+    line-height: 1.5;
+    display: flex;
+    gap: 8px;
+    font-weight: 300;                                 /* тонший weight, якщо є в шрифті */
+    -webkit-font-smoothing: antialiased;
+}
+
+.about-gallery-hero-direction-in_active {
+    text-decoration: none;
+    color: rgb(251, 246, 233);
+}
+
+.about-gallery-hero-direction-in_active:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about-gallery-hero-direction-active {
+    text-decoration: underline;
+    color: rgb(251, 246, 233);
+}
+
+@media (min-width: 768px) {
+    .about-gallery-hero {
+        padding-bottom: 95px;
+    }
+
+    .about-gallery-hero-title {
+        font-size: 51px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-gallery-hero {
+        padding-bottom: 100px;
+        gap: 5px;
+    }
+
+    .about-gallery-hero-title {
+        font-size: 62px;
+    }
+
+    .about-gallery-hero-image {
+        width: 239px;
+    }
+}
