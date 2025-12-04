@@ -133,4 +133,9 @@
     align-items: flex-end; 
     text-align: right;
   }
+
+  .footer__list{
+    flex-direction: row;
+    gap: 40px;
+  }
 }
