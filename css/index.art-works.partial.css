@@ -7,14 +7,13 @@
     .artworks__title {
         color: var(--title-color1);
         text-align: center;
-        font-family: "Bacasime Antique", serif;
+        font-family: var(--title-font);
         font-weight: 400;
         font-style: italic;
         font-size: clamp(56px, 10vw, 75px);
         margin: 6px auto 20px;
         width: fit-content;
         height: auto;
-        /* display: inline-block; */
     }
 
     .artworks__list {
@@ -47,8 +46,6 @@
         }
     }
 
-
-
     .artworks__item:nth-child(1) {
         text-align: center;
         margin-bottom: 3rem;
@@ -62,11 +59,10 @@
         margin-left: 10%;
     }
 
-
     .artworks__item--third {
         position: absolute;
         top: 50%;
-        right: 0%;
+        right: 5%;
         width: 42%;
         z-index: 2;
 
@@ -82,30 +78,31 @@
     }
 }
 
-
 @media (min-width: 768px) {
     .artworks {
+        position: relative;
         padding: 3rem 2rem;
         text-align: center;
 
         .artworks__title {
-            font-size: clamp(103px, 10vw, 183px);
+            font-size: 103px;
             margin-bottom: 0;
             justify-content: center;
-            z-index: 1;
-            display: inline-block;
+            z-index: 3;
+            position: relative;
             text-align: center;
         }
 
         .artworks__list {
+            position: relative;
             display: flex;
             align-items: flex-start;
+            justify-content: center;
             gap: 3rem;
             min-height: auto;
-            position: relative;
 
             .artworks__item {
-                position: static;
+                position: relative;
                 width: 28%;
                 margin: 0;
 
@@ -124,21 +121,41 @@
         }
 
         .artworks__item:nth-child(1) {
-            position: static;
-            margin-top: -2rem;
+            z-index: 4;
+            transform: translateY(-50px);
         }
-
 
         .artworks__item--second {
             margin-top: 0;
+            z-index: 1;
+            transform: translateY(-90px);
         }
-
 
         .artworks__item--third {
-            position: static !important;
-            margin-top: -2rem !important;
-
+            right: 0%;
+            top: 0%;
+            position: relative;
+            z-index: 4;
+            transform: translateY(-50px);
         }
+    }
+}
 
+@media (min-width: 992px) {
+
+    .artworks__title {
+        font-size: 183px !important;
+    }
+
+    .artworks__item:nth-child(1) {
+        transform: translateY(-70px) !important;
+    }
+
+    .artworks__item--second {
+        transform: translateY(-120px) !important;
+    }
+
+    .artworks__item--third {
+        transform: translateY(-70px) !important;
     }
 }

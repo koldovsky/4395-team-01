@@ -1,0 +1,136 @@
+.header-top__date-left-text,
+.header__date-right-text {
+    font-family: var(--text-font);
+    color: var(--title-color2);
+    font-style: italic;
+    flex: 1;
+}
+
+.header-top__date-left-text {
+    text-align: right;
+}
+
+.header__date-right-text {
+    text-align: left;
+}
+
+.header-top__hero-image {
+    flex-shrink: 0;
+}
+
+.header-top__image {
+    max-width: 120px;
+    height: auto;
+}
+
+
+.header-bottom__link {
+    font-family: var(--title-font2);
+    color: var(--title-color1);
+    text-decoration: none;
+}
+
+.header-bottom__left-word,
+.header-bottom__right-word {
+    font-family: var(--title-font);
+    color: var(--title-color1);
+}
+
+.raphael__segment,
+.murillo__segment {
+    display: block;
+    width: 100%;
+    max-width: 300px; 
+    flex-shrink: 0; 
+}
+
+
+.content__image-container {
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.raphael__headliner,
+.murillo__headliner {
+    font-size: 24px;
+    font-family: var(--title-font);
+    color: var(--text-color1);
+}
+
+.raphael__title,
+.murillo__title {
+    font-style: italic;
+    font-family: var(--title-font);
+    color: var(--title-color2);
+}
+
+.raphael__text,
+.murillo__text {
+    font-family: var(--text-font);
+    color: var(--text-color3);
+}
+
+.content__footer-link {
+    font-family: var(--text-font);
+    color: var(--title-color1);
+    text-decoration: none;
+}
+
+.content__header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.content__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.raphael__segment,
+.content__image-container,
+.murillo__segment {
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Статичний текст */
+.raphael__headliner,
+.raphael__title,
+.raphael__text,
+.murillo__headliner,
+.murillo__title,
+.murillo__text {
+    font-size: inherit;
+}
+
+@media (min-width: 768px) {
+    .content__body {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .raphael__segment,
+    .content__image-container,
+    .murillo__segment {
+        width: auto;
+        max-width: 300px;
+        text-align: left;
+    }
+
+    .content__image-container {
+        display: flex;
+        justify-content: center;
+    }
+    .content__image {
+        max-width: 200px;
+    }
+
+}

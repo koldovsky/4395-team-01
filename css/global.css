@@ -21,9 +21,21 @@
   --text-color2: rgba(255, 255, 255, 0.31);
   --text-color3: rgba(255, 255, 255, 0.59);
 
+  --color-hero-frame-outer: rgb(58, 48, 38); /* фон зовнішнього контуру */
+
+  --hero-video-bg: transparent;
+  --hero-video-border: #231107;
+  --hero-video-play-bg: rgba(255, 255, 255, 0.85);
+
   --text-font: "Work Sans", sans-serif;
   --title-font: "Bacasime Antique", serif;
   --title-font2: "Antic Didone", serif;
+
+  --header-events-bg: rgb(23, 29, 24);
+
+  --icon-hover-color: rgb(184, 143, 97);
+
+  --scale: 1;
 
   scroll-behavior: smooth;
 
