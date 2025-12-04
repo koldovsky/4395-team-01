@@ -219,16 +219,6 @@
     position: relative;
     overflow: hidden;
 
-    /* Фонова зірка */
-    .hero__content-info::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: url("img/global/global-star.svg") center/60% no-repeat;
-        opacity: 0.05;
-        z-index: 0;
-    }
-
     .hero__figure {
         position: relative;
         border-top-left-radius: 80%;
@@ -254,8 +244,8 @@
     .hero__info {
         display: flex;
         flex-direction: column;
-        max-width: 340px;
         gap: 1.5rem;
+        max-width: 320px;
         z-index: 1;
     }
 
@@ -274,14 +264,17 @@
         font-style: italic;
         color: var(--title-color2);
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 5.0vw;
     }
 
     .hero__info-text {
         font-family: var(--text-font);
-        font-weight: 300;
-        font-size: 0.8rem;
+        font-size: 4vw;
         color: var(--text-color1);
+        text-align: justify;
+        font-weight: 350;
+        line-height: 1.6;
+        letter-spacing: 0.4px;
     }
 }
 
