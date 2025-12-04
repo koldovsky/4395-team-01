@@ -1,81 +1,257 @@
+/* Museum Services Section */
 .museum-services {
-  background-color: #f5f1e9;
-  padding: 80px 0;
-  font-family: 'Cormorant Garamond', serif;
-  color: #3a2f1d;
+  background-color: #2b1810;
+  padding: 100px 0 120px;
+  position: relative;
+}
+
+.museum-services .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px 40px;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 100px;
+  row-gap: 60px;
   align-items: start;
 }
 
-.service-item {
-  background: #fff;
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+/* Service 01 - Top Left with decorative star */
+.service-01 {
+  grid-column: 1;
+  grid-row: 1;
   position: relative;
 }
 
-.service-number {
-  font-size: 28px;
-  font-weight: 700;
-  color: #9f7647;
-  margin-bottom: 10px;
+.service-header {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  position: relative;
+}
+
+.left-star {
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  flex-shrink: 0;
+}
+
+.left-star img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-.service-title {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.service-content {
+  flex: 1;
+  width: 100%;
 }
 
-.service-description {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #4a3b2a;
+/* Service 02 - Top Right */
+.service-02 {
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 60px;
 }
 
+/* Image Section - Bottom Left */
 .service-image {
-  grid-column: 1 / span 2;
-  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  max-width: 421px;
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin-top: 20px;
 }
 
 .service-image img {
-  max-width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
+/* Service 03 - Bottom Right with star */
+.service-03 {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  padding-top: 20px;
+}
+
+/* Service Items Common Styles */
+.service-item {
+  color: #ffffff96;
+}
+
+.service-number {
+  display: block;
+  font-family: 'Antic Didone', serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fbf6e9;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.service-title {
+  font-family: 'Bacasime Antique', serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  color: #eab156;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.service-description {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff96;
+  line-height: 1.7;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* Events Block for Service 03 */
 .events-block {
-  margin-top: 30px;
-  text-align: right;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
   position: relative;
 }
 
+.bottom-star {
+  flex-shrink: 0;
+  width: 68px;
+}
+
 .bottom-star img {
-  position: absolute;
-  right: 0;
-  bottom: 60px;
-  height: 80px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .events-link {
-  display: inline-block;
-  margin-top: 100px;
-  padding: 12px 24px;
-  background-color: #9f7647;
-  color: #fff;
+  font-family: 'Antic Didone', serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: #fbf6e9;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #fbf6e9;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .events-link:hover {
-  background-color: #7c5a34;
+  color: #eab156;
+  border-bottom-color: #eab156;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .museum-services .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 280px 1fr;
+    column-gap: 80px;
+  }
+
+  .left-star {
+    left: -60px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 968px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+  }
+
+  .service-01,
+  .service-02,
+  .service-image,
+  .service-03 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .service-02,
+  .service-03 {
+    padding-top: 0;
+  }
+
+  .left-star {
+    position: static;
+    transform: none;
+    width: 38px;
+    margin-bottom: 30px;
+  }
+
+  .service-header {
+    flex-direction: column;
+  }
+
+  .service-image {
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .museum-services {
+    padding: 80px 0;
+  }
+
+  .museum-services .container {
+    padding: 0 20px;
+  }
+
+  .services-grid {
+    row-gap: 60px;
+  }
+
+  .service-title {
+    font-size: 28px;
+  }
+
+  .service-description {
+    font-size: 15px;
+  }
+
+  .service-image {
+    max-width: 100%;
+  }
+
+  .events-block {
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .bottom-star {
+    width: 55px;
+  }
+
+  .events-link {
+    font-size: 11px;
+  }
 }
