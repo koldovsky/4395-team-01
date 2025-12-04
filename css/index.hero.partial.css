@@ -219,62 +219,30 @@
     position: relative;
     overflow: hidden;
 
-    .hero__figure {
-        position: relative;
-        border-top-left-radius: 80%;
-        overflow: hidden;
-        z-index: 1;
-        max-width: 380px;
-        margin-bottom: 2rem;
-    }
-
-    .hero__figure--side {
-        margin-bottom: 2rem;
-    }
-
-    .hero__img-info {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-        aspect-ratio: 3/4;
-        object-position: center top;
-    }
-
     .hero__info {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
         max-width: 320px;
         z-index: 1;
-    }
 
-    .hero__year {
-        font-family: var(--title-font);
-        font-weight: 100;
-        font-size: 2.5rem;
-        color: var(--title-color3);
-        position: absolute;
-        bottom: 1.5rem;
-        right: 1.5rem;
-    }
+        .hero__info-title {
+            font-family: var(--title-font);
+            font-style: italic;
+            color: var(--title-color2);
+            font-weight: 100;
+            font-size: 5.0vw;
+        }
 
-    .hero__info-title {
-        font-family: var(--title-font);
-        font-style: italic;
-        color: var(--title-color2);
-        font-weight: 100;
-        font-size: 5.0vw;
-    }
-
-    .hero__info-text {
-        font-family: var(--text-font);
-        font-size: 4vw;
-        color: var(--text-color1);
-        text-align: justify;
-        font-weight: 350;
-        line-height: 1.6;
-        letter-spacing: 0.4px;
+        .hero__info-text {
+            font-family: var(--text-font);
+            font-size: 4vw;
+            color: var(--text-color1);
+            text-align: justify;
+            font-weight: 350;
+            line-height: 1.6;
+            letter-spacing: 0.4px;
+        }
     }
 }
 
