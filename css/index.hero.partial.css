@@ -2,6 +2,7 @@
     margin: auto;
     max-width: 1200px;
     display: flex;
+    gap: 1.5rem;
     flex-direction: column;
     padding: 40px 20px;
 
@@ -15,6 +16,7 @@
 }
 
 .hero__content-container {
+    gap: 1.5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -87,6 +89,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 
     .hero__figure--main {
         width: 100%;
@@ -192,7 +195,7 @@
             .hero__video-title {
                 font-family: var(--title-font2);
                 font-weight: 100;
-                font-size: 0.75rem;
+                font-size: 3.75vw;
                 text-transform: uppercase;
                 color: var(--title-color3);
             }
@@ -200,7 +203,7 @@
             .hero__video-subtitle {
                 font-family: var(--text-font);
                 font-weight: 500;
-                font-size: 0.775rem;
+                font-size: 3.4vw;
                 color: var(--text-color2);
                 font-style: italic;
             }
@@ -209,6 +212,7 @@
 }
 
 .hero__content-info {
+    gap: 1.5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -248,7 +252,10 @@
     }
 
     .hero__info {
+        display: flex;
+        flex-direction: column;
         max-width: 340px;
+        gap: 1.5rem;
         z-index: 1;
     }
 
