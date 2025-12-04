@@ -1,300 +1,165 @@
 /* Museum Services Section */
+/* Загальні стилі для секції */
 .museum-services {
-  background: #231107;
-  padding: 90px 0;
-  color: #fff;
-  position: relative;
+  background-color: #231107; /* темний фон — змінити якщо потрібно */
+  color: #EABD65; /* світлий текст / золотистий, настроюй під дизайн */
+  font-family: 'Arial', sans-serif; /* або шрифт вашого сайту */
+  padding: 60px 0;
 }
 
 .museum-services .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
-/* Services Grid Layout */
-.services-grid {
+/* Сітка для сервісів + зображення */
+.museum-services .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  gap: 60px 30px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
   align-items: start;
-}
-
-/* Service 01 - Top Left with Decorative Star Line */
-.service-item.service-01 {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.service-header {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-.left-star {
-  flex-shrink: 0;
-  width: 69px;
-  margin-top: -10px;
-}
-
-.left-star img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.service-content {
-  flex: 1;
-  padding-top: 70px;
-}
-
-/* Service 02 - Top Right */
-.service-item.service-02 {
-  grid-column: 2;
-  grid-row: 1;
-  padding-top: 20px;
-}
-
-/* Service Image - Bottom Left */
-.service-image {
-  grid-column: 1;
-  grid-row: 2;
-  width: 100%;
-  max-width: 550px;
-  justify-self: start;
-}
-
-.service-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-
-/* Service 03 - Bottom Right */
-.service-item.service-03 {
-  grid-column: 2;
-  grid-row: 2;
   position: relative;
-  align-self: center;
 }
 
-/* Service Typography */
-.service-number {
+/* Сервіс-елементи */
+.museum-services .service-item {
+  /* базове для всіх */
+  display: flex;
+  flex-direction: column;
+  /* щоб номер, заголовок, текст були вертикально */
+  color: #EABD65;
+}
+
+/* “Service 01” — текст + іконка-«зірка» ліворуч */
+.museum-services .service-01 {
+  grid-column: 1 / 7; /* займає колонки з 1 по 6 */
+  /* можеш підкоригувати, щоб відповідало дизайну */
+}
+
+.museum-services .service-01 .service-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.museum-services .service-01 .left-star img {
   display: block;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: #a2a2a2;
-  margin-bottom: 20px;
-  letter-spacing: 0;
-  line-height: 1.4;
+  width: 69px; /* чи змінити за потреби */
+  height: auto;
 }
 
-.service-title {
-  font-family: 'Cormorant Infant', 'Playfair Display', Georgia, serif;
-  font-size: 50px;
-  font-style: italic;
-  font-weight: 400;
-  color: #feea8b;
-  margin: 0 0 25px 0;
-  line-height: 1.2;
-  letter-spacing: 0;
+.museum-services .service-number {
+  display: block;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 8px;
 }
 
-.service-description {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
+.museum-services .service-title {
   margin: 0;
-  max-width: 100%;
-  letter-spacing: 0;
+  font-size: 1.75rem; /* заголовок приблизно такий */
+  line-height: 1.2;
+  color: #EABD65;
 }
 
-/* Events Block */
-.events-block {
+.museum-services .service-description {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Сервіс 02 */
+.museum-services .service-02 {
+  grid-column: 1 / 7; /* лівий бік (можливо після картинки) */
+  margin-top: 60px;
+}
+
+.museum-services .service-02 .service-number {
+  margin-bottom: 8px;
+}
+
+.museum-services .service-02 .service-title {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+/* Сервіс 03 — правий блок нижче картинки */
+.museum-services .service-03 {
+  grid-column: 7 / 13; /* праві колонки (7–12) */
+  margin-top: 60px;
+  position: relative;
+}
+
+.museum-services .service-03 .service-number {
+  display: block;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.museum-services .service-03 .service-title {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #EABD65;
+}
+
+.museum-services .service-03 .service-description {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Блок з картинкою (service-image) */
+.museum-services .service-image {
+  grid-column: 5 / 13; /* можна змінити — це залежить від положення картинки на вашому макеті */
+  position: relative;
+  margin-top: 40px;
+}
+
+.museum-services .service-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* як на сайті — можеш підкоригувати */
+  object-fit: cover;
+}
+
+/* Нижня «зірка» + посилання на events у service 03 */
+.museum-services .service-03 .events-block {
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-top: 50px;
+  gap: 16px;
 }
 
-.bottom-star {
-  flex-shrink: 0;
-  width: 142px;
-}
-
-.bottom-star img {
-  width: 100%;
+.museum-services .service-03 .bottom-star img {
+  width: 56px; /* підкоригуй до твоєї зірки */
   height: auto;
-  display: block;
 }
 
-.events-link {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #feea8b;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #feea8b;
-  padding-bottom: 3px;
-  transition: all 0.3s ease;
-  line-height: 1.2;
+.museum-services .service-03 .events-link {
+  color: #EABD65;
+  text-decoration: underline;
+  font-size: 1rem;
 }
 
-.events-link:hover {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-/* Responsive Design */
-@media (min-width: 992px) {
-  .museum-services {
-    padding: 100px 0;
-  }
-  
-  .services-grid {
-    gap: 80px 60px;
-  }
-  
-  .service-title {
-    font-size: 55px;
-  }
-  
-  .service-content {
-    padding-top: 80px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .museum-services {
-    padding: 95px 0;
-  }
-  
-  .museum-services .container {
-    padding: 0 28px;
-  }
-  
-  .services-grid {
-    gap: 50px 40px;
-  }
-  
-  .service-title {
-    font-size: 48px;
-  }
-  
-  .service-content {
-    padding-top: 60px;
-  }
-  
-  .service-image {
-    max-width: 450px;
-  }
-}
-
-@media (max-width: 767px) {
-  .museum-services {
-    padding: 60px 0;
-  }
-  
-  .museum-services .container {
-    padding: 0 27px;
-  }
-  
-  .services-grid {
+/* Адаптивність */
+@media (max-width: 992px) {
+  .museum-services .services-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
   }
-  
-  .service-item.service-01,
-  .service-item.service-02,
-  .service-image,
-  .service-item.service-03 {
-    grid-column: 1;
+  .museum-services .service-01,
+  .museum-services .service-02,
+  .museum-services .service-03,
+  .museum-services .service-image {
+    grid-column: 1 / -1;
   }
-  
-  .service-item.service-01 {
-    grid-row: 1;
-  }
-  
-  .service-item.service-02 {
-    grid-row: 2;
-    padding-top: 0;
-  }
-  
-  .service-image {
-    grid-row: 3;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .service-item.service-03 {
-    grid-row: 4;
-  }
-  
-  .service-header {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .left-star {
-    width: 50px;
-  }
-  
-  .service-content {
-    padding-top: 0;
-  }
-  
-  .service-title {
-    font-size: 36px;
-  }
-  
-  .service-description {
-    font-size: 15px;
-  }
-  
-  .events-block {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  .museum-services .service-02,
+  .museum-services .service-03,
+  .museum-services .service-image {
     margin-top: 40px;
-  }
-  
-  .bottom-star {
-    width: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .museum-services {
-    padding: 50px 0;
-  }
-  
-  .services-grid {
-    gap: 40px;
-  }
-  
-  .service-title {
-    font-size: 30px;
-  }
-  
-  .service-description {
-    font-size: 14px;
-  }
-  
-  .service-number {
-    font-size: 14px;
-  }
-  
-  .events-link {
-    font-size: 13px;
   }
 }
