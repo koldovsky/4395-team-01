@@ -1,253 +1,230 @@
-.information__container {
+/* Museum Services Section */
+.museum-services {
+  background-color: #2d1810;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 60px 80px;
+  align-items: start;
+}
+
+/* Service Items */
+.service-item {
+  position: relative;
+}
+
+.service-number {
+  display: block;
+  font-size: 14px;
+  color: #c9a052;
+  margin-bottom: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.service-title {
+  font-size: 32px;
+  font-style: italic;
+  color: #d4a65a;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.service-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 450px;
+}
+
+/* Service 01 - with decorative star */
+.service-01 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.service-header {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.left-star {
+  flex-shrink: 0;
+  width: 69px;
+  margin-top: 10px;
+}
+
+.left-star img {
+  width: 100%;
+  height: auto;
+}
+
+.service-content {
+  flex: 1;
+}
+
+/* Service 02 - top right */
+.service-02 {
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 80px;
+}
+
+/* Service Image - center bottom left */
+.service-image {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  max-width: 550px;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+/* Service 03 - bottom right with events */
+.service-03 {
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-secondary);
-  padding: 12px 8px;
-  width: 100%;
+  justify-content: space-between;
+  min-height: 100%;
 }
 
-.information__title-block {
-  width: clamp(234px, 80vw, 768px);
-  height: auto;
-  margin-left: clamp(10px, 3vw, 30px);
-  margin-right: auto;
-}
-
-.information__subtitle {
-  font-family: var(--title-font2);
-  font-size: clamp(12px, 4vw, 38px);
-  color: var(--text-color1);
-  margin-top: clamp(10px, 5vw, 20px);
-  margin-bottom: clamp(25px, 5vw, 35px);
-}
-.information__title {
-  font-family: var(--title-font);
-  font-size: clamp(30px, 8vw, 70px);
-  width: 100%;
-  color: var(--title-color3);
-  margin-bottom: clamp(25px, 5vw, 35px);
-  overflow-wrap: break-word;
-}
-
-.information__title-span {
-  color: var(--title-color1);
-  font-size: clamp(50px, 11vw, 100px);
-}
-
-.information__item {
+/* Events Block */
+.events-block {
+  margin-top: 60px;
+  position: relative;
   display: flex;
   align-items: center;
-  width: clamp(260px, 80vw, 768px);
-  margin-left: clamp(10px, 3vw, 30px);
-  margin-right: auto;
-  margin-bottom: clamp(15px, 5vw, 25px);
+  gap: 30px;
 }
 
-.information__picture {
-  width: clamp(200px, 55vw, 760px);
+.bottom-star {
+  flex-shrink: 0;
+  width: 142px;
+}
+
+.bottom-star img {
+  width: 100%;
   height: auto;
 }
 
-.information__line-star {
-  margin-left: 40px;
-  width: clamp(20px, 20vw, 40px);
-  height: clamp(200px, 60vw, 400px);
-}
-
-.information__text1 {
-  font-family: var(--text-font);
-  font-size: clamp(14px, 4vw, 24px);
+.events-link {
+  font-size: 14px;
+  color: #c9a052;
+  text-decoration: none;
+  letter-spacing: 2px;
   font-weight: 500;
-  color: var(--text-color2);
-  width: clamp(250px, 80vw, 517px);
-  height: auto;
-  overflow-wrap: break-word;
-  margin-left: clamp(10px, 3vw, 30px);
-  margin-right: auto;
-  margin-top: clamp(5px, 4vw, 35px);
-  margin-bottom: clamp(5px, 4vw, 25px);
-  line-height: 1.2;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-.information__text2 {
-  font-family: var(--text-font);
-  font-size: clamp(14px, 4vw, 28px);
-  font-weight: 700;
-  color: var(--text-color1);
-  width: clamp(280px, 80vw, 632px);
-  overflow-wrap: break-word;
-  margin-top: clamp(5px, 4vw, 35px);
-  margin-bottom: clamp(5px, 4vw, 35px);
-  margin-left: clamp(10px, 3vw, 30px);
-  margin-right: auto;
-  line-height: 1.2;
+.events-link:hover {
+  color: #d4a65a;
 }
 
-.information__text3 {
-  font-family: var(--text-font);
-  font-size: clamp(14px, 4vw, 28px);
-  font-weight: 400;
-  color: var(--text-color3);
-  width: clamp(280px, 80vw, 632px);
-  overflow-wrap: break-word;
-  margin-left: clamp(10px, 3vw, 30px);
-  margin-right: auto;
-  margin-top: clamp(5px, 4vw, 35px);
-  margin-bottom: clamp(5px, 4vw, 25px);
-  line-height: 1.2;
+.events-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #c9a052;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
-@media (min-width: 768px) {
-  .information__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* ліва і права частина */
-    align-items: start;
-    gap: 12px;
-    padding: 12px 8px;
-  }
+.events-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
-  .information__title-block {
-    width: clamp(117px, 45vw, 384px);
-    grid-column: 2;
-    grid-row: 1;
-    margin-bottom: 2rem;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-grid {
+    gap: 40px 50px;
   }
-
-  /* Блок заголовку */
-  .information__subtitle {
-    text-transform: uppercase;
-    font-size: clamp(8px, 2vw, 14px);
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+  
+  .service-title {
+    font-size: 28px;
   }
-
-  .information__title {
-    font-size: clamp(20px, 5vw, 55px);
-    font-weight: 600;
-    line-height: 1.1;
+  
+  .service-02 {
+    padding-top: 40px;
   }
+}
 
-  .information__title-span {
-    font-size: clamp(25px, 11vw, 70px);
+@media (max-width: 768px) {
+  .museum-services {
+    padding: 60px 0;
   }
-
-  /* Блок із картинкою + зіркою */
-  .information__item {
-    position: relative;
-    display: flex;
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .service-01,
+  .service-02,
+  .service-image,
+  .service-03 {
     grid-column: 1;
-    grid-row: 1;
-    justify-content: center;
-    width: clamp(300px, 40vw, 500px);
+    grid-row: auto;
   }
-
-  .information__picture {
-    width: clamp(300px, 40vw, 500px);
-    height: auto;
+  
+  .service-02 {
+    padding-top: 0;
   }
-
-  .information__line-star {
-    display: none;
+  
+  .service-header {
+    flex-direction: column;
+    gap: 20px;
   }
-
-  .information__text1 {
-    font-size: clamp(14px, 2vw, 20px);
-    margin-top: clamp(150px, 40vw, 400px);
-    grid-column: 2;
-    grid-row: 1;
-    width: clamp(258px, 40vw, 400px);
+  
+  .left-star {
+    width: 50px;
   }
-
-  .information__text2 {
-    font-size: clamp(10px, 3vw, 25px);
-    width: clamp(140px, 45vw, 420px);
-    line-height: 1.6;
+  
+  .service-image {
+    max-width: 100%;
+    margin: 0 auto;
   }
-
-  .information__text3 {
-    font-size: clamp(10px, 3vw, 25px);
-    width: clamp(140px, 45vw, 450px);
-    line-height: 1.6;
+  
+  .events-block {
+    margin-top: 40px;
+    gap: 20px;
   }
-}
-
-@media (min-width: 990px) {
-  .information__container {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr; /* ліва і права частина */
-    align-items: start;
-    gap: 12px;
-    padding: 12px 8px;
+  
+  .bottom-star {
+    width: 100px;
   }
-
-  /*ЛЕВА ЧАСТИНА*/
-
-  .information__text1 {
-    grid-column: 1;
-    grid-row: 1;
-    width: clamp(210px, 2vw, 220px);
-    font-size: clamp(10px, 4vw, 14px);
-    margin-top: clamp(460px, 40vw, 510px);
-    margin-left: 0;
+  
+  .service-title {
+    font-size: 24px;
   }
-
-  /*ПРАВА ЧАСТИНА*/
-
-  .information__title-block {
-    grid-column: 2;
-    grid-row: 1;
-    position: relative;
-    z-index: 2;
-    width: clamp(384px, 80vw, 686px);
-  }
-
-  .information__subtitle {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .information__title-span {
-    margin-left: clamp(260px, 25vw, 300px);
-  }
-
-  .information__item {
-    grid-column: 2;
-    grid-row: 1;
-    z-index: 3; /* щоб накладалось зверху */
-    justify-self: left;
-    margin-left: 0;
-    width: clamp(300px, 28vw, 350px);
-  }
-
-  .information__picture {
-    width: clamp(300px, 28vw, 350px);
-    height: auto;
-    margin-top: clamp(140px, 12vw, 150px);
-  }
-
-  .information__text2 {
-    font-size: clamp(16px, 2vw, 17px);
-    grid-column: 2;
-    grid-row: 1;
-    width: clamp(400px, 10vw, 420px);
-    margin-top: clamp(240px, 20vw, 260px);
-    margin-left: clamp(240px, 33vw, 400px);
-  }
-
-  .information__text3 {
-    font-size: clamp(16px, 2vw, 17px);
-    grid-column: 2;
-    grid-row: 1;
-    width: clamp(420px, 45vw, 420px);
-    margin-top: clamp(380px, 35vw, 440px);
-    margin-left: clamp(240px, 33vw, 400px);
-  }
-
-  .information__line-star {
-    display: none;
-  }
-
-  .information__br {
-    display: none;
+  
+  .service-description {
+    font-size: 15px;
   }
 }
