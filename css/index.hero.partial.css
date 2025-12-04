@@ -24,7 +24,7 @@
     .hero__subtitle {
         font-family: var(--text-font);
         font-weight: 500;
-        font-size: 0.775rem;
+        font-size: 3.4vw;
         color: var(--text-color2);
         font-style: italic;
     }
@@ -32,8 +32,9 @@
     .hero__title {
         font-family: var(--title-font);
         font-weight: 100;
-        font-size: 2.85rem;
-        color: var(--title-color1);    
+        font-size: 14.85vw;
+        color: var(--title-color1);
+
 
         .hero__title-em {
             font-style: italic;
@@ -53,9 +54,11 @@
     .hero__description {
         font-family: var(--text-font);
         font-weight: 300;
-        font-size: 0.8rem;
+        font-size: 4vw;
         color: var(--text-color1);
         text-align: justify;
+        font-weight: 350;
+        line-height: 1.6;
     }
 
     .hero__btn {
@@ -222,10 +225,10 @@
 
     .hero__figure {
         position: relative;
-        border-top-left-radius: 55%;
+        border-top-left-radius: 80%;
         overflow: hidden;
         z-index: 1;
-        max-width: 400px;
+        max-width: 380px;
         margin-bottom: 2rem;
     }
 
@@ -238,6 +241,8 @@
         height: auto;
         display: block;
         object-fit: cover;
+        aspect-ratio: 3/4;
+        object-position: center top;
     }
 
     .hero__info {
