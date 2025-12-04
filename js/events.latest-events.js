@@ -8,7 +8,7 @@ const createEventCards = (events = []) => {
   const cardsMarkup = events
     .map(
       ({ id, title, date, time, description, themeImage }) => `
-        <article class="latest-events__card" aria-labelledby="event-${id}-title">
+        <article id="${id}"class="latest-events__card" aria-labelledby="event-${id}-title">
           <img
             class="avatar__img"
             src="${themeImage}"
