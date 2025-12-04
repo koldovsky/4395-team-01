@@ -1,22 +1,21 @@
 /* Museum Services Section */
 .museum-services {
   background-color: #2d1810;
-  padding: 80px 0;
+  padding: 100px 0 120px;
   color: #fff;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 60px 80px;
-  align-items: start;
+  grid-template-columns: 45% 55%;
+  gap: 0;
+  position: relative;
 }
 
 /* Service Items */
@@ -26,69 +25,80 @@
 
 .service-number {
   display: block;
-  font-size: 14px;
-  color: #c9a052;
-  margin-bottom: 15px;
+  font-size: 13px;
+  color: #a08466;
+  margin-bottom: 20px;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .service-title {
-  font-size: 32px;
+  font-size: 36px;
   font-style: italic;
-  color: #d4a65a;
-  margin-bottom: 20px;
+  color: #d4a558;
+  margin-bottom: 25px;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.2;
+  font-family: Georgia, serif;
 }
 
 .service-description {
   font-size: 16px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 450px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 550px;
 }
 
-/* Service 01 - with decorative star */
+/* Service 01 - Left side with decorative line and star */
 .service-01 {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1 / 3;
+  padding-right: 60px;
+  position: relative;
 }
 
 .service-header {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  position: relative;
+  padding-left: 50px;
 }
 
 .left-star {
-  flex-shrink: 0;
-  width: 69px;
-  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .left-star img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 .service-content {
-  flex: 1;
+  padding-top: 40px;
 }
 
-/* Service 02 - top right */
+/* Service 02 - Top right */
 .service-02 {
   grid-column: 2;
   grid-row: 1;
-  padding-top: 80px;
+  padding-left: 60px;
+  padding-bottom: 100px;
 }
 
-/* Service Image - center bottom left */
+/* Service Image - Bottom left */
 .service-image {
   grid-column: 1;
   grid-row: 2;
   width: 100%;
-  max-width: 550px;
+  max-width: 500px;
+  margin-top: 80px;
+  padding-left: 50px;
 }
 
 .service-image img {
@@ -99,20 +109,17 @@
   aspect-ratio: 1;
 }
 
-/* Service 03 - bottom right with events */
+/* Service 03 - Bottom right */
 .service-03 {
   grid-column: 2;
   grid-row: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100%;
+  padding-left: 60px;
+  padding-top: 20px;
 }
 
 /* Events Block */
 .events-block {
-  margin-top: 60px;
-  position: relative;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -120,69 +127,65 @@
 
 .bottom-star {
   flex-shrink: 0;
-  width: 142px;
+  width: 80px;
+  height: auto;
 }
 
 .bottom-star img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .events-link {
-  font-size: 14px;
-  color: #c9a052;
+  font-size: 13px;
+  color: #d4a558;
   text-decoration: none;
   letter-spacing: 2px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  position: relative;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
 }
 
 .events-link:hover {
-  color: #d4a65a;
-}
-
-.events-link::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #c9a052;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.events-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  color: #e8b968;
+  border-bottom-color: #d4a558;
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+  
   .services-grid {
-    gap: 40px 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .service-01,
+  .service-02 {
+    padding-right: 30px;
+    padding-left: 30px;
   }
   
   .service-title {
-    font-size: 28px;
-  }
-  
-  .service-02 {
-    padding-top: 40px;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 768px) {
   .museum-services {
-    padding: 60px 0;
+    padding: 60px 0 80px;
+  }
+  
+  .container {
+    padding: 0 20px;
   }
   
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 60px;
   }
   
   .service-01,
@@ -191,40 +194,50 @@
   .service-03 {
     grid-column: 1;
     grid-row: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .service-01 {
+    padding-bottom: 0;
   }
   
   .service-02 {
-    padding-top: 0;
+    padding-bottom: 0;
   }
   
   .service-header {
-    flex-direction: column;
-    gap: 20px;
+    padding-left: 40px;
   }
   
   .left-star {
-    width: 50px;
+    width: 25px;
   }
   
   .service-image {
     max-width: 100%;
     margin: 0 auto;
+    padding-left: 0;
   }
   
   .events-block {
-    margin-top: 40px;
+    margin-top: 50px;
     gap: 20px;
   }
   
   .bottom-star {
-    width: 100px;
+    width: 60px;
   }
   
   .service-title {
-    font-size: 24px;
+    font-size: 26px;
   }
   
   .service-description {
     font-size: 15px;
+  }
+  
+  .service-content {
+    padding-top: 20px;
   }
 }
