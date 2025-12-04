@@ -1,257 +1,180 @@
-/* Museum Services Section */
+/* Імпортуємо шрифти, щоб вони виглядали як на картинці */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Manrope:wght@300;400&display=swap');
+
+/* Основна секція */
 .museum-services {
-  background-color: #2b1810;
-  padding: 100px 0 120px;
-  position: relative;
+    background-color: #180D0B; /* Темний шоколадно-чорний фон */
+    color: #B0A8A6; /* Світло-сірий текст */
+    padding: 100px 20px;
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden; /* Щоб декоративні елементи не вилазили */
 }
 
-.museum-services .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 60px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Сітка (Grid) - 2 колонки */
 .services-grid {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  grid-template-rows: auto auto;
-  column-gap: 100px;
-  row-gap: 60px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Дві рівні колонки */
+    column-gap: 80px; /* Великий відступ між колонками */
+    row-gap: 60px; /* Відступ між рядками */
+    align-items: start;
 }
 
-/* Service 01 - Top Left with decorative star */
-.service-01 {
-  grid-column: 1;
-  grid-row: 1;
-  position: relative;
-}
-
-.service-header {
-  display: flex;
-  gap: 0;
-  align-items: flex-start;
-  position: relative;
-}
-
-.left-star {
-  position: absolute;
-  left: -70px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 38px;
-  flex-shrink: 0;
-}
-
-.left-star img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.service-content {
-  flex: 1;
-  width: 100%;
-}
-
-/* Service 02 - Top Right */
-.service-02 {
-  grid-column: 2;
-  grid-row: 1;
-  padding-top: 60px;
-}
-
-/* Image Section - Bottom Left */
-.service-image {
-  grid-column: 1;
-  grid-row: 2;
-  width: 100%;
-  max-width: 421px;
-  overflow: hidden;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  margin-top: 20px;
-}
-
-.service-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Service 03 - Bottom Right with star */
-.service-03 {
-  grid-column: 2;
-  grid-row: 2;
-  position: relative;
-  padding-top: 20px;
-}
-
-/* Service Items Common Styles */
-.service-item {
-  color: #ffffff96;
-}
-
+/* --- Типографіка --- */
 .service-number {
-  display: block;
-  font-family: 'Antic Didone', serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fbf6e9;
-  letter-spacing: 0.05em;
-  margin-bottom: 12px;
-  line-height: 1;
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #B0A8A6;
+    opacity: 0.8;
 }
 
 .service-title {
-  font-family: 'Bacasime Antique', serif;
-  font-size: 32px;
-  font-weight: 400;
-  font-style: italic;
-  color: #eab156;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 400;
+    color: #EAB156; /* Золотий колір заголовків */
+    margin: 0 0 20px 0;
+    line-height: 1.2;
 }
 
 .service-description {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  color: #ffffff96;
-  line-height: 1.7;
-  margin: 0;
-  letter-spacing: 0.01em;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 350px;
+    color: #B0A8A6;
+    font-weight: 300;
 }
 
-/* Events Block for Service 03 */
+/* --- Service 01 (Ліва колонка, верх) --- */
+.service-01 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.service-header {
+    display: flex;
+    gap: 30px; /* Відступ між зіркою/лінією і текстом */
+}
+
+/* Декоративна зірка з лінією */
+.left-star {
+    flex-shrink: 0;
+    margin-top: -50px; /* Підтягуємо лінію вгору, як на макеті */
+}
+.left-star img {
+    display: block;
+    /* Розміри беруться з SVG, але можна підстрахувати */
+    width: 69px; 
+    height: auto;
+}
+
+.service-01 .service-content {
+    padding-top: 40px; /* Вирівнюємо текст відносно зірки */
+}
+
+/* --- Service 02 (Права колонка, верх) --- */
+.service-02 {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 60px; /* Трохи нижче ніж перший елемент */
+    padding-left: 40px; /* Зсув вправо */
+}
+
+/* --- Картинка (Image Section) --- */
+.service-image {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    /* Робимо овальну/органічну форму як на скріншоті */
+    border-radius: 45% 55% 40% 60% / 55% 45% 60% 40%;
+    /* Легкий нахил і затемнення */
+    transform: rotate(-5deg);
+    opacity: 0.8; 
+    transition: all 0.5s ease;
+}
+
+.service-image img:hover {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* --- Service 03 (Права колонка, низ) --- */
+.service-03 {
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 40px;
+    padding-top: 80px; /* Більший відступ від верху */
+    position: relative;
+}
+
+/* Блок з подіями та зіркою знизу */
 .events-block {
-  margin-top: 60px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  position: relative;
-}
-
-.bottom-star {
-  flex-shrink: 0;
-  width: 68px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .bottom-star img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 40px; /* Зменшуємо нижню зірку, якщо вона завелика */
+    height: auto;
 }
 
 .events-link {
-  font-family: 'Antic Didone', serif;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  color: #fbf6e9;
-  text-decoration: none;
-  border-bottom: 1px solid #fbf6e9;
-  padding-bottom: 2px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #B0A8A6;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(176, 168, 166, 0.3);
+    padding-bottom: 5px;
+    transition: color 0.3s;
 }
 
 .events-link:hover {
-  color: #eab156;
-  border-bottom-color: #eab156;
+    color: #EAB156;
+    border-bottom-color: #EAB156;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .museum-services .container {
-    max-width: 100%;
-    padding: 0 40px;
-  }
-
-  .services-grid {
-    grid-template-columns: 280px 1fr;
-    column-gap: 80px;
-  }
-
-  .left-star {
-    left: -60px;
-    width: 35px;
-  }
-}
-
-@media (max-width: 968px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-    row-gap: 80px;
-  }
-
-  .service-01,
-  .service-02,
-  .service-image,
-  .service-03 {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .service-02,
-  .service-03 {
-    padding-top: 0;
-  }
-
-  .left-star {
-    position: static;
-    transform: none;
-    width: 38px;
-    margin-bottom: 30px;
-  }
-
-  .service-header {
-    flex-direction: column;
-  }
-
-  .service-image {
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .museum-services {
-    padding: 80px 0;
-  }
-
-  .museum-services .container {
-    padding: 0 20px;
-  }
-
-  .services-grid {
-    row-gap: 60px;
-  }
-
-  .service-title {
-    font-size: 28px;
-  }
-
-  .service-description {
-    font-size: 15px;
-  }
-
-  .service-image {
-    max-width: 100%;
-  }
-
-  .events-block {
-    margin-top: 50px;
-    gap: 20px;
-  }
-
-  .bottom-star {
-    width: 55px;
-  }
-
-  .events-link {
-    font-size: 11px;
-  }
+/* --- Адаптивність (Mobile) --- */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .service-02, .service-03 {
+        padding-left: 0;
+        padding-top: 0;
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .left-star {
+        display: none; /* Ховаємо довгу лінію на мобільному */
+    }
+    
+    .service-image {
+        grid-column: 1;
+        order: 2; /* Міняємо порядок, якщо треба */
+    }
 }
