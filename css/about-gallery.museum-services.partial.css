@@ -1,146 +1,143 @@
-/* ======= BASE ======= */
+/* ============================
+   GRID EXACT LIKE THE ORIGINAL
+   ============================ */
 .museum-services {
-  padding: 120px 0;
-  background: #1c0d05; /* темний коричневий фон як на сайті */
-  color: #e4c28c;      /* теплий золотистий колір */
+  background: #2b160a;
+  padding: 140px 0;
+  color: #e9c08f;
   font-family: "Cormorant Garamond", serif;
 }
 
 .museum-services .container {
-  max-width: 1380px;
+  width: 1280px;
   margin: 0 auto;
 }
 
-/* ======= GRID ======= */
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "s1 s2"
-    "img img"
-    "s3 s3";
-  gap: 80px 120px;
+  grid-template-rows: auto auto auto;
+  gap: 160px 140px;
+  align-items: start;
 }
 
-/* ======= SERVICE 01 ======= */
+
+/* ============================
+      LEFT DECORATIVE LINE 
+   ============================ */
 .service-01 {
-  grid-area: s1;
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
+  position: relative;
+  padding-left: 90px;
 }
 
-.service-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
+.service-01::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 2px;
+  height: 280px;
+  background: #e9b15a;
+}
+
+.service-01::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 320px;
+  width: 2px;
+  height: 280px;
+  background: #e9b15a;
 }
 
 .left-star img {
-  width: 60px;
-  height: auto;
+  position: absolute;
+  left: 4px;
+  top: 285px;
+  width: 28px;
 }
 
-.service-content {
-  max-width: 420px;
-}
 
+/* ============================
+            TEXT STYLES
+   ============================ */
 .service-number {
-  display: block;
-  font-size: 16px;
-  color: #e4c28c;
-  opacity: 0.7;
-  margin-bottom: 12px;
+  font-size: 15px;
+  opacity: 0.8;
+  margin-bottom: 10px;
 }
 
 .service-title {
   font-size: 34px;
-  font-weight: 500;
   margin-bottom: 18px;
-  color: #e4c28c;
+  color: #e9c08f;
 }
 
 .service-description {
   font-size: 18px;
-  line-height: 1.6;
-  color: #c8b08d;
+  color: #d8c1a2;
+  line-height: 1.7;
+  max-width: 380px;
 }
 
-/* ======= SERVICE 02 ======= */
+
+/* ============================
+            RIGHT COLUMN
+   ============================ */
 .service-02 {
-  grid-area: s2;
-  max-width: 460px;
+  padding-top: 20px;
 }
 
-.service-02 .service-title {
-  margin-top: 12px;
+.service-02 .service-number {
+  margin-left: -4px;
 }
 
-/* ======= IMAGE SECTION ======= */
+
+/* ============================
+           OVAL IMAGE
+   ============================ */
 .service-image {
-  grid-area: img;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-top: -80px;
 }
 
 .service-image img {
-  width: 70%;
+  width: 560px;
+  height: auto;
   border-radius: 50%;
-  display: block;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 55px rgba(0,0,0,0.6);
 }
 
-/* ======= SERVICE 03 ======= */
+
+/* ============================
+         THIRD BLOCK (03)
+   ============================ */
 .service-03 {
-  grid-area: s3;
-  max-width: 520px;
-}
-
-.events-block {
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  grid-column: 1 / 2;
+  padding-left: 90px;
+  margin-top: -40px;
 }
 
 .bottom-star img {
-  width: 80px;
-  height: auto;
+  width: 40px;
+  margin-right: 16px;
+}
+
+.events-block {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
 }
 
 .events-link {
-  font-size: 16px;
-  color: #e4c28c;
-  letter-spacing: 1px;
+  color: #e9b15a;
   text-decoration: none;
-  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
   border-bottom: 1px solid transparent;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .events-link:hover {
-  border-color: #e4c28c;
-}
-
-/* ======= RESPONSIVE ======= */
-@media (max-width: 992px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "s1"
-      "s2"
-      "img"
-      "s3";
-    gap: 60px;
-  }
-
-  .service-01 {
-    flex-direction: column;
-  }
-
-  .service-image img {
-    width: 90%;
-  }
+  border-color: #e9b15a;
 }
