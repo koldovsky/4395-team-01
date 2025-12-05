@@ -280,6 +280,9 @@
 /* =======================================
    DESKTOP LOGO FALLBACK — FIX OPACITY
    ======================================= */
+/* =======================================
+   DESKTOP LOGO FALLBACK (background image)
+   ======================================= */
 @media (min-width: 992px) {
   .header-nav__logo-link {
     position: relative;
@@ -295,13 +298,10 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-color: transparent; /* або #251d13 якщо треба бачити контур */
-    background-image: url("/img/global/gallery-logo.svg"); /* ← уважно: шлях має починатись зі слеша! */
+    background-image: url("/4395-team-01/img/global/gallery-logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    opacity: 1 !important;
-    filter: brightness(1) contrast(1);
   }
 
   .header-nav__logo-image {
