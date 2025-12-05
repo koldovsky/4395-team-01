@@ -6,8 +6,9 @@ const createEventCards = (events = []) => {
   if (!sectionContainer || !Array.isArray(events)) return;
 
   const cardsMarkup = events
-    .map(
-      ({ id, title, date, time, description, themeImage }) => `
+    .map(({ title, date, time, description, themeImage }) => {
+      const id = crypto.randomUUID();
+      return `
         <article id="${id}"class="latest-events__card" aria-labelledby="event-${id}-title">
           <img
             class="avatar__img"
@@ -23,8 +24,8 @@ const createEventCards = (events = []) => {
             <h3 id="event-${id}-title" class="card__title">${title}</h3>
             <p class="card__desc">${description}</p>
           </div>
-        </article>`
-    )
+        </article>`;
+    })
     .join("");
 
   sectionContainer.insertAdjacentHTML("beforeend", cardsMarkup);

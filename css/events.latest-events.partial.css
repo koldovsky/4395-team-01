@@ -61,11 +61,9 @@
     gap: 22px;
     align-items: flex-start;
     flex-direction: column;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.02),
-      rgba(255, 255, 255, 0.01)
-    );
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.01));
     padding: 18px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.03);
@@ -79,12 +77,14 @@
     .avatar__img {
       /* flex: 1; */
       width: clamp(100px, 9vw, 200px);
-      height: clamp(100px, 9vw, 200px);;
+      height: clamp(100px, 9vw, 200px);
+      ;
       object-fit: cover;
       object-position: top;
       border-radius: 50%;
       overflow: hidden;
     }
+
     .card__time {
       flex: 2;
       display: flex;
@@ -109,6 +109,7 @@
         color: var(--text-color1);
       }
     }
+
     .card__body {
       flex: 4;
       padding-right: 6px;
