@@ -874,7 +874,7 @@
       .hero__nav-link--main {
         font-family: var(--title-font);
         color: var(--title-color1);
-        font-size: 2.0vw;
+        font-size: 2vw;
         display: inline-flex;
         gap: 0.5rem;
       }
