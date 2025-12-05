@@ -1,292 +1,353 @@
 .hero {
-    margin: auto;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding: 40px 20px;
 
-    @media (min-width: 768px) {
-       
-    }
+  @media (min-width: 768px) {
+    
+  }
 
-    @media (min-width: 992px) {
-        
-    }
+  @media (min-width: 992px) {
+  }
 }
 
 .hero__content-container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-width: 600px;
+  gap: 1.5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 600px;
 
-    .hero__subtitle {
-        font-family: var(--text-font);
-        font-weight: 500;
-        font-size: 0.775rem;
-        color: var(--text-color2);
-        font-style: italic;
+  .hero__subtitle {
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 3.4vw;
+    color: var(--text-color2);
+    font-style: italic;
+  }
+
+  .hero__title {
+    font-family: var(--title-font);
+    font-weight: 100;
+    font-size: 14.85vw;
+    color: var(--title-color1);
+
+    .hero__title-em {
+      font-style: italic;
+      color: var(--title-color2);
     }
 
-    .hero__title {
-        font-family: var(--title-font);
-        font-weight: 100;
-        font-size: 2.85rem;
-        color: var(--title-color1);    
-
-        .hero__title-em {
-            font-style: italic;
-            color: var(--title-color2);
-        }
-
-        .hero__endtitle-em {
-            font-style: italic;
-            color: var(--title-color3);
-        }
+    .hero__endtitle-em {
+      font-style: italic;
+      color: var(--title-color3);
     }
+  }
 
-    .hero__divider {
-        width: 140px;
+  .hero__divider {
+    width: 140px;
+  }
+
+  .hero__description {
+    font-family: var(--text-font);
+    font-size: 4vw;
+    color: var(--text-color1);
+    text-align: justify;
+    font-weight: 350;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+  }
+
+  .hero__btn {
+    margin: 0;
+    align-self: flex-start;
+    padding: 0.75rem 1.3rem;
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-size: 3.6vw;
+    color: var(--title-color1);
+    background-color: transparent;
+    border: 0.9px solid var(--title-color1);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: var(--title-color1);
+      color: var(--title-color3);
     }
-
-    .hero__description {
-        font-family: var(--text-font);
-        font-weight: 300;
-        font-size: 0.8rem;
-        color: var(--text-color1);
-        text-align: justify;
-    }
-
-    .hero__btn {
-        padding: 0.75rem 1.3rem;
-        font-family: var(--text-font);
-        font-weight: 700;
-        font-size: 0.6rem;
-        color: var(--title-color1);
-        background-color: transparent;
-        border: 0.9px solid var(--title-color1);
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        transition: background-color 0.3s ease, color 0.3s ease;
-
-        &:hover {
-            background-color: var(--title-color1);
-            color: var(--title-color3);
-        }
-    }
+  }
 }
 
 .hero__content-visual {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
-    .hero__figure--main {
+  .hero__figure--main {
+    width: 100%;
+    max-width: 380px;
+    margin-inline: auto;
+
+    padding: 3px; /* створює проміжок між рамкою та зовн. контуром */
+    background-color: var(--color-hero-frame-outer);
+
+    border-top-left-radius: 50% 35%;
+    border-top-right-radius: 50% 35%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    overflow: hidden; /* обрізає все під арку */
+
+    .hero__figure-inner {
+      padding: 10px; /* ВАЖЛИВО! Це і є той проміжок! */
+      background-color: var(--bg-primary);
+
+      border-top-left-radius: 50% 35%;
+      border-top-right-radius: 50% 35%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      overflow: hidden;
+
+      /* Внутрішній блок із зображенням */
+      .hero__img-visual {
+        display: block;
         width: 100%;
-        max-width: 380px;
-        margin-inline: auto;
+        height: auto;
 
-        padding: 3px; /* створює проміжок між рамкою та зовн. контуром */
-        background-color: var(--color-hero-frame-outer);
+        aspect-ratio: 3/4;
 
+        /* щоб верхня частина була також заокруглена */
         border-top-left-radius: 50% 35%;
         border-top-right-radius: 50% 35%;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
 
-        overflow: hidden; /* обрізає все під арку */
-
-        .hero__figure-inner {
-            padding: 10px; /* ВАЖЛИВО! Це і є той проміжок! */
-            background-color: var(--bg-primary);
-
-            border-top-left-radius: 50% 35%;
-            border-top-right-radius: 50% 35%;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-
-            overflow: hidden;
-
-            /* Внутрішній блок із зображенням */
-            .hero__img-visual {
-                display: block;
-                width: 100%;
-                height: auto;
-
-                aspect-ratio: 3/4;
-
-                /* щоб верхня частина була також заокруглена */
-                border-top-left-radius: 50% 35%;
-                border-top-right-radius: 50% 35%;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-
-                object-fit: cover;
-                object-position: center top;
-            }
-        }
+        object-fit: cover;
+        object-position: center top;
+      }
     }
+  }
 
-    .hero__video {
-        display: flex;
-        align-items: center;
-        gap: 16px;
+  .hero__video {
+    display: flex;
+    max-width: 380px;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+
+    .hero__video-btn {
+      position: relative;
+
+      width: 89px;
+      height: 89px; /* ВАЖЛИВО: ширина = висоті */
+
+      border-radius: 50%;
+      overflow: hidden;
+
+      border: 4px solid var(--hero-video-border);
+      padding: 0;
+      background: var(--hero-video-bg);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-shrink: 0; /* Щоб кнопка не деформувалась */
+
+      .hero__video-thumb {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-        .hero__video-btn {
-            position: relative;
+      .hero__video-play {
+        position: absolute;
+        width: 28px;
+        height: 28px;
 
-            width: 89px;
-            height: 89px; /* ВАЖЛИВО: ширина = висоті */
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            border-radius: 50%;
-            overflow: hidden;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1;
+        border-radius: 50%;
 
-            border: 4px solid var(--hero-video-border);
-            padding: 0;
-            background: var(--hero-video-bg);
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            flex-shrink: 0; /* Щоб кнопка не деформувалась */
-
-            .hero__video-thumb {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .hero__video-play {
-                position: absolute;
-                width: 28px;
-                height: 28px;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                background: var(--hero-video-play-bg);
-                color: #000;
-                font-size: 16px;
-                line-height: 1;
-                border-radius: 50%;
-
-                pointer-events: none;
-            }
-        }
-
-        .hero__video-text {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-
-            .hero__video-title {
-                font-family: var(--title-font2);
-                font-weight: 100;
-                font-size: 0.75rem;
-                text-transform: uppercase;
-                color: var(--title-color3);
-            }
-
-            .hero__video-subtitle {
-                font-family: var(--text-font);
-                font-weight: 500;
-                font-size: 0.775rem;
-                color: var(--text-color2);
-                font-style: italic;
-            }
-        }
+        pointer-events: none;
+      }
     }
+
+    .hero__video-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .hero__video-title {
+        font-family: var(--title-font2);
+        font-weight: 100;
+        font-size: 3.75vw;
+        text-transform: uppercase;
+        color: var(--title-color3);
+      }
+
+      .hero__video-subtitle {
+        font-family: var(--text-font);
+        font-weight: 500;
+        font-size: 3.4vw;
+        color: var(--text-color2);
+        font-style: italic;
+      }
+    }
+  }
 }
 
 .hero__content-info {
-    margin: auto;
+  gap: 1.5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  .hero__side-card {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
     position: relative;
-    overflow: hidden;
 
-    /* Фонова зірка */
-    .hero__content-info::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: url("img/global/global-star.svg") center/60% no-repeat;
-        opacity: 0.05;
-        z-index: 0;
-    }
+    .hero__side-img-wrapper {
+      width: 60%;
+      overflow: hidden;
+      border-top-left-radius: 90% 55%;
 
-    .hero__figure {
-        position: relative;
-        border-top-left-radius: 55%;
-        overflow: hidden;
-        z-index: 1;
-        max-width: 400px;
-        margin-bottom: 2rem;
-    }
-
-    .hero__figure--side {
-        margin-bottom: 2rem;
-    }
-
-    .hero__img-info {
+      .hero__side-img {
         width: 100%;
         height: auto;
         display: block;
         object-fit: cover;
-    }
+      }
 
-    .hero__info {
-        max-width: 340px;
-        z-index: 1;
-    }
-
-    .hero__year {
+      .hero__side-year {
+        z-index: 2;
         font-family: var(--title-font);
-        font-weight: 100;
-        font-size: 2.5rem;
+        font-size: 10.5vw;
         color: var(--title-color3);
         position: absolute;
-        bottom: 1.5rem;
-        right: 1.5rem;
+        right: 25%;
+        bottom: 8%;
+      }
     }
 
+    .hero__side-decor {
+      position: absolute;
+      inset: 0;
+      background-image: url("../img/global/global-star.svg");
+      background-size: 45%;
+      background-repeat: no-repeat;
+      background-position: 90% 10%;
+      opacity: 0.12;
+      z-index: 1;
+    }
+  }
+
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 320px;
+    z-index: 1;
+
     .hero__info-title {
-        font-family: var(--title-font);
-        font-style: italic;
-        color: var(--title-color2);
-        font-weight: 100;
-        font-size: 1.5rem;
+      font-family: var(--title-font);
+      font-style: italic;
+      color: var(--title-color2);
+      font-weight: 100;
+      font-size: 5vw;
     }
 
     .hero__info-text {
-        font-family: var(--text-font);
-        font-weight: 300;
-        font-size: 0.8rem;
-        color: var(--text-color1);
+      font-family: var(--text-font);
+      font-size: 4vw;
+      color: var(--text-color1);
+      text-align: justify;
+      font-weight: 350;
+      line-height: 1.6;
+      letter-spacing: 0.4px;
     }
+  }
 }
 
-
 .hero__nav {
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+
+  .hero__nav-link {
+    text-decoration: none;
+    color: var(--title-color1);
+    font-size: 3vw;
+    letter-spacing: 0.05em;
+    position: relative;
+  }
+
+  .hero__nav-top {
     display: flex;
-    flex-direction: row;
+    gap: 1.5rem;
+    font-family: var(--title-font2);
 
-    .hero__nav-link {
-        font-family: var(--title-font);
-        font-weight: 500;
-        font-size: 0.775rem;
-        color: var(--title-color1);
-        text-decoration: none;
-        cursor: pointer;
-
-        &:hover {
-            text-decoration: underline;
-        }
+    .hero__nav-link--top {
+      border-bottom: 1px solid var(--text-color2);
+      color: var(--text-color2);
+      text-transform: uppercase;
+      padding-bottom: 0.2rem;
     }
+
+    .hero__nav-icon {
+      color: var(--title-color1);
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  .hero__nav-link--main {
+    font-family: var(--title-font);
+    color: var(--title-color1);
+    font-size: 5.5vw;
+    display: inline-flex;
+    gap: 0.5rem;
+  }
+
+  .hero__nav-arrow {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+/* Tablet/Desktop layout */
+@media (min-width: 768px) {
+  .hero__nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .hero__nav-top {
+    order: 2;
+    gap: 3rem;
+  }
+
+  .hero__nav-link--main {
+    order: 1;
+    font-size: 2rem;
+  }
 }

@@ -1,7 +1,7 @@
 .header-top__date-left-text,
 .header__date-right-text {
-    font-family: "Work Sans", sans-serif;
-    color: rgb(159, 118, 71);
+    font-family: var(--text-font);
+    color: var(--title-color2);
     font-style: italic;
     flex: 1;
 }
@@ -25,50 +25,57 @@
 
 
 .header-bottom__link {
-    font-family: "Antic Didone", serif;
-    color: #fbf6e9;
+    font-family: var(--title-font2);
+    color: var(--title-color1);
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.header-bottom__link:hover {
-    color: rgb(234, 177, 86);
 }
 
 .header-bottom__left-word,
 .header-bottom__right-word {
-    font-family: 'Bacasime Antique', serif;
-    color: rgb(234, 177, 86);
+    font-family: var(--title-font);
+    color: var(--title-color1);
+}
+
+.raphael__segment,
+.murillo__segment {
+    display: block;
+    width: 100%;
+    max-width: 300px; 
+    flex-shrink: 0; 
+}
+
+
+.content__image-container {
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
 }
 
 
 .raphael__headliner,
 .murillo__headliner {
-    font-family: 'Bacasime Antique', serif;
-    color: #fbf6e9;
+    font-size: 24px;
+    font-family: var(--title-font);
+    color: var(--text-color1);
 }
 
 .raphael__title,
 .murillo__title {
-    font-family: 'Bacasime Antique', serif;
-    color: rgb(159, 118, 71);
+    font-style: italic;
+    font-family: var(--title-font);
+    color: var(--title-color2);
 }
 
 .raphael__text,
 .murillo__text {
-    font-family: "Work Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.51);
+    font-family: var(--text-font);
+    color: var(--text-color3);
 }
 
 .content__footer-link {
-    font-family: "Work Sans", sans-serif;
-    color: rgb(234, 177, 86);
+    font-family: var(--text-font);
+    color: var(--title-color1);
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.content__footer-link:hover {
-    color: #fbf6e9;
 }
 
 .content__header-top {
