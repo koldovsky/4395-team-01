@@ -236,37 +236,28 @@
                 display: block;
                 object-fit: cover;
             }
-        }
-
-        .hero__side-panel {
-            width: 40%;
-            background-color: var(--bg-primary);
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            padding: 2rem;
-
-            .hero__side-decor {
-                position: absolute;
-                inset: 0;
-                background-image: url("../img/global/global-star.svg");
-                background-size: 80%;
-                background-repeat: no-repeat;
-                background-position: center;
-                opacity: 0.1;
-                pointer-events: none;
-            }
 
             .hero__side-year {
-                position: relative;
                 z-index: 2;
                 font-family: var(--title-font);
-                font-size: clamp(1.2rem, 3vw, 2.4rem);
+                font-size: 10.5vw;
                 color: var(--title-color3);
+                position: absolute;
+                right: 25%;
+                bottom: 8%;
             }
         }
 
+        .hero__side-decor {
+            position: absolute;
+            inset: 0;
+            background-image: url("../img/global/global-star.svg");
+            background-size: 45%;
+            background-repeat: no-repeat;
+            background-position: 90% 10%;
+            opacity: 0.12;
+            z-index: 1;
+        }
     }
 
     .hero__info {
