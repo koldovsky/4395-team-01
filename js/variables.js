@@ -35,7 +35,53 @@ const renaissanceTours = [
 
 const galleryItems = [
   {
+    artworkCreator:"Henriette Ronner-Knip",
+    artworkName: "Cat with Kittens",
+    startDate: "May 19, 2023",
+    endDate: "Aug 28, 2024",
+    status: "On display",
+    imagePath: "./img/gallery/cat_with_kittens.webp",
+  },
+  {
+    artworkCreator:"Kanuty Rusiecki",
+    artworkName: "Kanuty Rusiecki",
+    startDate: "Aug 01, 2023",
+    endDate: "Sep 12, 2024",
+    status: "On display",
+    imagePath: "./img/exhibitions/kanuty-rusiecki.webp",
+  },
+  {
+    artworkCreator:"Marcello Fogolino",
+    artworkName: "Maria with The Child",
+    startDate: "Sep 22, 2024",
+    endDate: "Jun 13, 2025",
+    status: "Soon",
+    imagePath: "./img/exhibitions/marcello-fogolino.webp",
+  },
+  {
+    artworkCreator:"Philip H. Calderon",
+    artworkName: "Flora MacDonald's farewell",
+    startDate: "Oct 01, 2023",
+    endDate: "Jun 12, 2024",
+    status: "Soon",
+    imagePath: "./img/exhibitions/flora_macdonalds_farewell.webp",
+  },
+  {
+    artworkCreator:"",
+    artworkName: "",
+    startDate: "",
+    endDate: "",
+    status: "",
+    imagePath: "",
+  },
+  {
+    artworkCreator:"",
+    artworkName: "",
+    startDate: "",
+    endDate: "",
+    status: "",
+    imagePath: "",
   }
 ]
 
-export { renaissanceTours };
+export { renaissanceTours, galleryItems };
