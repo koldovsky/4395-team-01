@@ -1,27 +1,22 @@
-// 1. Клік по кнопці OUR EVENTS → перехід на events.html
-document.addEventListener("DOMContentLoaded", () => {
-  const link = document.querySelector(".events-link");
+// 1. Після кліку ставимо прапорець
+document.addEventListener("click", (e) => {
+  const link = e.target.closest(".events-link");
+  if (!link) return;
 
-  if (link) {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      sessionStorage.setItem("scrollToEvents", "1");
-      window.location.href = "events.html";
-    });
-  }
+  sessionStorage.setItem("scrollToEvents", "1");
 });
 
-// 2. Коли partial підвантажено — робимо scroll
-document.body.addEventListener("htmx:afterOnLoad", (e) => {
+// 2. Чекаємо, поки HTMX підвантажить partial
+document.body.addEventListener("htmx:afterSwap", (e) => {
   if (!sessionStorage.getItem("scrollToEvents")) return;
 
-  // Чекаємо підвантаження latest-events partial
-  if (e.detail.pathInfo?.requestPath.includes("events.latest-events.partial.html")) {
-    const section = document.querySelector(".latest-events");
+  const path = e?.detail?.pathInfo?.requestPath || "";
+  if (!path.includes("events.latest-events.partial.html")) return;
 
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      sessionStorage.removeItem("scrollToEvents");
-    }
+  const section = document.querySelector(".latest-events");
+
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+    sessionStorage.removeItem("scrollToEvents");
   }
 });
