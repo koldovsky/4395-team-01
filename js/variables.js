@@ -40,7 +40,7 @@ const galleryItems = [
     startDate: "May 19, 2023",
     endDate: "Aug 28, 2024",
     status: "On display",
-    imagePath: "./img/gallery/cat_with_kittens.webp",
+    imagePath: "./img/exhibitions/henriette-ronner-knip.webp",
   },
   {
     artworkCreator:"Kanuty Rusiecki",
@@ -67,21 +67,21 @@ const galleryItems = [
     imagePath: "./img/exhibitions/flora_macdonalds_farewell.webp",
   },
   {
-    artworkCreator:"",
-    artworkName: "",
-    startDate: "",
-    endDate: "",
-    status: "",
-    imagePath: "",
+    artworkCreator:"Georges D. de Monfreid",
+    artworkName: "Nature morte aux giroflées",
+    startDate: "May 02, 2024",
+    endDate: "Jun 08, 2024",
+    status: "Soon",
+    imagePath: "./img/exhibitions/nature_morte_aux_giroflees.webp",
   },
   {
-    artworkCreator:"",
-    artworkName: "",
-    startDate: "",
-    endDate: "",
-    status: "",
-    imagePath: "",
+    artworkCreator:"Philip H. Calderon",
+    artworkName: "Joyous Summer",
+    startDate: "Oct 01, 2023",
+    endDate: "Jun 12 ,2024",
+    status: "Soon",
+    imagePath: "./img/exhibitions/joyous_summer.webp",
   }
-]
+];
 
 export { renaissanceTours, galleryItems };

@@ -1,5 +1,6 @@
 function init() {
     import('./events.header-hero.js');
+    import('./events.exhibitions-list.js');
     import('./events.latest-events.js');
 }
 
