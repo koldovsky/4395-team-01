@@ -351,7 +351,7 @@
       }
 
       .hero__description {
-        font-size: 2.1vw;
+        font-size: 1.4vw;
         max-width: 440px;
       }
 
@@ -630,7 +630,7 @@
       }
 
       .hero__description {
-        font-size: 1.1vw;
+        font-size: 1.4vw;
         max-width: 440px;
       }
 
@@ -695,12 +695,13 @@
         align-items: center;
         gap: 16px;
         width: 100%;
+        transform: translateY(-50px) translateX(-45px);
 
         .hero__video-btn {
           position: relative;
 
-          width: 89px;
-          height: 89px; /* ВАЖЛИВО: ширина = висоті */
+          width: 120px;
+          height: 120px; /* ВАЖЛИВО: ширина = висоті */
 
           border-radius: 50%;
           overflow: hidden;
@@ -823,7 +824,7 @@
 
         .hero__info-text {
           font-family: var(--text-font);
-          font-size: 1vw;
+          font-size: 1.4vw;
           color: var(--text-color1);
           text-align: justify;
           font-weight: 350;
