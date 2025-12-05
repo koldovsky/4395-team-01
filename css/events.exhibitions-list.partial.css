@@ -7,9 +7,12 @@
     margin: 0 auto;
     display: grid;
     gap: 1rem;
-    /* grid-auto-rows: auto; */
     grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
     .events-exhibition {
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
       position: relative;
       .events-exhibition__image {
         height: 450px;
@@ -32,7 +35,6 @@
         font-size: 2.3rem;
         font-weight: 400;
         margin-top: 1rem;
-        /* opacity: 0.6; */
         color: var(--title-color1);
       }
       .events-exhibition__work {
@@ -44,12 +46,12 @@
       .read-more {
         display: inline-block;
         position: absolute;
-        bottom: 1rem; /* відступ від нижнього краю */
+        bottom: 1rem;
         padding: 0.7em 1.2em;
         margin-top: 1rem;
-        border: 1px solid var(--title-color1); /* жовта рамка */
-        color: var(--title-color1); /* жовтий текст */
-        background-color: transparent; /* прозора заливка */
+        border: 1px solid var(--title-color1);
+        color: var(--title-color1);
+        background-color: transparent;
         text-decoration: none;
         font-family: inherit;
         font-size: 1rem;
@@ -57,7 +59,7 @@
       }
 
       .read-more:hover {
-        color: #ffffff; /* білий текст при наведенні */
+        color: #ffffff;
         background-color: var(--title-color1);
       }
     }
