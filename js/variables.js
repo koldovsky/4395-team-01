@@ -1,6 +1,5 @@
 const renaissanceTours = [
   {
-    id: 1,
     title: "A Journey Through the Renaissance",
     date: "AUG 13, 2023",
     time: "12:30 PM – 1:15 PM",
@@ -9,7 +8,6 @@ const renaissanceTours = [
     themeImage: "./img/latest-events/journey-through.webp",
   },
   {
-    id: 2,
     title: "The Renaissance and You",
     date: "SEP 22, 2023",
     time: "12:30 PM – 3:30 PM",
@@ -18,7 +16,6 @@ const renaissanceTours = [
     themeImage: "./img/latest-events/renaissance_and_you.webp",
   },
   {
-    id: 3,
     title: "Renaissance Art and Music",
     date: "DEC 23, 2023",
     time: "5:30 PM – 8:15 PM",
@@ -27,7 +24,6 @@ const renaissanceTours = [
     themeImage: "./img/latest-events/art_and_music.webp",
   },
   {
-    id: 4,
     title: "Renaissance Women Artists",
     date: "MAY 12, 2024",
     time: "12:30 PM – 1:15 PM",
@@ -36,5 +32,10 @@ const renaissanceTours = [
     themeImage: "./img/latest-events/women_artists.webp",
   }
 ];
+
+const galleryItems = [
+  {
+  }
+]
 
 export { renaissanceTours };
