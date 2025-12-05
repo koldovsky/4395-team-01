@@ -1,52 +1,186 @@
-<!-- Vitaliy Kuzhil --> 
-<div class="header__content">
+<nav class="header-nav">
+  <div class="header-nav__inner">
     <!-- Logo -->
-    <a href="index.html" class="header__logo-link">
-        <img src="img/global/logo.svg" width="300" style="background-color: #251a0d" alt="Logo" class="header__logo-image">
+    <a href="index.html" class="header-nav__logo-link">
+      <img
+        src="img/global/gallery-logo.svg"
+        alt="RenArt logo"
+        class="header-nav__logo-image"
+      />
     </a>
-    <!-- Logo End -->
 
-    <!-- Navigation -->
-    <nav class="header__nav">
-        <ul class="header__nav-list">
-            <li class="header__nav-item">
-                <a href="events.html" class="header__nav-link">
-                    Exhibitions
-                </a>
-            </li>
-            <li class="header__nav-item">
-                <a href="about-gallery.html" class="header__nav-link">
-                    About Gallery
-                </a>
-            </li>
-            <li class="header__nav-item">
-                <a href="events.html" class="header__nav-link">
-                    Events
-                </a>
-            </li>
-            <li class="header__nav-item">
-                <a href="location.html" class="header__nav-link">
-                    Location
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Navigation End -->
+    <!-- Desktop menu -->
+    <ul class="header-nav__menu">
+      <li class="header-nav__menu-item">
+        <a href="exhibitions.html" class="header-nav__menu-link">Exhibitions</a>
+      </li>
+      <li class="header-nav__menu-item">
+        <a href="events.html" class="header-nav__menu-link">Events</a>
+      </li>
+      <li class="header-nav__menu-item">
+        <a href="about-gallery.html" class="header-nav__menu-link"
+          >About Gallery</a
+        >
+      </li>
+      <li class="header-nav__menu-item">
+        <a href="location.html" class="header-nav__menu-link">Location</a>
+      </li>
+    </ul>
 
-    <!-- Social Media -->
-    <div class = "header__sotial-media">
-        <a href="https://www.facebook.com" class="header__social-link" target="_blank" rel="noopener noreferrer">
-            <img src="./img/global/sotial-icon/facebook.png" width="24" alt="Facebook" class="header__social-icon">
-        </a>
-        <a href="https://www.twitter.com" class="header__social-link" target="_blank" rel="noopener noreferrer">
-            <img src="./img/global/sotial-icon/twitter.png" width="24" alt="Twitter" class="header__social-icon">
-        </a>
-        <a href="https://www.instagram.com" class="header__social-link" target="_blank" rel="noopener noreferrer">
-            <img src="./img/global/sotial-icon/instagram-96.png" width="24" alt="Instagram" class="header__social-icon">
-        </a>
-        <a href="https://www.youtube.com" class="header__social-link" target="_blank" rel="noopener noreferrer">
-            <img src="./img/global/sotial-icon/youtube.png" width="24" alt="YouTube" class="header__social-icon">
+    <!-- Desktop social icons -->
+    <div class="header-nav__social">
+      <a
+        href="https://x.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-nav__social-item"
+      >
+        <img
+          src="img/global/sotial-icon/twitter.png"
+          alt="Twitter"
+          class="header-nav__social-icon"
+        />
+      </a>
+      <a
+        href="https://facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-nav__social-item"
+      >
+        <img
+          src="img/global/sotial-icon/facebook.png"
+          alt="Facebook"
+          class="header-nav__social-icon"
+        />
+      </a>
+      <a
+        href="https://instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-nav__social-item"
+      >
+        <img
+          src="img/global/sotial-icon/instagram-96.png"
+          alt="Instagram"
+          class="header-nav__social-icon"
+        />
+      </a>
+      <a
+        href="https://youtube.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-nav__social-item"
+      >
+        <img
+          src="img/global/sotial-icon/youtube.png"
+          alt="YouTube"
+          class="header-nav__social-icon"
+        />
+      </a>
     </div>
-    <!-- End Social Media -->
-</div>
-<!-- Vitaliy Kuzhil End -->
+
+    <!-- Burger button (tablet + mobile) -->
+    <button
+      class="header-nav__burger"
+      id="headerBurger"
+      aria-label="Open navigation menu"
+    >
+      <span class="header-nav__burger-line"></span>
+      <span class="header-nav__burger-line"></span>
+      <span class="header-nav__burger-line"></span>
+    </button>
+  </div>
+
+  <!-- Fullscreen mobile menu -->
+  <div class="header-nav__overlay" id="headerMobileMenu">
+    <div class="header-nav__overlay-inner">
+      <div class="header-nav__overlay-top">
+        <a href="index.html" class="header-nav__logo-link">
+          <img
+            src="img/global/gallery-logo.svg"
+            alt="RenArt logo"
+            class="header-nav__logo-image header-nav__logo-image--overlay"
+          />
+        </a>
+
+        <button
+          class="header-nav__overlay-close"
+          id="headerMobileClose"
+          aria-label="Close navigation menu"
+        >
+          ✕
+        </button>
+      </div>
+
+      <ul class="header-nav__overlay-menu">
+        <li class="header-nav__overlay-item">
+          <a href="exhibitions.html" class="header-nav__overlay-link"
+            >Exhibitions</a
+          >
+        </li>
+        <li class="header-nav__overlay-item">
+          <a href="events.html" class="header-nav__overlay-link">Events</a>
+        </li>
+        <li class="header-nav__overlay-item">
+          <a href="about-gallery.html" class="header-nav__overlay-link"
+            >About Gallery</a
+          >
+        </li>
+        <li class="header-nav__overlay-item">
+          <a href="location.html" class="header-nav__overlay-link">Location</a>
+        </li>
+      </ul>
+
+      <div class="header-nav__overlay-social">
+        <a
+          href="https://x.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-nav__social-item"
+        >
+          <img
+            src="img/global/sotial-icon/twitter.png"
+            alt="Twitter"
+            class="header-nav__social-icon"
+          />
+        </a>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-nav__social-item"
+        >
+          <img
+            src="img/global/sotial-icon/facebook.png"
+            alt="Facebook"
+            class="header-nav__social-icon"
+          />
+        </a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-nav__social-item"
+        >
+          <img
+            src="img/global/sotial-icon/instagram-96.png"
+            alt="Instagram"
+            class="header-nav__social-icon"
+          />
+        </a>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-nav__social-item"
+        >
+          <img
+            src="img/global/sotial-icon/youtube.png"
+            alt="YouTube"
+            class="header-nav__social-icon"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

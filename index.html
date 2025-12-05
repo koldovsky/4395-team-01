@@ -14,17 +14,21 @@
   </head>
   <body>
     <header class="header">
+      <!-- Хедер підтягується з partial -->
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
       ></nav>
+
+      <!-- Hero секція -->
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.hero.partial.html"
       ></div>
     </header>
+
     <main class="main">
       <!--Oksana Kovalenko-->
       <!-- Section 4. Gateway to the Renaissance -->
@@ -129,6 +133,7 @@
       ></section>
       <!--Mykola Heiko Finish-->
     </main>
+
     <!--Nychkalo Vira-->
     <footer class="footer">
       <nav
@@ -138,6 +143,9 @@
       ></nav>
     </footer>
     <!--Nychkalo Vira Finish-->
+
+    <!-- JS -->
+    <script src="js/header-menu.js"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
-  <script type="module" src="js/index.js"></script>
 </html>
