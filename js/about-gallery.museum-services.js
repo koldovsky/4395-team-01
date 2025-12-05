@@ -1,22 +1,28 @@
-// 1. Після кліку ставимо прапорець
-document.addEventListener("click", (e) => {
-  const link = e.target.closest(".events-link");
-  if (!link) return;
+// about-gallery.museum-services.js
 
-  sessionStorage.setItem("scrollToEvents", "1");
-});
-
-// 2. Чекаємо, поки HTMX підвантажить partial
-document.body.addEventListener("htmx:afterSwap", (e) => {
-  if (!sessionStorage.getItem("scrollToEvents")) return;
-
-  const path = e?.detail?.pathInfo?.requestPath || "";
-  if (!path.includes("events.latest-events.partial.html")) return;
-
-  const section = document.querySelector(".latest-events");
-
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-    sessionStorage.removeItem("scrollToEvents");
+export function initMuseumServices() {
+  // Отримуємо параметр з URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const scrollParam = urlParams.get('scroll');
+  
+  // Якщо параметр scroll=latest, скролимо до блоку
+  if (scrollParam === 'latest') {
+    // Невелика затримка для завантаження всіх partials
+    setTimeout(() => {
+      const latestEventsBlock = document.querySelector('.latest-events');
+      
+      if (latestEventsBlock) {
+        // Плавний скрол до елементу
+        latestEventsBlock.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      } else {
+        console.warn('Latest events block not found');
+      }
+    }, 100);
   }
-});
+}
+
+// Автоматичний запуск
+initMuseumServices();
