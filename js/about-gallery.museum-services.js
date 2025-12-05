@@ -1,16 +1,30 @@
-document.addEventListener("htmx:afterSwap", (event) => {
-    const params = new URLSearchParams(window.location.search);
+// js/about-gallery.museum-services.js
 
-    // Перевіряємо — чи прийшли з музейного блоку
-    if (params.get("scroll") === "latest") {
+// 1. Клік по кнопці OUR EVENTS → перехід на events.html
+document.addEventListener("DOMContentLoaded", () => {
+  const link = document.querySelector(".events-link");
 
-        // Перевіряємо, що підвантажується саме events.latest-events.partial.html
-        if (event.detail.pathInfo.finalRequestPath.includes("events.latest-events.partial.html")) {
+  if (link) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      sessionStorage.setItem("scrollToEvents", "1");
+      window.location.href = "events.html";
+    });
+  }
+});
 
-            // Затримка, щоб DOM встиг промалюватися
-            setTimeout(() => {
-                event.target.scrollIntoView({ behavior: "smooth", block: "start" });
-            }, 50);
-        }
+// 2. Коли сторінка events.html завантажилась
+//    і htmx підтягнув partial — скролимо
+document.body.addEventListener("htmx:afterOnLoad", (e) => {
+  if (!sessionStorage.getItem("scrollToEvents")) return;
+
+  // Чекаємо саме partial latest-events
+  if (e.detail.pathInfo?.requestPath.includes("events.latest-events.partial.html")) {
+    const section = document.querySelector("#events-section");
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      sessionStorage.removeItem("scrollToEvents");
     }
+  }
 });
