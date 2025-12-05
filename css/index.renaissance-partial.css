@@ -77,9 +77,9 @@
 
 .arrow {
   position: absolute;
-  left: -120px;
-  bottom: -40px;
-  width: 26px;
+  left: -220px;
+  bottom: -60px;
+  width: 44px;
 }
 
 /* ================= RIGHT IMAGES ================= */
@@ -103,9 +103,22 @@
 .decor-star {
   position: absolute;
   right: 90px;
-  top: 150px;
-  width: 22px;
-  opacity: 0.8;
+  top: 120px;
+  width: 44px;
+  height: 44px;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.decor-star::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* ================================================= */
@@ -213,5 +226,29 @@
 
   .image-caption {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .decor-star::after {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .decor-star::after {
+    display: none;
+  }
+
+  .decor-star {
+    width: 32px;
+    height: 32px;
+    right: 20px;
+    top: 60px;
+  }
+
+  .arrow {
+    width: 32px;
+    left: -120px;
   }
 }
