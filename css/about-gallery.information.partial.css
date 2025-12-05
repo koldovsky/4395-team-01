@@ -1,9 +1,13 @@
+.information {
+  background-color: var(--about-gallery-bg);
+}
+
 .information__container {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-secondary);
   padding: 12px 8px;
   width: 100%;
+  max-width: 1200px;
 }
 
 .information__title-block {
@@ -104,6 +108,7 @@
     align-items: start;
     gap: 12px;
     padding: 12px 8px;
+    margin: 0 auto;
   }
 
   .information__title-block {
@@ -178,6 +183,7 @@
     align-items: start;
     gap: 12px;
     padding: 12px 8px;
+    margin: 0 auto;
   }
 
   /*ЛЕВА ЧАСТИНА*/
