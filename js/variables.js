@@ -30,12 +30,12 @@ const renaissanceTours = [
     description:
       "We'll focus on the work of women artists from the Renaissance period. You'll learn about the challenges that these women faced and how they overcame them to create the most beautiful artworks of the time.",
     themeImage: "./img/latest-events/women_artists.webp",
-  }
+  },
 ];
 
 const galleryItems = [
   {
-    artworkCreator:"Henriette Ronner-Knip",
+    artworkCreator: "Henriette Ronner-Knip",
     artworkName: "Cat with Kittens",
     startDate: "May 19, 2023",
     endDate: "Aug 28, 2024",
@@ -43,7 +43,7 @@ const galleryItems = [
     imagePath: "./img/exhibitions/henriette-ronner-knip.webp",
   },
   {
-    artworkCreator:"Kanuty Rusiecki",
+    artworkCreator: "Kanuty Rusiecki",
     artworkName: "Kanuty Rusiecki",
     startDate: "Aug 01, 2023",
     endDate: "Sep 12, 2024",
@@ -51,7 +51,7 @@ const galleryItems = [
     imagePath: "./img/exhibitions/kanuty-rusiecki.webp",
   },
   {
-    artworkCreator:"Marcello Fogolino",
+    artworkCreator: "Marcello Fogolino",
     artworkName: "Maria with The Child",
     startDate: "Sep 22, 2024",
     endDate: "Jun 13, 2025",
@@ -59,7 +59,7 @@ const galleryItems = [
     imagePath: "./img/exhibitions/marcello-fogolino.webp",
   },
   {
-    artworkCreator:"Philip H. Calderon",
+    artworkCreator: "Philip H. Calderon",
     artworkName: "Flora MacDonald's farewell",
     startDate: "Oct 01, 2023",
     endDate: "Jun 12, 2024",
@@ -67,7 +67,7 @@ const galleryItems = [
     imagePath: "./img/exhibitions/flora_macdonalds_farewell.webp",
   },
   {
-    artworkCreator:"Georges D. de Monfreid",
+    artworkCreator: "Georges D. de Monfreid",
     artworkName: "Nature morte aux giroflées",
     startDate: "May 02, 2024",
     endDate: "Jun 08, 2024",
@@ -75,13 +75,13 @@ const galleryItems = [
     imagePath: "./img/exhibitions/nature_morte_aux_giroflees.webp",
   },
   {
-    artworkCreator:"Philip H. Calderon",
+    artworkCreator: "Philip H. Calderon",
     artworkName: "Joyous Summer",
     startDate: "Oct 01, 2023",
     endDate: "Jun 12 ,2024",
     status: "Soon",
     imagePath: "./img/exhibitions/joyous_summer.webp",
-  }
+  },
 ];
 
 export { renaissanceTours, galleryItems };
