@@ -328,18 +328,21 @@
 
 @media (min-width: 768px) {
   .hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
     .hero__content-container {
       max-width: 800px;
       gap: 2rem;
       order: 1;
+      z-index: 2;
 
       .hero__subtitle {
         font-size: 2vw;
       }
 
       .hero__title {
-        font-size: 10.5vw;
+        font-size: 8vw;
         width: auto;
       }
 
@@ -348,8 +351,8 @@
       }
 
       .hero__description {
-        font-size: 2.5vw;
-        max-width: 500px;
+        font-size: 2.1vw;
+        max-width: 440px;
       }
 
       .hero__btn {
@@ -363,7 +366,7 @@
 
       .hero__figure--main {
         width: 100%;
-        max-width: 380px;
+        max-width: 360px;
         margin-inline: auto;
 
         padding: 3px; /* створює проміжок між рамкою та зовн. контуром */
@@ -481,6 +484,7 @@
       position: relative;
       overflow: hidden;
       order: 2;
+      transform: translateY(80px);
 
       .hero__side-card {
         display: flex;
@@ -489,7 +493,7 @@
         position: relative;
 
         .hero__side-img-wrapper {
-          width: 60%;
+          width: 100%;
           overflow: hidden;
           border-top-left-radius: 90% 55%;
 
@@ -556,6 +560,7 @@
       align-items: flex-start;
       gap: 1.5rem;
       order: 4;
+      transform: translateY(80px);
 
       .hero__nav-link {
         text-decoration: none;
